@@ -1,0 +1,16 @@
+# The Malagasy PARGRAM Project
+
+ESRC Project RES-000-23-0505
+We have developed a broad-coverage computational lexicon and grammar for Malagasy, an Austronesian language spoken in Madagascar. The grammar was written as a part of the PARGRAM project, a project to develop linguistically sound, large-scale grammars within the syntactic framework of Lexical Functional Grammar. Project Web site: http://users.ox.ac.uk/~cpgl0015/pargram/malagasy.html
+
+## Getting Started
+
+The README files in subdirectories explain how to run the grammar and morphological analyser.
+
+
+## Authors
+
+* **Mary Dalrymple**
+* **Charles Randriamasimanana**
+* **Maria Liakata**
+* **Lisa Mackie**
