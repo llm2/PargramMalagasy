@@ -1,0 +1,94 @@
+!!!!irregular forms should override morphological analysis
+
+!!!This is an alternate
+	PresentTense%+:0 AhaCaus%+:0 NounRoot%+:0 [{tratra}:{ahatrarana}] %+Verb:0 %+Passive2:0 |
+!!!Ank does not normally combine with noun roots
+        ActiveVoice%+:0 Recip%+:0 AnkCaus%+:0 PassRoot%+:0 [{azo}:{mifankahazo}] %+Verb:0 |
+	NominalizationF%+:0 AnkCaus%+:0 NounRoot%+:0 [{laza}:{fankalazana}] %+Verb:0 %+Passive2:0 |
+	NominalizationMP%+:0 AnkCaus%+:0 NounRoot%+:0 [{laza}:{mpankalaza}] %+Verb:0 |
+!!!Other forms of ome include epenthetic z
+	PastTense%+:0 PassRoot%+:0 [{ome}:{nomena}] %+Verb:0 %+Passive1:0 |
+!!!lovers; verb or noun?
+	NominalizationMP%+:0 Recip%+:0 AnkCaus%+:0 NounRoot%+:0 [ {tia}:{mpifankatia} ] %+Verb:0 |
+!!!the action of taking upstairs, the action of espousing
+	NominalizationF%+:0 AmpCaus%+:0 NonPassRoot%+:0 [{akatra}:{fampakarana}] %+Verb:0 Passive2%+:0 |
+!!!drop h with voa for hodidina
+	voaPss%+:0 NounRoot%+:0 [{hodidina}:{voadidina}] %+Verb:0 |
+!!!imp usually -y in this context
+	PresentTense%+:0 aPss%+:0 NounRoot%+:0 [{hofa}:{ahofao}] %+Verb:0 %+Imp:0 |
+!!!these combinations don't seem frequent enough to include in regular formations
+	PresentTense%+:0 NounRoot%+:0[{hanina}:{hanina}] %+Verb:0 %+Passive1:0 |
+	PresentActive%+:0 Recip%+:0 AmpCaus%+:0 ActiveI%+:0 NounRoot%+:0 [{resaka}:{mifampiresaka}] %+Verb:0 |
+	PresentActive%+:0 Recip%+:0 AmpCaus%+:0 ActiveI%+:0 NounRoot%+:0 [{laza}:{mifampilaza}] %+Verb:0 |
+	NominalizationF%+:0 Recip%+:0 ActiveAN%+:0 NounRoot%+:0 [{vali}:{fifamaliana}] %+Verb:0 %+Passive2:0 |
+	NominalizationF%+:0 Recip%+:0 ActiveAN%+:0 NounRoot%+:0 [{voatra}:{fifanamboarana}] %+Verb:0 %+Passive2:0 |
+	NominalizationF%+:0 Recip%+:0 AmpCaus%+:0 NounRoot%+:0 [{laza}:{fifampilazana}] %+Verb:0 %+Passive2:0 |
+	NominalizationF%+:0 Recip%+:0 ActiveAN%+:0 NounRoot%+:0 [{veli}:{fifamelezana}] %+Verb:0 %+Passive2:0 |
+!!!epenthetic n with pass2
+	NominalizationF%+:0 ActiveI%+:0 NounRoot%+:0 [{vidi}:{fividianana}] %+Verb:0 %+Passive2:0 |
+	PresentTense%+:0 ActiveI%+:0 NounRoot%+:0 [{vidi}:{ividianana}] %+Verb:0 %+Passive2:0 |
+	FutureTense%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{leha}:{handehanana}] %+Verb:0 %+Passive2:0 |
+	PresentTense%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{leha}:{andehanana}] %+Verb:0 %+Passive2:0 |
+	PastTense%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{leha}:{nandehanana}] %+Verb:0 %+Passive2:0 |
+	NominalizationF%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{leha}:{fandehanana}] %+Verb:0 %+Passive2:0 |
+	PresentTense%+:0 AmpCaus%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{leha}:{ampandehanana}] %+Verb:0 %+Passive2:0 |
+	NominalizationF%+:0 AmpCaus%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{leha}:{fampandehanana}] %+Verb:0 %+Passive2:0 |
+!!!epenthetic v with pass2
+	PresentTense%+:0 ActiveI%+:0 PassRoot%+:0 [{tadidi}:{itadidiavana}] %+Verb:0 %+Passive2:0 |
+!!!h>v
+	PresentTense%+:0 aPss%+:0 NonPassRoot%+:0[{leha}:{alevo}] %+Verb:0 %+Imp:0 |
+!!! voa + an
+	voaPss%+:0 ActiveAN%+:0 NounRoot%+:0 [{voatra}:{voamboatra}] %+Verb:0 |
+!!! ActiveI followed by ActiveAN
+	PresentActive%+:0 ActiveI%+:0 ActiveAN%+:0 NounRoot%+:0[{zera}:{mianjera}] %+Verb:0 |		
+	PresentTense%+:0 ActiveI%+:0 ActiveAN%+:0 NounRoot%+:0[{zera}:{ianjerana}] %+Verb:0 %+Passive2:0 |	
+	PresentActive%+:0 AmpCaus%+:0 ActiveI%+:0 ActiveAN%+:0 NounRoot%+:0[{zera}:{mampianjera}] %+Verb:0 |
+!!!suppletion; could be handled another way?
+	PresentTense%+:0 NonPassRoot%+:0 [{tondra}:{ento}] %+Verb:0 %+Imp:0 |
+	PresentTense%+:0 NonPassRoot%+:0 [{tondra}:{entina}] %+Verb:0 %+Passive1:0 |
+	PastTense%+:0 NonPassRoot%+:0 [{tondra}:{nentina}] %+Verb:0 %+Passive1:0 |
+	FutureTense%+:0 NonPassRoot%+:0 [{tondra}:{hoentina}] %+Verb:0 %+Passive1:0 |
+	FutureTense%+:0 NonPassRoot%+:0 [{tondra}:{hoentinao}] %+Verb:0 %+Passive1:0 %+2SgGen:0 |
+!!! unusual 1SgGen
+        NominalizationMP%+:0 ActiveI%+:0 NounRoot%+:0 [{anatra}:{mpianatrao}] %+Verb:0 %+1SgGen:0 |
+	NominalizationMP%+:0 AmpCaus%+:0 ActiveI%+:0 NounRoot%+:0 [{anatra}:{mpampianatrao}] %+Verb:0 %+1SgGen:0 |
+!!! epenthetic "o"
+	PresentTense%+:0 AmpCaus%+:0 NounRoot%+:0 [{risika}:{amporisihina}] %+Verb:0 %+Passive1:0 |
+!!! epenthetic "z" with deletion
+	PresentTense%+:0 NounRoot%+:0 [{faisana}:{faizina}] %+Verb:0 %+Passive1:0 |
+!!! anka
+	PastTense%+:0 NonPassRoot%+:0 [{anka}:{nanka}] %+Verb:0 |
+	PresentTense%+:0 NonPassRoot%+:0 [{anka}:{manka}] %+Verb:0 |
+	FutureTense%+:0 NonPassRoot%+:0 [{anka}:{hanka}] %+Verb:0 |
+	PastTense%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{anka}:{nangalana}] %+Verb:0 %+Passive2:0 |
+	PresentTense%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{anka}:{angalana}] %+Verb:0 %+Passive2:0 |
+	FutureTense%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{anka}:{hangalana}] %+Verb:0 %+Passive2:0 |
+!!! hita
+	PresentTense%+:0 PassRoot%+:0 [{hita}:{hita}] %+Verb:0 |
+	PresentTense%+:0 PassRoot%+:0 [{hita}:{hitana}] %+Verb:0 %+OvertGenAgent:0 |
+	PastTense%+:0 ActiveAN%+:0 PassRoot%+:0 [{hita}:{nahita}] %+Verb:0 |
+	PresentTense%+:0 ActiveAN%+:0 PassRoot%+:0 [{hita}:{mahita}] %+Verb:0 |
+	FutureTense%+:0 ActiveAN%+:0 PassRoot%+:0 [{hita}:{hahita}] %+Verb:0 |
+!!! hai
+	PresentTense%+:0 PassRoot%+:0 [{hai}:{hai}] %+Verb:0 |
+	PresentTense%+:0 PassRoot%+:0 [{hai}:{haina}] %+Verb:0 %+OvertGenAgent:0 |
+	PastTense%+:0 ActiveAN%+:0 PassRoot%+:0 [{hai}:{nahai}] %+Verb:0 |
+	PresentTense%+:0 ActiveAN%+:0 PassRoot%+:0 [{hai}:{mahai}] %+Verb:0 |
+	FutureTense%+:0 ActiveAN%+:0 PassRoot%+:0 [{hai}:{hahai}] %+Verb:0 |
+!!! odi
+	PresentTense%+:0 NonPassRoot%+:0 [{odi}:{modi}] %+Verb:0 |
+!!! onina
+	PresentTense%+:0 NonPassRoot%+:0 [{onina}:{monina}] %+Verb:0 |
+!!! isi
+	PresentTense%+:0 NonPassRoot%+:0 [{isi}:{misi}] %+Verb:0 |
+	PastTense%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{isi}:{nasiana}] %+Verb:0 %+Passive2:0 | 
+	PresentTense%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{isi}:{asiana}] %+Verb:0 %+Passive2:0 | 
+	FutureTense%+:0 ActiveAN%+:0 NonPassRoot%+:0 [{isi}:{hasiana}] %+Verb:0 %+Passive2:0 | 
+!!! tadidi
+	PastTense%+:0 PassRoot%+:0 [{tadidi}:{notadidiana}] %+Verb:0 %+Passive1:0 |
+	PresentTense%+:0 PassRoot%+:0 [{tadidi}:{tadidiana}] %+Verb:0 %+Passive1:0 |
+	FutureTense%+:0 PassRoot%+:0 [{tadidi}:{hotadidiana}] %+Verb:0 %+Passive1:0 |
+!!! mora
+	PastTense%+:0 NominalizationHA%+:0 AdjRoot%+:0 [{mora}:{notamoraina}] %+Verb:0 %+Passive1:0 |
+	PresentTense%+:0 NominalizationHA%+:0 AdjRoot%+:0 [{mora}:{otamoraina}] %+Verb:0 %+Passive1:0 |
+	FutureTense%+:0 NominalizationHA%+:0 AdjRoot%+:0 [{mora}:{hotamoraina}] %+Verb:0 %+Passive1:0 ;

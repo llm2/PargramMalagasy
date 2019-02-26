@@ -1,0 +1,144 @@
+! malagasy-rule.script: morphological cleanup rules for Malagasy
+! Mary Dalrymple, Maria Liakata, Lisa Mackie 2004-2006
+! Based on example from Beesley and Karttunen book
+! Used by mallex.script
+
+define Vowel [A|E|I|O|U|Y|a|e|i|o|u|y];
+!!! High Vowel for Erwin imperative rule. See Keenan & Pol. p.583
+define HVowel [I|E|i|e];
+define LVowel Vowel-HVowel;
+define Conson  [B|C|D|F|G|H|J|K|L|M|N|P|Q|R|S|T|V|W|X|Z|
+                b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z];
+define Nasal [N|M|n|m];
+define Bilabial [P|p|B|b|M|m];
+define Syllable [(Nasal) ([t|d]) (Conson) Vowel^{1,2}];
+define Weak	["^WeakKTRoot"|"^WeakNRoot"];
+
+define Prefixation1[
+    [..] -> m || "^PRESACT^" "^MPRES^" _
+.o. m -> 0    || _ a n "^ACT^" "^NULLPRES^"
+.o. n -> m    || _  "^TNS^" Vowel
+.o. h -> 0    || "^TNS^" "^D2" _
+.o. o -> 0    || [ h | n ] _ "^TNS^" ("^MPRES^") Vowel
+.o. a -> 0    || _"^Tafa" [i|a]
+.o. a -> 0    || _["^Ma^"] a
+.o. a -> 0    || "^HA" _
+.o. ["^Tafa"|"^TNS^"|"^D2"|"^Ma^"|"^HA"|"^MPRES^"|"^NULLPRES^"|"^PRESACT^"] -> 0
+];
+
+define Prefixation2[  
+!!! Rules for prefixation with 'aN' from p.595
+!!! Case 1: if C is voiced, then aN- + CVX = a + nasal(stop(C)) + VX
+!!! Case 2: if C =0 or k,s,ts,t, then aN- + CVX = anVX
+!!! Case 3: if C is f, p, v, then aN- + CVX = amVX
+!!! Case 4: if C is h, then aN- + CVX = anVX for verbs hety, hatona, etc  h -> 0
+!!! angVX for others, e.g. halatra, hataka h -> g || _ a
+!!! there are some exceptions
+    l -> d, r -> [d r], z -> j, n -> 0 || "^ACT^" _
+.o. h -> g || "^ACT^" _ [a|A]
+.o. h -> g || "^ACT^" "^G"_ 
+.o. h -> 0 || "^ACT^" _ 
+.o. h -> 0 || "^ACT^" "^D" _
+.o. [k|t s|s] -> 0 || "^ACT^" _
+.o. t -> 0 || "^ACT^" _
+.o. n "^ACT^" "^ANV" v -> [m b] 
+.o. n "^ACT^" "^ANAV" v -> [n a m b] 
+.o. n "^ACT^" [f|p|v|b] -> m 
+.o. n -> m || _ "^NAN^" [v|b]
+.o. "^NAN^" -> "-"
+.o. a -> 0 ||"^VOA^"  _
+.o. a -> 0 || _ "^AHA^" Vowel
+.o. i -> 0 || _ "^ACTI^" i 
+!!!Added for epenthetic h + avy
+.o. [..] -> h || "^ACTI^" "^H" _
+    !!! Clean up prefix markers 
+.o. ["^ACT^"|"^VOA^"|"^AHA^"|"^G"|"^ANV"|"^ANAV"|"^ACTI^"|"^H"|"^D"] -> 0 
+];
+
+
+!!! Edge effects on the root during formation of passive 
+define Passive [
+     [[t r|k] a] -> f           ||  _ ["^Ftr2f"|"^Fk2f"]
+.o.  [t r a] -> t             	||  _ ["^Ftr2t"|"^Fitr2et"]
+.o.  [t r a] -> r             	||  _ ["^Ftr2r"|"^Fitr2or"]
+.o.  [n a] -> m               	||  _ "^Fn2m"
+!!! Root Vowel change with passive suffix
+.o.  [n a] -> n               	||  _ ["^Fn2n"|"^Fin2on"]
+!.o.  i -> e		      	||  _ [n a] "^Fn2m"
+.o.  i -> o		      	||  _ [r "^Fitr2or"|n "^Fin2on"]
+.o.  [k a] -> k              	||  _ "^Fk2k"
+.o.  [k a] -> h              	||  _ ["^Fk2h"|"^Fk2eh"|"^Faik2eh"|"^Fik2eh"]
+!!! Root Vowel change with passive suffix
+.o.  [a i|i] @-> e              ||  _ [h "^Faik2eh"|"^Fi2e"|h "^Fik2eh"|h "^Fk2eh"|t "^Fitr2et"]
+.o.  a -> 0                 	||  e "^Fi2e" "^ANA^" _
+.o.  [i|a] -> e                 ||  _ ["^Fi2e"|"^Fa2e"]
+.o.  [s|a] -> 0                 ||  _ ["^Fs20"|"^Fa20"]
+.o.  i -> [a s] 		||  _ "^Fi2as"
+.o.  i -> [a z] 		||  _ "^Fi2az"
+.o.  i -> [e n] 		||  _ "^Fi2en"
+.o.  [i (n a)] -> [e s] 	||  _ ["^Fi2es"|"^Fin2es"] 	!!matches strong and na weak
+.o.  i (n a) -> [e z] 		||  _ "^Fi2ez" 			!!matches strong and na weak roots
+.o.  i -> [e v] 		||  _ "^Fi2ev" 			
+.o.  [i t r a] -> [e r] 	||  _ "^Ftr2er"
+.o.  [i n a] -> [e m]		||  _ "^Fin2em"
+.o.  [i n a] -> [e n]		||  _ "^Fin2en"
+.o.  e -> [i a z]		||  _ "^Fe2iaz"
+.o.  [f i] -> [a s]		||  _ "^Ffi2as"
+.o.  a -> 0 			|| _ ["^ANA^" a|"^ANACaus^" a|"^ANK^" Vowel]
+.o.  i -> 0			|| _ ["^INA^"|"^Fidel" "^ANA^"] 
+.o.  i -> 0			|| _ i z "^ANA^"
+.o. ["^Fi2en"|"^Fi2es"|"^Fi2ev"|"^Fi2ez"|"^Fi2as"|"^Fi2az"|"^Fa20"|"^Fs20"|"^Fi2e"|"^Fk2f"|"^Fk2eh"|"^Faik2eh"|"^Fik2eh"|"^Fk2h"|"^Fk2k"|"^Fn2n"|"^Fn2m"|"^Ftr2r"|"^Ftr2t"|"^Ftr2f"|"^Ftr2er"|"^Fitr2or"|"^Fin2e"|"^Fin2em"|"^Fin2en"|"^Fin2on"|"^Fitr2et"|"^Fe2iaz"|"^Fin2es"|"^Ffi2as"|"^Fa2e"|"^Fidel"]  -> 0
+.o. ["^INA^"| "^APSS^"|"^ANA^"|"^ANACaus^"|"^ANK^"] -> 0
+];
+
+
+!!! Suffix effects for the formation of imperative
+define Imperative [
+     o -> i	|| [O|o] (Vowel) Conson* (LVowel) _ "^ImpSuf"
+.o.  a -> 0	|| _ a "^ImpAct"
+.o. ["^ImpSuf"|"^ImpAct"] -> 0
+];         
+
+define Deletion [
+    !!! Vowel deletion, conditioned by pronominal genitive affixes
+    Vowel @-> 0 || _ "^FVDel"
+    !!! Syllable deletion, conditioned by pronominal genitive affixes
+.o. [[n|t r|k] a] -> 0 || _ "^FSyllDel" 
+   !!! Clean up diacritics for vowel or syllable deletion
+.o. ["^FVDel"|"^FSyllDel"] -> 0 
+    !!!Consonant deletion
+.o. [k|t r] -> 0 || _ "^DropCon"
+.o. "^DropCon"  -> 0
+];
+
+!!!Removes forms without matching brackets (for use with reduplication)
+define BracketFilter [
+ ~[ ?* "^[" ~$["^]"] ] & ~[ ~$["^["] "^]" ?* ]
+];
+
+!!! Final cleanup.
+define Cleanup [
+!["^StrongRoot"|"^WeakKTRoot"|"^WeakNRoot"] -> 0
+    !!! Replace word-internal compound boundary punctuation with +CMP+
+ "+CMP+" -> %-
+.o. "+CMP+" -> '
+    !!! i->y at end of word
+.o. i (->) y, I (->) Y || _ .#. 
+] ;
+
+read regex [
+ Prefixation1 .o. Prefixation2 
+.o. Passive .o. Imperative 
+.o. Deletion
+.o. BracketFilter
+.o. Cleanup
+];
+
+
+
+
+
+
+
+
+

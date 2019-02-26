@@ -1,0 +1,479 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Verb and adjective root lexicon
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!! Passive verb roots
+!!!
+
+LEXICON PassiveRoot
+PassRoot+:0				ListedPassRoot;
+
+LEXICON ListedPassRoot
+
+!!! Strong Passive roots
+<"@D.AVT.ON@" {aleo}>			StrongSuff ; ! be preferable; no imperative
+<"@U.ACT.AN@" {ambara} "@P.PASS1.A@">	StrongSuff ; ! be stated
+<"@D.VOA.ON@" {azo} "@P.PASS1.A@">	StrongSuff ; ! be understood; be taken
+<"@U.ACT.AN@" {efa}>			StrongSuff; ! be destroyed, damaged
+<"@U.ACT.AN@" {foi}>			02ZStrong ; ! be given up
+<"@U.ACT.AN@" "@D.AVT.ON@" 0:%^D{hadino}>	StrongSuff ; ! be forgotten
+<"@U.ACT.I@" "@D.VOA.ON@" {haino}>	StrongSuff ; ! be listened to
+hala					StrongSuff ; ! spider or is_hated
+harihari				StrongSuff ; ! exposed to view, made known
+heno					StrongSuff ; ! is.heard
+kenda					StrongSuff ; ! strangled state
+lani					StrongSuff ; ! all_gone_used_up_or_bad_smell
+lavo					StrongSuff ; ! fallen
+mati					I2ESStrong ; ! dead
+<"@U.ACT.AN@" "@D.VOA.ON@" {ome}>	02ZStrong; ! donation; not a verb
+<{rava} "@P.PASS1.A@">			StrongSuff ; ! in. ruins
+<"@U.ACT.AN@" "@D.AVT.ON@" {re}>	02NESStrong ; ! be heard
+<"@U.ACT.AN@" "@D.VOA.ON@" {resi}>	I2EStrong ; ! be defeated
+<"@U.ACT.I@" "@D.AVT.ON@" {tadidi}>	02AVStrong ; ! be remembered
+<"@U.ACT.ANA@" "@D.AVT.ON@" {tonga}>	02VStrong ; ! have arrived
+tontosa					StrongSuff ; ! achieved(state)
+<"@U.ACT.ANA@" "@D.VOA.ON@" {tratra}>	02RStrong; ! be_caught_or_chest
+<"@U.ACT.I@" {tsapa}>			StrongSuff; ! be felt
+<"@D.VOA.ON@" {tsinjo}>			02VStrong; ! be perceived from afar
+vaki					StrongSuff ; ! be broken
+<"@U.ACT.AN@" "@D.VOA.ON@" {voa} "@P.PASS1.A@">  02ZStrong ; ! be hit_or_fruit_or_seed
+vori					StrongSuff ; ! be assembled
+<"@D.AVT.ON@" {zaka}>			StrongSuff ; ! which-can-be-supported/carried
+!!! Weak Pass Roots in -ka/-tra
+afaka					K2HWeak ; ! set_free
+araka					K2HWeak ; ! be followed
+<"@U.ACT.AN@"	"@D.VOA.ON@" {fantatra}> TR2RWeak ; ! be known
+fongotra		     		TR2RWeak; ! eradicated
+gorobaka				K2HWeak ; ! pierced_through	
+kaoka					K2HWeak ; ! hollow_concave
+laitra					TR2RWeak ; ! can_be_chewed
+latsaka					K2HWeak ; ! be dropped
+lefitra					TR2RWeak ; ! is.tolerable
+<"@D.VOA.ON@" {lelaka}>			K2FWeak ; ! be licked
+<{lentika}"@P.PASS1.A@">		K2EHWeak; ! sinking
+poritra					ITR2ETWeak ; ! crushed	
+<"@U.ACT.AN@" {potika}>			K2EHWeak ; ! be smashed
+<{potraka} "@P.PASS1.A@">		K2HWeak ; ! be fallen off
+potsika					IK2EHWeak ; ! crushed
+<{raikitra} "@P.PASS1.A@">		TR2TWeak ; ! agreed upon
+rendrika				KTWeak ; ! sunk, melted (state)
+ripaka					K2HWeak ; ! destroyed_in_large_numbers
+<"@U.ACT.AN@" "@D.AVT.ON@" {ritra}>	TR2TWeak ; ! be dried up
+sitraka					K2HWeak ; ! appreciated	
+<{tapaka}>				K2HWeak ; ! be cut off
+tanteraka				K2HWeak ; ! carried out
+tapitra					TR2ERWeak ; ! completely finished
+<{tataka} "@P.PASS1.A@">		K2HWeak ; ! unstitched
+<"@D.VOA.ON@" {teraka}>			K2HWeak ; ! be born
+<"@U.ACT.AN@" {tolaka}>			K2HWeak ; ! embezzled, twisted
+tobaka					K2HWeak ; ! overflowing
+<{tondraka} "@P.PASS1.A@">		K2HWeak ; ! overflowing
+tsotra					TR2RWeak ; ! smooth_plain
+vatra					TR2RWeak ; ! (is). bearable/tolerated
+
+!!! Weak Pass Roots in -na
+entina					NWeak ; ! be taken
+levona					NWeak ; ! dissolved (state)
+<"@U.ACT.I@" "@D.VOA.ON@" {tazana}>	NWeak ; ! be seen
+
+!!! Active verb roots
+!!! These roots do not have an inherent gramatical category; these should all make nouns as well
+LEXICON NonPassRoot
+NonPassRoot+:0				ListedNonPassRoot;
+
+LEXICON ListedNonPassRoot
+<{andra} "@P.PASS1.A@">			StrongSuff ; ! expectation	
+aniani					StrongSuff ; ! oath	
+antena					StrongSuff; ! hope, expectation
+<{arana} "@P.PASS1.A@">			StrongSuff; ! indulgences
+<"@D.AVT.ON@" 0:%^H{avi} "@P.PASS1.A@">	StrongSuff; ! is coming
+de					StrongSuff; ! coming back
+<"@D.AVT.ON@" "@U.ACT.AN@" {gaina}>	StrongSuff; ! disappointed
+hatra					StrongSuff ; ! application
+homehi					I2EZStrong ;! laugh
+isi					StrongSuff ; ! exist	
+ita					StrongSuff ; ! crossing	
+jali					StrongSuff ;! suffer
+kendri					I2EStrong ; ! aim	
+kimpi					StrongSuff ; ! shutdown	
+<"@U.ACT.AN@" {la}>			02VStrong; ! refusal
+lasa					StrongSuff ;! be gone
+lefa					02SStrong ; ! send
+<"@U.ACT.AN@" "@D.VOA.ON@" {leha} "@P.PASS1.A@">  StrongSuff; ! march, motion
+odi					StrongSuff ; ! to go back home; from ody "from"
+ontani					StrongSuff ; ! questioning
+<{tahi} "@P.PASS1.A@">			StrongSuff ; ! protection	
+<{taki} "@P.PASS1.A@">			StrongSuff ; ! demand	
+tami					StrongSuff ; ! hole	
+<"@U.ACT.I@" "@D.AVT.ON@" {tia}>	02VStrong ; ! love
+toa					StrongSuff ; ! obedience	
+<"@D.AVT.ON@" "@U.ACT.I@" {tondra}>	StrongSuff; ! steering		
+tovi					StrongSuff ; ! resemblance	
+tsilani					StrongSuff ; ! be on its back	
+<{vili} "@P.PASS1.A@">			StrongSuff; ! steering, deviation
+
+<{akatra}>				TR2RWeak; ! ascension
+fokatra					TR2RWeak; ! extraction
+hanaka					KTWeak ; ! spread	
+<"@D.AVT.ON@" {hoatra} "@P.PASS1.A@">	TR2RWeak; ! like_equal_or_that_which_surprises
+kisaka					K2HWeak ; ! move to one side	
+<{kosika} "@P.PASS1.A@">		IK2EHWeak; ! rubbing
+<"@D.AVT.ON@" "@U.ACT.AN@" {lositra}>	TR2RWeak; ! flight, desertion
+paritaka				K2HWeak ; ! scattering	
+posaka					K2HWeak; ! revelation
+singotra				TR2RWeak ; ! ensnarement
+tambesatra				TR2RWeak ; ! heavy weight	
+tsontsorika				KTWeak ; ! head downwards	
+
+<{anana} "@P.PASS1.A@">			NWeak ; ! possess
+angona					NWeak ; ! gathering	
+haona					NWeak ; ! meeting	
+hafainganina				NWeak ; ! quicken
+hafohezina				NWeak ; ! shorten
+hakelezina				NWeak ; ! make_smaller
+halalinia				NWeak ; ! deepen
+halavaina				NWeak ; ! lengthen
+halavirina 				NWeak ; ! keep_at_distance
+halebiazina				NWeak ; ! make_bigger
+hamaivanina				NWeak ; ! lighten
+hamaintisina				NWeak ; ! blacken
+<"@D.VOA.ON@" {hatona}>			NWeak ; ! approached
+<"@U.ACT.I@" {hinana}>			NWeak; ! eating
+<"@D.VOA.ON@" {hintsana}>		NWeak;	  ! shaking
+kombona					NWeak ; ! closure	
+levina					IN2ENWeak ; ! burial	
+lona					NWeak ; ! soaking	
+onina					IN2ENWeak; ! residing
+taona					NWeak ; ! to carry	
+tohina					NWeak ; ! jostle	
+tsimpona				NWeak ; ! hand-picking	
+vantana					NWeak ; ! straight_forward_open
+
+!!! Closed class of a2 verbs
+!!! not necessarily the same as K+P a2 verbs
+LEXICON VA2
+PassRoot+:0				ListedVA2Root;
+
+LEXICON ListedVA2Root
+! NB hai "heat" is in noun lexicon
+<"@U.ACT.AN@" "@D.AVT.ON@" {hai} "@P.PASS1.A@">	02ZStrong ; ! be known to; knowledgeable about smthng
+<{hita} "@P.PASS1.A@">			StrongSuff ; ! be seen
+
+
+!!! Adjective roots
+
+LEXICON AdjectiveRoot
+AdjRoot+:0				ListedAdjectiveRoot;
+
+LEXICON ListedAdjectiveRoot
+
+!!! Strong adjective roots.
+adala		     StrongSuff ; ! foolish
+ambaka		     StrongSuff ; ! inferior_to
+<{ambani} "@P.PASS1.A@"> StrongSuff ; ! low
+ambinina	     StrongSuff ; ! fortunate
+<{ampi} "@P.PASS1.A@">  StrongSuff ; ! sufficient
+antra		     StrongSuff ; ! compassionate
+arafesi		     StrongSuff ; ! rusty
+avo		     StrongSuff ; ! high
+bado		     StrongSuff ; ! stupid
+baribari	     StrongSuff ; ! open
+be		     02AZStrong ; ! big
+bingo		     StrongSuff ; ! bow_legged
+bodo		     StrongSuff ; ! infantile
+bongo		     StrongSuff ; ! small_mound
+boribori	     StrongSuff ; ! round_spherical
+bori		     StrongSuff ; ! round
+botri		     StrongSuff ; ! schooner_used_in_coastal_trade_or_stunted
+danadana	     StrongSuff ; ! wide_open
+diso		     StrongSuff ; ! wrong
+dombo		     StrongSuff ; ! blunt_dull_on_edge
+donto		     StrongSuff ; ! blunt
+fai		     02ZStrong ; ! disgusted
+fali		     StrongSuff ; ! happy_joyous
+<{farani}0:%^Fidel "@P.PASS1.A@"> StrongSuff ; ! last
+fatsora		     StrongSuff ; ! deceiver
+<"@U.ACT.AN@" {feno}>   StrongSuff ; ! full
+<{fetsi} "@P.PASS1.A@"> I2EStrong ; ! sly_cunning_sharp
+<"@U.ACT.ANA@" {foana} "@P.PASS1.A@"> StrongSuff ; ! empty_null_void
+fohi		     I2EZStrong ; ! short
+folo		     StrongSuff ; ! ten days time
+fotsi		     StrongSuff ; ! white
+<{jenjina} "@P.PASS1.A@">   IN2ENWeak ; ! overwhelmed
+heno	             StrongSuff ; ! is heard
+iva		     StrongSuff ; ! low
+jamba		     StrongSuff ; ! blind
+jobo		     StrongSuff ; ! having_deep_hollow
+joko		     StrongSuff ; ! curved
+kalita		     StrongSuff ; ! jocular_and_deceitful
+kamo		     StrongSuff ; ! lazy
+kanosa		     StrongSuff ; ! cowardly
+kasi		     StrongSuff ; ! vain_showy
+keli		     I2EZStrong ; ! small
+kinga		     StrongSuff ; ! clever
+kivi		     StrongSuff ; ! discouraged_dismayed
+kotsa		     StrongSuff ; ! soaking_wet
+lahi		     StrongSuff ; ! male_man
+lalodalovana	     StrongSuff ; ! rather_deaf_paying_little_attention
+<{lao} "@P.PASS1.A@">	     02ZStrong ; ! deserted
+lava		     StrongSuff ; ! long
+lavorari	     StrongSuff ; ! perfect_well_accomplished
+lefi		     I2EStrong ; ! insipid
+lehibe		     E2IAZStrong ; ! big
+<{letsi} "@P.PASS1.A@">   I2EStrong ; ! sinking_under_pressure
+lo		     02VStrong ; ! rotten
+mainti		     02SStrong ; ! black
+maitso		     StrongSuff ; ! green
+mami		     StrongSuff ; ! sweet
+mamo		     StrongSuff ; ! drunk
+manta		     StrongSuff ; ! uncooked
+maro		     StrongSuff ; ! many
+mena		     StrongSuff ; ! red
+meti		     I2EZStrong ; ! willing
+mondro		     StrongSuff ; ! blunted_dulled
+mora		     StrongSuff ; ! easy
+ngita		     StrongSuff ; ! kinky
+ngoli		     StrongSuff ; ! numb
+njola		     StrongSuff ; ! cross_eyed_squint_eyed
+noana		     StrongSuff ; ! hungry
+ori		     StrongSuff ; ! miserable_wretched_poor
+osa		     StrongSuff ; ! feeble_weak_cowardly
+pepo		     StrongSuff ; ! concave_hollow
+<"@U.ACT.ANA@" {ratsi}>	StrongSuff ; ! bad
+sendaotra	     StrongSuff ; ! unintentional_accidental
+<"@U.ACT.AN@" "@D.VOA.ON@" {simba}  "@P.PASS1.A@"> StrongSuff; ! destroyed_damaged
+sola		     StrongSuff ; ! bald
+solampi		     StrongSuff ; ! sloping
+tafitafi	     StrongSuff ; ! ajar
+tanora		     StrongSuff ; ! young_immature
+tavi		     02ZStrong ; ! fat
+telo		     StrongSuff ; ! three
+teri		     I2EStrong ; ! tight
+to		     02VStrong; ! true_accepted
+tolitsika	     StrongSuff ; ! lame_halting
+tono		     StrongSuff ; ! broiled
+torotoro	     StrongSuff ; ! crushed_to_pieces
+tranaini	     StrongSuff ; ! old_out_of_date
+<"@U.ACT.ANA@" {tsara}>	StrongSuff ; ! good
+vao		     02ZStrong ; ! new
+vavi		     StrongSuff ; ! female
+<"@U.ACT.AN@" "@D.AVT.ON@" {veri}>  I2EZStrong; ! lost
+veta	      	     StrongSuff ; ! indecent_loathsome
+<"@U.ACT.AN@" "@D.AVT.ON@" {vita}>  StrongSuff; ! has_been_done
+vitsi		     StrongSuff ; ! smallness of number
+<"@U.ACT.AN@" {voki} "@P.PASS1.A@">	02SStrong ; ! filled_satiated_satisfied
+!!!! There may be 2 separate "zari" roots but the adj root would not combine with verbal morphology
+<"@U.ACT.AN@" "@D.AVT.ON@" {zari}> 02ZStrong ; ! appropriate_able_convenient
+zeni		     StrongSuff ; ! dwarf
+
+
+!!! Weak adjective roots ending in -ka/-tra
+
+antitra		     TR2ERWeak ; ! mature
+antomotra	     TR2RWeak ; ! close_at_hand
+asiaka		     K2HWeak  ; ! fierce
+betsaka		     K2HWeak ; ! numerous
+<{boboka} "@P.PASS1.A@"> K2HWeak ; ! soaked
+boroaka		     K2HWeak ; ! pierced through (state)
+empaka		     K2HWeak ; ! blistered
+<{fisaka} "@P.PASS1.A@">    K2HWeak ; ! flat
+<{gorobaka} "@P.PASS1.A@">     K2HWeak ; ! pierced through (state)
+hendratra	     TR2TWeak ; ! twitching_startled
+hentitra	     TR2ERWeak ; ! tough
+<{hiboka} "@P.PASS1.A@"> K2HWeak ; ! full_crowded
+hinjitra	     TR2RWeak ; ! stiff_rigid
+<{hipoka} "@P.PASS1.A@"> K2HWeak ; ! full_crammed
+jomoka		     K2HWeak ; ! quiet_and_retiring
+kaozatra	     TR2TWeak ; ! very_thin
+kepaka		     K2HWeak ; ! loose
+ketraka		     K2HWeak ; ! not_stiff
+kevoka		     K2HWeak ; ! vain_pretentious
+kodedika	     K2EHWeak ; ! babble
+kolepaka	     K2HWeak ; ! limping
+lavitra		     TR2RWeak ; ! far_away
+<{lefaka} "@P.PASS1.A@">	     K2HWeak ; ! lax
+<{lesoka} "@P.PASS1.A@">	     K2HWeak ; ! sunken_in_middle
+lonaka		     K2HWeak ; ! fertile
+lozotra		     TR2RWeak ; ! that_does_not_get_done_when_cooked
+maharitra	     ITR2ETWeak ; ! permanent
+maika		     AIK2EHWeak ; ! hurried
+mailaka		     K2HWeak ; ! nimble_quick
+<{masaka} "@P.PASS1.A@">	     K2HWeak ; ! well_done_cooked
+meloka		     K2HWeak ; ! guilty
+mohaka		     K2FWeak ; ! rotten_ready_to_go_to_pieces
+momoka		     KTWeak ; ! decayed_and_falling_apart
+montitra	     ITR2ORWeak ; ! who_is_angry_but_remains_silent
+<{petaka} "@P.PASS1.A@">	     K2HWeak; ! flat
+potsitra	     TR2RWeak; ! crushed
+<"@D.VOA.ON@" {raraka} "@P.PASS1.A@"> K2HWeak; ! spilled
+<{rehetra}>	     KTWeak ; ! all
+reraka		     K2HWeak; ! tired
+<"@D.VOA.ON@" "@U.ACT.AN@" {rotika}> K2EHWeak; ! shredded
+<"@U.ACT.AN@" {rovitra}>	TR2TWeak; ! torn_up
+<{safotra} "@P.PASS1.A@">  TR2RWeak ; ! flooded
+saraka		     K2HWeak ; ! separate
+sarotra		     TR2TWeak ; ! difficult
+sasatra		     TR2RWeak ; ! tired_weary
+sempotra	     TR2RWeak ; ! out_of_breath_stifled
+<{sompatra} "@P.PASS1.A@"> TR2RWeak ; ! malicious_doing_wanton_damage
+tahaka		     K2FWeak ; ! like_similar_to
+taitra		     TR2RWeak ; ! surprised
+tezitra		     TR2RWeak ; ! angry
+<{trabaka} "@P.PASS1.A@">	     K2HWeak ; ! pierced_through_as_meat
+<{tresaka} "@P.PASS1.A@">	     K2HWeak ; ! cracked
+tretrika	     K2EHWeak ; ! happy_having_all_one_could_desire
+triatra		     TR2RWeak ; ! torn_up
+trotraka	     K2HWeak ; ! fatigued_worn_out
+<{tsemboka} "@P.PASS1.A@">     K2HWeak ; ! sweaty
+vahotra		     TR2RWeak ; ! benumbed_perplexed
+<{vasoka} "@P.PASS1.A@">	     K2HWeak ; ! off_color_tarnished_discolored
+voretra		     KTWeak ; ! dirty_untidy
+<{votsotra} "@P.PASS1.A@"> TR2RWeak ; ! released
+zatra		     TR2RWeak ; ! accustomed_to
+
+
+!!! Weak adjective roots ending in -na
+
+
+<{dodona} "@P.PASS1.A@">  NWeak ; ! in_hurry
+faingana	     NWeak ; ! quick_prompt
+henjana		     NWeak ; ! stiff_stretched
+kentsona	     NWeak ; ! nasal
+lalina		     NWeak ; ! deep
+lempona		     NWeak ; ! concave_hollow
+<"@U.ACT.AN@" "@D.VOA.ON@" {lena} "@P.PASS1.A@"> N2MWeak ; ! soaked
+maina		     NWeak ; ! dry
+maivana		     NWeak ; ! light_in_weight
+mangana		     NWeak ; ! bruised_black_and_blue
+masina		     NWeak ; ! holy
+<{montsana} "@P.PASS1.A@">     NWeak ; ! in_bits_and_pieces
+ngazana		     NWeak ; ! dry_and_barren
+ngerona		     NWeak ; ! of_very_dark_bluish_color
+pintsana	     NWeak ; ! very_young_but_quick_and_agile
+sahirana	     NWeak ; ! bothered_worried_perplexed
+<"@U.ACT.ANA@" {sitrana}>	NWeak ; ! cured
+sompirana	     NWeak ; ! oblique
+tailana		     NWeak ; ! crooked_irregular_disproportioned
+tamana		     NWeak ; ! happily_settled_liking_place_or_situation
+<{tampina} "@P.PASS1.A@">  IN2ENWeak ; ! clogged_up
+<{takona} "@P.PASS1.A@">  NWeak ; ! hidden
+<{tokana} "@P.PASS1.A@"> NWeak ; ! alone_single
+tonina		     IN2ONWeak ; ! calm
+vandana		     NWeak ; ! spotted_speckled_of_mixed_colors
+<"@D.VOA.ON@" {velona}>	N2MWeak ; ! soaked
+vilana		     NWeak ; ! crooked_warped
+vizana		     NWeak ; ! tired
+vonona		     NWeak ; ! ready
+
+
+!!!Adjective roots which do not take verbal morphology
+LEXICON AdjectiveRootNV
+AdjRoot+:0	ListedAdjectiveRootNV ;
+
+LEXICON ListedAdjectiveRootNV
+ana		     StrongSuff ; ! faint_from_hunger_or_fatigue
+anankirai	     StrongSuff ; ! one
+ankasa		     StrongSuff ; ! even
+anointsarotra	     StrongSuff ; ! difficult
+baranahini	     StrongSuff ; ! careless
+bari		     StrongSuff ; ! open_and_expressive
+dangi		     StrongSuff ; ! fallen_down_dead
+donendrina	     StrongSuff ; ! stupid_simple_minded
+ela		     StrongSuff ; ! old
+elektrika	     StrongSuff ; ! electrical
+faraidina	     StrongSuff ; ! poorest_lowest_in_quality_or_degree
+farari		     StrongSuff ; ! often_ill
+faratomponi	     StrongSuff ; ! very_best
+farofi		     StrongSuff ; ! chronically_invalid
+gaga		     StrongSuff ; ! astonished
+hafa		     StrongSuff ; ! other_different
+hani		     StrongSuff ; ! only_one
+haolo		     StrongSuff ; ! wild
+hendri		     I2EStrong ; ! wise_prudent_intelligent
+henika		     StrongSuff ; ! full
+hirihirini	     StrongSuff ; ! genuine_unadulterated_pure
+ireri		     StrongSuff ; ! solitary_alone
+janga		     StrongSuff ; ! immoral
+kafiri		     StrongSuff ; ! miserly
+kahihitra	     StrongSuff ; ! stingy
+kankanina	     StrongSuff ; ! afflicted_with_intestinal_worms
+kaodi		     StrongSuff ; ! timid
+karakaina	     StrongSuff ; ! dry_and_desolate
+kavia		     StrongSuff ; ! left_handed
+kelirai		     StrongSuff ; ! small_and_slight_of_stature
+kelireni	     StrongSuff ; ! small_and_slight_of_stature
+ketrina		     I2EStrong ; ! stupid
+kilemaina	     StrongSuff ; ! crippled
+kivalavala	     StrongSuff ; ! said_or_done_in_jest
+kongorevo	     StrongSuff ; ! who_does_careless_work
+konjo		     StrongSuff ; ! clever_and_deceitful
+mafaraka	     StrongSuff ; ! rancid_bitter
+malailai	     StrongSuff ; ! scratchy_itchy
+malaki		     StrongSuff ; ! prompt
+malala		     StrongSuff ; ! love
+matoa		     StrongSuff ; ! eldest_son_or_daughter
+moana		     StrongSuff ; ! mute
+morabe		     StrongSuff ; ! easy_going
+mosarena	     I2EStrong ; ! hungry_starved
+nofosana	     02SStrong ; ! fleshy
+rainazi		     StrongSuff ; ! of_easy_going_disposition
+rendrehana	     StrongSuff ; ! sleepy
+rendremana	     StrongSuff ; ! sleepy
+sahala		     StrongSuff ; ! alike_same
+sahaza		     StrongSuff ; ! fit_suitable
+sakodiavatra	     StrongSuff ; ! hesitant_doubting_perplexed
+salama		     StrongSuff ; ! well_healthy
+saozanina	     StrongSuff ; ! sickly_in_poor_health
+sanganehana	     StrongSuff ; ! hesitating_to_make_choice_or_decision
+sarotini	     StrongSuff ; ! difficult_about_things
+soamadodoka	     StrongSuff ; ! happily_busy
+somorina	     StrongSuff ; ! bearded
+talaki		     StrongSuff ; ! visible_obvious
+talanjona	     StrongSuff ; ! amazed
+talesaka	     StrongSuff ; ! wide_and_shallow_as_platter_or_tray
+tandalerina	     StrongSuff ; ! covered_with_spots
+tandrevaka	     StrongSuff ; ! hurried_and_negligent
+tomadi		     StrongSuff ; ! strong_muscular
+tontolo		     StrongSuff ; ! whole
+torovana	     StrongSuff ; ! overcome_by_fatigue
+tsinana		     StrongSuff ; ! at_new_moon_phase
+tsinontsinona	     StrongSuff ; ! of_no_importance_of_little_worth
+tsitoha		     StrongSuff ; ! almighty_irresistible
+tsizarizari	     StrongSuff ; ! inadequate
+tsontsa		     StrongSuff ; ! mistaken_making_mistake_unconsciously
+vailanina	     StrongSuff ; ! twisted_warped
+valalanina	     StrongSuff ; ! tired_out_by_monotonous_work
+vanga		     StrongSuff ; ! white_spotted_or_partly_covered_with_color
+vetiveti	     StrongSuff ; ! in_instant_in_little_while
+voalohani	     StrongSuff ; ! first
+vodivodiana	     StrongSuff ; ! uneasy_suspicious 
+vovohina	     StrongSuff ; ! dusty_from_rot
+zina		     StrongSuff ; ! fruitful
+
+!!!KTWeak roots
+bitika		     KTWeak ; ! tiny
+bonaika		     KTWeak ; ! peaceful_easy_going
+finaritra	     TR2TWeak ; ! well_happy
+hatsatra	     KTWeak ; ! livid_pale
+jihitra		     KTWeak ; ! dead
+mahantra	     KTWeak ; ! poor
+matroka		     K2HWeak ; ! tarnished_dull_colored
+menatra		     TR2RWeak ; ! ashamed
+sambatra	     TR2RWeak ; ! happy
+sariaka		     KTWeak ; ! gay_affable
+sosotra		     KTWeak ; ! angry
+vokoka		     KTWeak ; ! bent_over_stooped
+
+!!!NWeak roots
+bikana		     NWeak ; ! elegantly_shaped
+dondrona	     NWeak ; ! dumb
+farina		     N2MWeak ; ! hoarse
+foizina		     NWeak ; ! short_tempered
+kirina		     NWeak ; ! obstinate
+malina		     NWeak ; ! sober_prudent_circumspect
+mongena		     NWeak ; ! who_disapproves_but_remains_silent
+morana		     NWeak ; ! rainy
+ozatina		     NWeak ; ! strong_muscular
+pahina		     NWeak ; ! dim
+vavana		     NWeak ; ! very_talkative
+voloina		     NWeak ; ! hairy

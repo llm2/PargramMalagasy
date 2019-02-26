@@ -1,0 +1,2 @@
+lexc checkall.script
+

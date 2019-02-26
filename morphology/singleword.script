@@ -1,0 +1,19 @@
+# usage: xfst -f singleword.script 
+# extract transducer for a single word 
+read regex [?* {anana} ?*]
+ .o. $"+Verb"
+ .o. ~$"NominalizationF+"
+ .o. ~$"FutureTense+"
+ .o. ~$"PastTense+"
+ .o. ~$"+1SgGen"
+ .o. ~$"+1PlIncGen"
+ .o. ~$"+1PlExcGen"
+ .o. ~$"+2SgGen"
+ .o. ~$"+2PlGen"
+ .o. ~$"+ActImp"
+ .o. ~$"+PassImp"
+ .o. ~$"NominalizationMP+"
+ .o. @"malmorph.fst";
+save stack malmorphsingle.fst
+
+

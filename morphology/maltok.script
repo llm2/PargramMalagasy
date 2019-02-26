@@ -1,0 +1,164 @@
+# Script to create a tokenizer for Malagasy
+# Mary Dalrymple, 2004-2006
+# Based on example from Beesley and Karttunen book
+# Usage: xfst -f maltok.script
+# Produces: maltok.fst
+# Multi-word expressions are now handled by XLE
+
+clear stack
+
+### the token boundary symbol
+define TokBound "TB";
+
+### the symbol for compounding with hyphen or apostrophe
+define Compound "+GEN+";
+
+## Definitions for controlling edge effects in compounding
+define Vowel    [A|E|I|O|U|Y|a|e|i|o|u|y];
+define Conson   [B|C|D|F|G|H|J|K|L|M|N|P|Q|R|S|T|V|W|X|Z|
+                 b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z];
+define Bilabial [P|p|B|b|M|m|V|v|f|F];
+
+### white space
+define SP " ";
+define TAB "\t";
+define NL "\n";
+define WS [SP|NL|TAB];
+
+### punctuation
+define SINGLEPUNCT [%.|%,|%"|%`|%;|%:|%!|%?|%(|%)|%[|%]|%{|%}];
+define MULTPUNCT   [%. %. %.|%` %`|%' %'];
+define PUNCTUATION [SINGLEPUNCT|MULTPUNCT];
+
+### numeric expressions
+define Digit [%0|%1|%2|%3|%4|%5|%6|%7|%8|%9];
+define NumSep [%.|%,];
+define NUMBER [(NumSep) Digit+]* & [?* Digit];
+
+### words can have genitive apostrophe internally, 
+### but word-finally it is normal punctuation
+define Char \[WS|SINGLEPUNCT|M1|M2|TokBound|Compound];
+define WORD [Char]+ - [?* %'];
+
+### simple tokens
+define TOKEN [NUMBER|PUNCTUATION|WORD|%'];
+
+### abbreviations end with a period
+define ABBR [{Mr.}|{Mrs.}|{etc.}];
+
+### initials
+define Letter [A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+               a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z];
+define INIT [Letter %.];
+
+### abbreviations
+define Abbreviation [ABBR|INIT];
+
+### token boundaries
+define Bound [SINGLEPUNCT|WS|TokBound|.#.];
+
+####### define the tokenizers:
+
+### normalize spaces
+define SPACES [WS+ @-> SP];
+
+### Optionally decapitalize first word
+define DECAPITALIZE [
+A (->) a, B (->) b, C (->) c, D (->) d, E (->) e, F (->) f,
+G (->) g, H (->) h, I (->) i, J (->) j, K (->) k, L (->) l,
+M (->) m, N (->) n, O (->) o, P (->) p, Q (->) q, R (->) r,
+S (->) s, T (->) t, U (->) u, V (->) v, W (->) w, X (->) x,
+Y (->) y, Z (->) z || .#. _ ];
+
+### Bracket things that might be abbreviations, insert underscores, and introduce an
+### optional extra period if the abbreviation comes at the end of the sentence.
+define ABBREVIATIONS [
+    Abbreviation (@->) M1 ... M2 || Bound _ Bound
+.o. WS -> %_ || M1 [Letter|Digit|SINGLEPUNCT|SP]* _ [Letter|Digit|SINGLEPUNCT|SP]* M2
+.o. M1 -> 0
+.o. M2 (->) TokBound %. || _ TokBound .#.
+.o. M2 -> 0 ];
+
+### Pick out maximal basic tokens
+define TOKENIZE [
+TOKEN @-> ... TokBound ];
+
+### remove spaces 
+define REMOVESPACES [
+  WS+ @-> 0 
+] ;
+
+### Replace word-internal compound boundary punctuation
+### with compound marker, set off as a separate token
+define COMPOUNDBOUNDARY [
+    %- -> [TokBound Compound TokBound] || Letter _ Letter
+.o. %' -> [TokBound Compound TokBound] || Letter _ Letter
+] ;
+
+### Edge effects of compounding on first member, which we assume is a
+### root (unlike the second member, which is a phrase). 
+### If the first member is a weak root and the second member begins
+### with a vowel, delete the final vowel of the first root.
+### If the first member is a weak K/T root, delete ka/tra.
+### If the first member is strong and the second member begins with
+### anything but a bilabial consonant, insert n. Otherwise insert m.
+### If the first member is a weak N root, change na/ni to N.
+### This will provide multiple inputs to the morphological analyzer,
+### e.g. ...n-... can be treated as n-epenthesis after a strong root,
+### or a-deletion after n in a root ending with -na.  The
+### morphological analyzer will sort this out.
+define COMPOUNDING1 [
+    [..] (->) [[k|t r] a] || Vowel _ TokBound Compound TokBound Conson
+.o. [..] -> a 	          || [k|[t r]] _ TokBound Compound TokBound Vowel
+.o. [..] (->) [a|i]       || n _ TokBound Compound TokBound \[Bilabial]
+.o. m (->) [n [a|i|0]]      || _ TokBound Compound TokBound Bilabial
+.o. n -> 0	          || _ TokBound Compound TokBound \[Bilabial]
+.o. m -> 0	          || _ TokBound Compound TokBound Bilabial
+];
+
+### Edge effects of compounding on second member. If the second
+### member begins with a surface stop consonant, it may correspond to a
+### lexical non-stopped consonant, or it may be lexically a stop.
+define COMPOUNDING2 [
+    p (->) f	 || Compound TokBound _ 
+.o. P (->) F	 || Compound TokBound _ 
+.o. [t s] (->) s || Compound TokBound _ 
+.o. [t S] (->) S || Compound TokBound _ 
+.o. h (->) k	 || Compound TokBound _ 
+.o. H (->) K	 || Compound TokBound _ 
+.o. d (->) l	 || Compound TokBound _ \[r|R] 
+.o. D (->) L	 || Compound TokBound _ \[r|R] 
+.o. [d r] (->) r || Compound TokBound _ 
+.o. [d R] (->) R || Compound TokBound _ 
+.o. b (->) v	 || Compound TokBound _ 
+.o. B (->) V	 || Compound TokBound _ 
+.o. j (->) z	 || Compound TokBound _ 
+.o. J (->) Z	 || Compound TokBound _ 
+] ;
+
+### Take care of exceptional compounding case (2.2.1 in Keenan and Polinsky)
+define KPCOMPOUNDING [
+    [y TokBound] (->) [a TokBound Compound TokBound ] || [[T|t] [R|r]|[K|k]] _ [[N|n] [Y|y] TokBound] 
+.o. [Y TokBound] (->) [A TokBound Compound TokBound ] || [[T|t] [R|r]|[K|k]] _ [[N|n] [Y|y] TokBound] 
+  ];
+
+### Treat accusative marker specially, removing the
+### compound flag: "an-dRabe" becomes "an TB Rabe".
+
+define ANCOMPOUNDING [
+    [TokBound Compound TokBound ] -> TokBound || Bound [A|a] [N|n] _  
+   ];
+
+
+### compose
+read regex [
+    SPACES .o. DECAPITALIZE 
+.o. ABBREVIATIONS 
+.o. TOKENIZE .o. REMOVESPACES
+.o. COMPOUNDBOUNDARY .o. COMPOUNDING2 .o. ANCOMPOUNDING .o. COMPOUNDING1 
+.o. KPCOMPOUNDING 
+] ;
+
+### create transducer
+invert net
+save stack maltok.fst

@@ -1,0 +1,182 @@
+PARGRAM  MALAGASY   CONFIG (1.0)
+  ROOTCAT   ROOT.
+  "Fragments not currently used."
+  "REPARSECAT FRAGMENTS."
+  FILES  malagasy-noun-lex.lfg
+         malagasy-adj-lex.lfg
+         malagasy-verb-lex.lfg
+         malagasy-oblique-lex.lfg
+         malagasy-indeclinable-lex.lfg
+ 	 malagasy-rules.lfg
+ 	 malagasy-templates.lfg
+         common.templates.lfg
+         common.features.lfg.
+  LEXENTRIES   (all all).
+  RULES   (PARGRAM MALAGASY).
+  MORPHOLOGY (PARGRAM MALAGASY).
+
+ "templates and features from the common files (STANDARD COMMON) have lower
+ priority than those defined in this grammar"
+  TEMPLATES   (STANDARD COMMON) (PARGRAM MALAGASY).
+  FEATURES (STANDARD COMMON) (PARGRAM MALAGASY).
+
+  GOVERNABLERELATIONS    SUBJ OBJ OBJ2 OBJ-TH COMP XCOMP OBL?*.
+  SEMANTICFUNCTIONS    MOD TOPIC FOCUS FOCUS-INT ADJUNCT.
+  NONDISTRIBUTIVES    NUM PERS COORD COORD-FORM COORD-LEVEL ADJUNCT.
+  EPSILON   e.
+
+OPTIMALITYORDER unknown "disprefer forms with no syntactic entry"
+                guessed "disprefer morphologically guessed forms"
+                *fragment "disprefer fragments and mark with *"
+		STOPPOINT
+		headless-noun-phrase "disprefer headless noun phrases"
+                pronoun-mod "disprefer modification of pronouns"
+                nominalized-ip-no-n-morph "disprefer analysis as nominalized IP if no nominalizing morphology"
+		STOPPOINT
+                sentential-subj "disprefer analysis of CP as subject"
+		3sg-suffix "disprefer analysis of n'... as -ni 3sg genitive suffix"
+                fronted-nonsubj "prefer analysis of fronted constitutent as subject"
+		rel "disprefer analysis as relative clause"
+                n-n-compound "disprefer analysis as noun-noun compound"
+                nominalized-ip "disprefer analysis as nominalized IP"
+		STOPPOINT
+                pro-drop "disprefer pro-drop"
+		+mwe   "prefer multi-word analysis"
+                +det "prefer treatment of ambiguous forms as determiners and not nouns"
+                +closed-class "prefer closed-class forms to analyzed forms"
+                +acc "prefer analysis of an as accusative marker rather than preposition"
+                +time "prefer analysis of time phrases as time".
+
+GENOPTIMALITYORDER GenBadPunct NOGOOD "do not generate these"
+                   +GenGoodPunct. "prefer these"
+
+----
+
+PARGRAM MALAGASY MORPHOLOGY (1.0)
+
+# Malagasy tokenizer for analysis, default tokenizer for generation
+
+TOKENIZE:
+P!maltok.fst G!default-gen-tokenizer.fst
+
+ANALYZE USEALL:
+malmorph.fst malagasy_lexicalized_forms.fst
+digits.fst 
+malmorph.redup.fst
+# malmorph.guess.fst
+
+BuildMultiwordsFromLexicon:
+        Tag = +MultiWord
+
+----
+
+PARGRAM MALAGASY FEATURES (1.0)
+
+"Declarations for features common to all grammars."
+
+CHECK: -> <<  [_LEX-SOURCE _SUBCAT_IRREG _MORPH].
+
+_LEX-SOURCE: -> $ {guessed}.
+
+"These feature declarations modify or augment the common declared features."
+
+&CASE: -> $ {nom gen acc}.
+&PRON-TYPE: -> $ {pers demon rel int locative}.
+&VTYPE: -> $ {main predicative modal}.
+
+!PSEM: -> $ {temp loc generic}.
+
++ADJUNCT-TYPE: -> $ {distrib}.
++TIME: -> $ {time period}.
+
+"These feature declarations eliminate common features not currently used in this grammar."
+
+!COMMON: -> $ {}.
+!GEND: -> $ {}.
+!PERF: -> $ {}.
+!PROG: -> $ {}.
+!PTYPE: -> $ {}.
+
+"Indicates whether we are dealing with an irregular specification. If a root pattern 
+is not specified as irregular, the regular/default frame is used, as defined 
+in the templates section."
+
+_SUBCAT_IRREG: -> $ {+}.
+
+"Verbal morphology features."
+
+_MORPH: -> << [_ROOTTYPE _WORDTYPE _VTYPE _AFFIX_PATTERN
+               _ACTAN _ACTI _AMP_ANK_CAUS _ANA_CAUS _AHA 
+               _PREFIX_PASS _SUFFIX_PASS _RECIP _INCH _NOM].
+
+_ROOTTYPE: -> $ {adj n v}.
+
+_WORDTYPE: -> $ {adj n v adv}.
+
+_VTYPE: -> $ {vpass vact}.
+
+_AFFIX_PATTERN: -> $ {AHA_ROOT AHA_ROOT_Pass2 AHA_tafaPss_ROOT AHA_voaPss_ROOT ActiveAN_ROOT ActiveAN_ROOT_Pass1 ActiveAN_ROOT_Pass2 ActiveI_ActiveAN_ROOT ActiveI_ActiveAN_ROOT_Pass2 ActiveI_ROOT ActiveI_ROOT_Pass2 ActiveI_ROOT_Pass1 ActiveI_ROOT_Pass2 AmpCaus_AHA_ROOT AmpCaus_AHA_ROOT_Pass1 AmpCaus_AHA_ROOT_Pass2 AmpCaus_ActiveAN_ROOT AmpCaus_ActiveAN_ROOT_Pass2 AmpCaus_ActiveI_ActiveAN_ROOT AmpCaus_ActiveI_ROOT AmpCaus_ActiveI_ROOT_Pass1 AmpCaus_ActiveI_ROOT_Pass2 ANK_ROOT_Pass1 ANK_ROOT_Pass2 ROOT ROOT_NA ROOT_Pass1 ROOT_Pass2 Recip_ActiveAN_ROOT Recip_ActiveAN_ROOT_Pass2 Recip_AmpCaus_ActiveAN_ROOT Recip_AnkCaus_ActiveAN_ROOT Recip_AnkCaus_ActiveAN_ROOT_Pass2 Recip_AnkCaus_ROOT aPss_ROOT aPss_ROOT_NA aPss_ROOT_Pass2 tafaPss_ROOT voaPss_ROOT ANA_ROOT ANA_ROOT_Pass2 fNOM_ROOT fNOM_ROOT_Pass2 fNOM_ROOT_NA fNOM_ActiveAN_ROOT fNOM_ActiveAN_ROOT_Pass1 fNOM_ActiveAN_ROOT_Pass2 fNOM_ActiveI_ROOT fNOM_ActiveI_ROOT_Pass2 fNOM_ANA_ROOT fNOM_ANA_ROOT_Pass2 haNOM_ROOT haNOM_ROOT_Pass1 haNOM_ROOT_Pass2 haNOM_ROOT_NA haNOM_ANK_ROOT_Pass1}.
+
+_ACTAN: -> $ {+ -}.
+
+_ACTI: -> $ {+ -}.
+
+_AMP_ANK_CAUS: -> $ {amp ank none}.
+
+_AHA: -> $ {+ -}.
+
+_ANA_CAUS: -> $ {+ -}.
+
+_PREFIX_PASS: -> $ {aPss tafaPss voaPss none}.
+
+_SUFFIX_PASS: -> $ {pass1 pass2 na none}.
+
+_RECIP: -> $ {+ -}.
+
+_INCH: -> $ {+ -}.
+
+_NOM: -> $ {fNom mpNom haNom none}.
+
+"Features for locative deictics."
+
++DET: -> << [ VISIBLE].
+
++DEIXIS: -> $ {abstract-nonvisible}.
+
+VISIBLE: -> $ {+ -}.
+
+"Pronominal features."
+
+!POSS: -> << [PRED NTYPE HUMAN NUM PERS PRON-FORM PRON-TYPE CHECK SPEC CASE INCLUSIVE].
+
+EMPHASIS: -> ${+}.
+
+INTIMATE: -> ${+}.
+
+"Features of sentential complements."
+
+!COMP-FORM: -> $ {fa ho hoe izay mba moa_ve ny raha samy null}.
+
+ILLFORCE: -> $ {factive nonfactive reportative}.
+
+FOCUS-PART-FORM: -> $ {no}.
+
+"Features for coordination."
+
+!COORD-FORM: -> $ {sy ary dia}.
+
+COORD: -> $ {+_}.
+
+"Reduplication."
+
+SEM-PROP: -> $ {redup}.
+
+"Placeholder features for work in progress."
+
+FUNCTION. "Temporary treatment of discourse particles."
+
+"Projections must be declared.  This is the declaration for the
+optimality projection."
+o::.
+
+----

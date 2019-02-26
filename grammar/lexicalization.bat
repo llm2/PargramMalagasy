@@ -1,0 +1,1 @@
+call xfst -f lexicalization.script 

@@ -1,0 +1,77 @@
+!!! Oblique roots (prepositions, adverbs) taking tense prefixes and/or
+!!! pronominal suffix inflection.
+!!! Invariant oblique (adverbial) roots do not go through the
+!!! morphological analyzer. 
+
+LEXICON Deictic
+!!! Locative deictics.  This is a closed class, optionally taking a
+!!! tense prefix or a verbalizing prefix.
+eti	     DeicticSuff ;
+eto	     DeicticSuff ;
+eo	     DeicticSuff ;
+etsi	     DeicticSuff ;
+eni	     DeicticSuff ;
+eroa	     DeicticSuff ;
+eri	     DeicticSuff ;
+ati	     DeicticSuff ;
+ato	     DeicticSuff ;
+ao	     DeicticSuff ;
+atsi	     DeicticSuff ;
+ani	     DeicticSuff ;
+aroa	     DeicticSuff ;
+ari	     DeicticSuff ;
+aiza	     DeicticSuff ; ! where
+
+
+LEXICON OptionallyTensedPrep
+!!! These prepositions can take an OPTIONAL tense prefix and/or a
+!!! pronominal genitive object suffix.  Lack of a prefix contributes
+!!! no information, not information that the form is nonpast tense.
+!!! Presence of a tense prefix contributes tense information.
+!!! Strong preposition roots.  
+ambani          OStrong ; ! below; past tense prefix optional
+anati		OStrong ; ! inside; past tense prefix optional
+amboni		OStrong ; ! above; past tense prefix optional
+!!! Weak preposition roots ending in -ka/-tra
+ambadika	OKTWeak ; ! at the back of; past tense prefix optional
+
+
+LEXICON TensedPrep
+!!! These prepositions can take a tense prefix and/or a pronominal
+!!! genitive object suffix.  The absence of a past tense prefix
+!!! indicates nonpast tense.   The presence of a past tense prefix
+!!! indicates past tense.
+!!! Strong preposition roots.  
+aloha		OStrong ; ! before
+!!! Weak preposition roots ending in -na
+amorona	 	ONWeak ; ! at the edge
+amina		ONWeak ; ! with; on + date
+ani		ONWeak ; ! after, later
+aoriana		ONWeak ; ! after, later
+
+LEXICON Prep
+!!! Prepositions without a tense prefix which can take pronominal
+!!! object suffixes. 
+!!! Strong preposition roots.
+afovoani	OStrong ; ! in the middle of 
+akaiki		OStrong ; ! near
+andoha		OStrong ; ! at head of
+anelanelana	OStrong ; ! between
+anisani		OStrong ; ! among
+anivo		OStrong ; ! in the middle of
+anjoro		OStrong ; ! at
+antenantenani	OStrong ; ! in the middle of
+hoatra		OStrong ; ! like
+ivoho		OStrong ; ! behind 
+ivelani		OStrong ; ! outside 
+mandraka	OStrong ; ! until
+momba		OStrong ; ! about
+toraka		OStrong ; ! same_as
+
+!!! Weak preposition roots ending in -na
+akilana	        ONWeak ; ! to the side of
+hatramina	ONWeak ; ! from, up to
+
+!!! Weak preposition roots ending in -ka/-tra
+tahaka	        OKTWeak ; ! like
+

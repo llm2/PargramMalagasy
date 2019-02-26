@@ -1,0 +1,2 @@
+compile-source malagasy-lexc.txt malagasy-obliques.txt malagasy-nouns.txt malagasy-verbs.txt
+save-source malwords.fst

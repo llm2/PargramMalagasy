@@ -1,0 +1,62 @@
+
+The Malagasy grammar was developed by Mary Dalrymple and Charles Randriamasimanana at the Centre for Linguistics and Philology, Oxford University, under the Malagasy PARGRAM Project, ESRC Project RES-000-23-0505.  The project ran from April 2004 to May 2007.
+
+Project web page: http://users.ox.ac.uk/~cpgl0015/pargram/
+
+The grammar depends on the finite-state morphological analyzer for Malagasy which was developed in tandem with the grammar.  The source files for the morphological analyzer are available in the morphology directory.  The compiled .fst files are included in this directory.
+
+The grammar was implemented as a part of the PARGRAM project, a collaborative project to develop computational grammars within a shared linguistic framework and based on common linguistic assumptions. 
+
+PARGRAM web site: http://www2.parc.com/isl/groups/nltt/pargram/
+
+The Malagasy grammar runs on the XLE grammar development platform, an efficient and powerful system developed and maintained at the Palo Alto Research Center in California, which faithfully implements LFG theory.
+
+This directory contains the following files:
+
+README
+  this file
+
+common.features.lfg
+common.templates.lfg
+  Common feature declarations and templates for the PARGRAM grammars
+
+maltok.fst
+malmorph.fst
+malmorph.redup.fst
+default-gen-tokenizer.fst
+  Compiled fst files for the finite-state tokenizer and morphological analyzer.
+
+digits.fst
+digits.script
+testnum.bat
+  Script, compiled fst file, and test file for the digit recognizer.
+
+lexicalization.bat
+malagasy_lexicalized_forms.fst
+lexicalization.script
+testlex.bat
+  Script, compiled fst file, and test file for the transducer for
+  lexicalized forms.
+
+malagasy.lfg
+  Top-level file for the Malagasy grammar.  The feature declarations
+  override and supplement the common feature declarations for PARGRAM grammars.
+
+malagasy-templates.lfg
+  Lexical templates for the Malagasy grammar.  Supplements the common
+  template declarations for PARGRAM grammars.
+
+malagasy-rules.lfg
+  Annotated phrase structure rules for Malagasy.
+
+malagasy-adj-lex.lfg
+malagasy-noun-lex.lfg
+malagasy-verb-lex.lfg
+malagasy-oblique-lex.lfg
+malagasy-indeclinable-lex.lfg
+  Lexicon files for Malagasy.  The adjective, noun, verb, and oblique
+  files contain grammatical information about stems, and work on the
+  output of the morphological analyzer.  The lexicon for indeclinables
+  contains grammatical information about forms that do not go through
+  the morphological analyzer.
+ 

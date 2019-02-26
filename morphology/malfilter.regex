@@ -1,0 +1,16 @@
+!!! Lexical filters
+ 
+    !!! No m- present tense prefix with passive suffixes.  
+    [~[?*] <- $["PresentActive+" ?* ["+Passive1"|"+Passive2"]]]
+    !!! No null present tense prefix with active forms UNLESS passive
+    !!! suffixes are present -- CURRENTLY REMOVES TOO MUCH
+!.o. [~[?*] <- $["PresentTense+" ?* ["ActiveI+"|"ActiveAN+"|"ANACaus+"] ~[?* ["+Passive1"|"+Passive2"]]]]
+    !!! +PassImp suffix only with unmarked PresentTense, not
+    !!! PresentActive, PastTense, or FutureTense
+.o. [~[?*] <- $[["PastTense+"|"PresentActive+"|"FutureTense+"] ?* "+PassImp" ]]
+    !!! Only one reciprocal affix allowed.
+.o. [~[?*] <- $["Recip+" ?* "Recip+"]]
+    !!! Only one passive affix allowed.
+!.o. [~[?*] <- $[["aPss+"|"tafaPss+"|"voaPss+"] ?* "+Passive1"]]
+;
+

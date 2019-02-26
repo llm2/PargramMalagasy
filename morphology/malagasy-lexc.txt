@@ -1,0 +1,781 @@
+! malagasy-lexc.txt: lexicon for Malagasy
+! Mary Dalrymple, Maria Liakata, Lisa Mackie 2004-2006
+! Based on example from Beesley and Karttunen book
+
+! Used by mallex.script
+! Main reference: Keenan and Polinsky article in Handbook of Morphology
+
+! - Finish treatment of inchoative
+! - Need to revisit treatment of irregular forms. Treat by creating
+! an override transducer using the definitions in this file?
+! - Add voice diacritics to passive roots
+! - come back to active imperative suffixation -- seems to
+! overgenerate; KP say not possible with aha.  What else disallows
+! active imperative?
+
+
+Multichar_Symbols PastTense+ NonpastTense+ PresentTense+ PresentActive+ FutureTense+
+		 NominalizationMP+ NominalizationF+ NominalizationHA+
+		 Ma+
+		 ActiveI+ ActiveAN+
+		 aPss+ tafaPss+ voaPss+
+		 ANACaus+ AhaCaus+ AhaAbil+ AmpCaus+ AnkCaus+ Recip+
+		 Directive+ Locative+ Inch+
+		 NounRoot+ AdjRoot+ PassRoot+ NonPassRoot+ Guess+
+		 +Noun +Verb +Adj +Oblique +Deictic +Root 
+		 +Passive1 +Passive2 
+                 +PassImp +ActImp
+		 +1SgGen +2SgGen +3Gen +1PlIncGen +1PlExcGen +2PlGen
+		 +OvertGenAgent
+		 +Redup
+		 +GEN+ 
+		 ^StrongRoot ^WeakKTRoot ^WeakNRoot ^Tafa ^Ma^ ^HA
+		 ^TNS^ ^ACT^ ^ACTI^ ^AHA^ ^VOA^ ^ANA^ ^ANACaus^ ^INA^
+		 ^ANK^ ^NAN^ ^APSS^ ^MPRES^ ^NULLPRES^ ^PRESACT^ ^Fidel
+		 ^FVDel ^FSyllDel ^Fitr2et ^Fitr2or ^Ftr2f ^Ftr2t ^Ftr2r 
+		 ^Fk2k ^Fk2f ^Faik2eh ^Fik2eh ^Fk2h ^Fk2eh ^Fn2n ^Fn2m
+		 ^Fi2e ^Fi2as ^Fi2av ^Fi2az ^Fi2en ^Fi2es ^Fi2ev ^Fi2ez ^Fa20
+		 ^Ftr2er ^Fin2em ^Fin2en ^Fin2on ^Fin2es ^Fe2iaz ^Ffi2as
+		 ^ImpSuf ^ImpAct ^[ ^] ^DropCon ^D ^D2 ^G ^ANV ^ANAV ^H
+		 ! part of speech diacritics ensure prefixes match suffixes
+		 @P.POS.NOUN@ @P.POS.VERB@ @P.POS.ADJ@ 
+                 @R.POS.NOUN@ @R.POS.VERB@ @R.POS.ADJ@
+		 ! voice diacritics ensure proper prefix/suffix
+		 ! combinations: Passive2 combines only with active forms,
+		 ! imperative suffixes are different depending on
+		 ! voice.  ACTIVE VOICE forms have active prefixes;
+		 ! PASSIVE VOICE forms take a null present tense
+		 ! prefix, and allow imperative suffixes.  
+		 @P.VOICE.ACTIVE@ @R.VOICE.ACTIVE@ @U.VOICE.ACTIVE@ 
+		 @P.VOICE.PASSIVE@ @U.VOICE.PASSIVE@ @D.VOICE.PASSIVE@ 
+		 @P.ACTIVE.ON@ @R.ACTIVE.ON@ @D.ACTIVE.ON@ @N.ACTIVE.ON@
+		 ! Lexically specified diacritic ACT regulates whether
+		 ! verbs take active an-, i-, ana-; unmarked verbs
+		 ! take all of these active prefixes.
+		 @U.ACT.AN@ @U.ACT.ANA@ @U.ACT.I@
+		 ! VOA and TAFA cannot appear with some roots and with
+		 ! passive imperative suffix; APSS is allowed with
+		 ! passive imperative
+                 @P.VOA.ON@ @D.VOA.ON@ 
+		 @P.TAFA.ON@ @D.TAFA.ON@
+		 @P.APSS.ON@ @R.APSS.ON@ 
+		 ! PASS1 dacritic regulates form of passive suffix:
+		 ! -ina (default) or -ana
+		 @P.PASS1.A@ @D.PASS1.A@ @R.PASS1.A@
+		 ! RECIP not possible with 1st or 2nd person singular subjects
+		 @P.RECIP.ON@ @D.RECIP.ON@
+		 ! Restrict affixation of nominalizers MP and F
+		 @P.NOM.F@ @D.NOM.F@ @D.NOM@ @P.NOM.MP@ @D.NOM.MP@
+		 ! restrict combinations with aha, causative and abilitative 
+		 @P.AHA.ON@ @D.AHA.ON@ @P.ABL.ON@ @D.ABL.ON@
+
+Definitions
+  !!! vowels and consonants. Includes more than the standard inventory
+  !!! of Malagasy consonants, since this can't really hurt.
+  Vowel = [A|E|I|O|U|a|e|i|o|u] ;
+  Conson = [B|C|D|F|G|H|J|K|L|M|N|P|Q|R|S|T|V|W|X|Z|
+	   b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z] ;
+  Nasal = [N|M|n|m] ;
+  Syllable = [((Nasal) ([t|d]) Conson) (Vowel) Vowel] ;
+  !!! This is the general pattern. Exceptions are explicitly listed.
+  !!! Weak roots in -ka/-tra: 3 syllables
+  WeakKTRoot = [Syllable^2 [[[T|t] [R|r]|[K|k]] [A|a]]] ;
+  !!! Weak roots in -na: 3 syllables
+  WeakNRoot = [Syllable^2 [[N|n] [A|a]]] ;
+  !!! Strong roots: up to 4 syllables, not Weak
+  StrongRoot = [Syllable^{1,4} - [WeakKTRoot|WeakNRoot]] ;
+
+  
+LEXICON Root
+		GuessedForm ;
+		Oblique ;
+		Noun ;
+		Adjective ;
+		Verb ;
+		Reduplicant;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Guessed forms, possibly with suffixal genitive compounding. If
+! there is unambiguously verbal morphology present, the guessed form is
+! analyzed by the verbal rules below.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Guessed form analysis:
+! Guess+ ROOT +Root     ( 0  PRONGEN)
+! 0      ROOT  ROOTTYPE ((DEL) ...    ) 
+! ROOTTYPE is ^StrongRoot or ^WeakKTRoot or ^WeakNRoot
+! DEL is deletion type, ^FVDel or ^FSyllDel
+! PRONGEN is +1SgGen or +2SgGen or...
+
+LEXICON GuessedForm
+<Guess%+:0 StrongRoot> StrongEnding ;
+<Guess%+:0 WeakKTRoot> WeakKTEnding ;
+<Guess%+:0 WeakNRoot>   WeakNEnding ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Nouns, adjectives
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Analysis for nouns and adjectives: abbreviations as for guessed roots.
+! LEXROOTTYPE ROOT POS      ( 0  PRONGEN)
+! 0           ROOT ROOTTYPE ((DEL) ...) 
+! LEXROOTTYPE is NounRoot+ or AdjRoot+ 
+! POS is +Noun or +Adj
+! Noun roots also take adjectival and verbal prefixal and suffixal
+! morphology, and are called in the Adjective and Verb section below.
+
+
+LEXICON Noun
+! set POS to NOUN, ensuring only nominal suffixes
+@P.POS.NOUN@		   NounRoot ; 
+@P.POS.NOUN@		   NounRootNV ;
+@P.POS.NOUN@		   NonPassRoot ; 
+
+! Adjective root lexicon is in file malagasy-verbs.txt.  Adjective
+! roots can appear with verbal suffixes.
+
+LEXICON Adjective
+@P.POS.ADJ@			AdjectiveRoot ;
+@P.POS.ADJ@			AdjectiveRootNV ;
+! ma-prefixation creates adjectives from noun and verb 
+! roots, resets POS to ADJ
+Ma+:ma^Ma^@P.POS.ADJ@		NounRoot ; 
+Ma+:ma^Ma^@P.POS.ADJ@		NonPassRoot ;
+Ma+:ma^Ma^@P.POS.ADJ@		PassiveRoot ;
+!Ma+:ma^Ma^@P.POS.ADJ@		Reduplicant ; !causes memory error
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Obliques and deictics
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Obliques are either the closed-class locative deictic series
+! or prepositions. Prepositions take an object, though not always a
+! genitive one.
+! Analysis for deictics:
+! {TENSE|Locative+} ROOT +Deictic
+! ...  hatr    ROOT     
+! Analysis for prepositions:
+! (TENSE) ROOT +Oblique ( 0  PRONGENLEX)
+! ....  ROOT ROOTTYPE ((DEL) ...)
+
+! Oblique lexicon is in file malagasy-obliques.txt.
+LEXICON Oblique
+PastTense+:t		Deictic ;
+NonpastTense+:0		Deictic ;
+Locative+:hatr		Deictic ;
+
+			Prep ;
+NonpastTense+:0		TensedPrep ;
+PastTense+:t		TensedPrep ;
+			OptionallyTensedPrep ;
+PastTense+:t		OptionallyTensedPrep ;
+
+! The deictic series takes a tense prefix or a verbalizing locative 
+! prefix, no suffix.
+LEXICON DeicticSuff
++Deictic:0		# ;
+
+! Pronominal genitive endings for prepositions.
+LEXICON OStrong
++Oblique:0	StrongEnding ;
+
+LEXICON ONWeak
++Oblique:0	WeakNEnding ;
+
+LEXICON OKTWeak
++Oblique:0	WeakKTEnding ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Pronominal genitive suffixation, including -na/0 suffix (followed by
+! full determinerless genitive noun phrase) or reduplication.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON StrongEnding
+			# ;
++OvertGenAgent:na@R.POS.VERB@	# ;
+@D.ABL.ON@		PronominalGenitive1 ;
+0:^StrongRoot		RedupEnd ;
+
+LEXICON WeakNEnding
+			# ;
++OvertGenAgent:0@R.POS.VERB@	# ;
+@D.ABL.ON@		PronominalGenitive1a ;
+0:^WeakNRoot		RedupEnd ;
+
+LEXICON WeakKTEnding
+			# ;
++OvertGenAgent:0@R.POS.VERB@	# ;
+@D.ABL.ON@		PronominalGenitive2 ;
+0:^WeakKTRoot		RedupEnd ;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Pronominal genitive suffixes
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON PronominalGenitive1
++1SgGen:ko@D.RECIP.ON@		 # ; 
++2SgGen:nao@D.RECIP.ON@		 # ;
++3Gen:ni			 # ;
++1PlIncGen:ntsika		 # ;
++1PlExcGen:nai			 # ;
++2PlGen:nareo			 # ;
+
+LEXICON PronominalGenitive1a
+0:^FSyllDel			 PronominalGenitive1 ;
+
+LEXICON PronominalGenitive2
+0:^FVDel			 VPronGen ;
+0:^FSyllDel			 CPronGen ;
+
+LEXICON VPronGen
++1SgGen:o@D.RECIP.ON@		 # ; 
++2SgGen:ao@D.RECIP.ON@		 # ;
+<%+1PlIncGen:%^DropCon 0:t 0:s 0:i 0:k 0:a>	 # ;
++1PlExcGen:ai			 # ;
++2PlGen:areo			 # ;
+
+LEXICON CPronGen
++3Gen:ni			 # ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Reduplication
+! Reduplication requires separate compilation after the transducers are
+! formed. The file malredup.script has additional documentation. Reduplicated
+! forms interact with ActiveAn+ and Ma+(not yet implemented) and passive suffixation 
+! (implemented).
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON Reduplicant
+0:^[@P.POS.VERB@	PassiveRoot ;
+0:^[@P.POS.VERB@	NonPassRoot ;
+0:^[@P.POS.ADJ@		AdjectiveRoot ;
+0:^[@P.POS.NOUN@	NounRoot ;
+0:^[@P.POS.ADJ@		AdjectiveRootNV ;
+0:^[@P.POS.NOUN@	NounRootNV ;
+
+LEXICON RedupEnd
++Redup:^]	# ;
++Redup:^]	PassSuff ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Verbs 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Verb 
+@P.POS.VERB@	Tense ;
+@P.POS.VERB@	Nom ;
+@P.POS.VERB@	Passive ;  ! unprefixed forms: unprefixed
+			   ! passive roots and tafa- and voa- passives
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Tertiary prefix pattern (prefixation to result of tense prefixation):
+! ACTTENSE ({INCH|COM})...
+! ...        iha-/iaraka-
+! INCH combines with adjective roots, nouns roots, or active verbs
+! with a- or ActiveAN (not ActiveI, AHACause, ...)
+! COM combines with active verbs.  Not done yet -- more work needed.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!LEXICON Tertiary	
+!	 				Secondary ;
+!Inch+:iha				Tense ;
+!Inch+:iha				Secondary ;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Tense and nominalizing prefix pattern:
+! {TENSE|NOM} ...
+! TENSE is PastTense+ or PresentTense+ or FutureTense+
+! Tense marking is different for different forms:
+! Unprefixed passive roots and passives in tafa/voa are unmarked for tense.
+! Passive1, Passive 2, and a- passives are marked: n(o)/0/h(o) 
+! Actives and forms with secondary prefixes are marked: n/m/h
+! NOM is the nominalization prefix mp- (for active verbs) or f-
+! (for active or Passive2, not Passive1).
+! Evidently, there is a third nominalization prefix ha- which combines with Passive1
+! NOT DONE: present tense forms of guessed verbal roots.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Tense  ! Past and future are always marked
+PastTense+:no^TNS^			Secondary ;
+PastTense+:no^TNS^			Vroot ;
+FutureTense+:ho^TNS^			Secondary ;
+FutureTense+:ho^TNS^			Vroot ;
+PresentActive+:m			SecondaryPref ;
+PresentActive+:m@U.VOICE.ACTIVE@	Active ; 
+!PresentTense+:0@U.VOICE.PASSIVE@	Active ; 
+PresentTense+:0^PRESACT^		VNonPassRoot ;
+PresentTense+:0				Active ; !!!may need to remove passive to produce forms like angalarina
+PresentTense+:0				aPss ;
+!!split between abilitative and causative aha
+PresentTense+:0				AhaCaus ; 
+PresentTense+:0				AmpCaus ; !!see ampianaro, ampianarina
+PresentTense+:0				AnkCaus ; !!see ankadalaina
+
+! K&P claim that f-nominalization is not possible for passive roots, but 
+! we have found some exceptions, e.g. f+ambara=omen, so we allow
+! f-nominalization with all passive as well as nonpassive roots.
+LEXICON Nom
+NominalizationMP+:mp@P.NOM.MP@			Active ;
+NominalizationMP+:mp@P.NOM.MP@			AmpCaus ;
+! f-noms prefix tenseless verbs, active and circumstantial, not passive
+NominalizationF+:f@P.NOM.F@		Active ; 
+NominalizationF+:f@P.NOM.F@		AmpCaus ; 
+NominalizationF+:f@P.NOM.F@		AhaCaus ;
+NominalizationF+:f@P.NOM.F@		NonPassRoot ;  
+NominalizationF+:f@P.NOM.F@		PassiveRoot ; 
+!!!Charles lists both a ha+ nominalizing prefix
+!!!and ha+ for inchoative; this should be checked
+PastTense+NominalizationHA+:noha^HA	Vroot ;	 
+NominalizationHA+:ha^HA			Vroot ;	 
+FutureTense+NominalizationHA+:hoha^HA	Vroot ;	 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Secondary prefixation (prefixes attaching to result of primary prefixation).  
+! Secondary prefix pattern:
+! (Recip) {AnkCaus|AmpCaus} (Recip) (AhaCaus) ...
+! AmpCaus is the -amp- causative, prefixed to active forms in i- and an-.
+! The distribution of AnkCaus -ank- is more limited, combining
+! primarily with adjective roots, some noun roots.
+! Recip is the reciprocal affix, which can appear either before or
+! after the causative affix (but not in both places! -- this is
+! handled in malfilter.regex).
+! Contrary to K&P, we assume that aha- can precede at least some
+! primary affixes -- in particular, aha-tafa and aha-voa seem to be
+! possible.
+! Structure of lexical calls:
+! Secondary    SecondaryPref Reciprocal
+!			     AnkCaus
+!			     AmpCaus
+!			     AhaCaus
+!	       Primary
+! The Secondary lexicon covers forms with secondary prefixes, primary
+! prefixes, or both.  It does not cover unprefixed roots.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON Secondary		  ! Forms with secondary prefixes 
+	SecondaryPref ;		  ! or primary prefixes.
+	Primary ;
+
+LEXICON SecondaryPref		  !!!Secondary prefixes
+                                        Reciprocal ;
+					AnkCaus ;
+					AmpCaus ;
+					AhaAbil ;
+
+
+LEXICON Reciprocal
+Recip+:if@P.RECIP.ON@			AmpCaus ;    ! activeAN is not always transitive
+Recip+:if@P.RECIP.ON@			ActiveAN ;   ! recip cannot be adjacent to bare root 
+Recip+:ifanka^ANK^@P.RECIP.ON@		ActiveA2 ;   ! see mifankahita
+
+LEXICON AnkCaus
+AnkCaus+:anka^ANK^			ActiveA2 ; 
+AnkCaus+:anka^ANK^			AdjectiveRoot ; ! only Ank + adj (and some nouns)
+AnkCaus+:anka^ANK^			NounRoot ;	! see mankalaza
+AnkCaus+:anka^ANK^			PassiveRoot ;	! see ankahalaina
+Directive+:anka^ANK^			Deictic ;
+
+LEXICON AmpCaus
+AmpCaus+:amp				Active ;    ! either passive ii or active
+AmpCaus+:amp				NonPassRoot ; 
+AmpCaus+:amp				AhaCaus ;   ! see mampahafantatra
+AmpCaus+:amp				Reciprocal ; 
+
+LEXICON AhaCaus
+AhaCaus+:aha^AHA^@P.AHA.ON@		voaPss ;	!causal aha
+AhaCaus+:aha^AHA^@P.AHA.ON@		tafaPss ;	!causal aha
+AhaCaus+:aha^AHA^@P.AHA.ON@		Vroot ;		!causal aha
+
+LEXICON AhaAbil
+AhaAbil+:aha^AHA^@P.ABL.ON@		Vroot ;		!abilitative aha
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Primary prefix pattern (prefixation to a root):
+! ({ActiveI|ActiveAN|ActiveA2|ANACaus|aPss|tafaPss|voaPss}) LEXROOTTYPE ROOT
+!  i-/an-/an-/a-/tafa-/voa-                                 0           ...
+! LEXROOTTYPE is one of: NounRoot+ AdjRoot+ PassRoot+ NonPassRoot+ Guess+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Structure of lexical calls:
+! Primary Active   ActiveI
+!		   ActiveAN
+!		   CausalANA
+!		   ActiveA2
+!         Passive  voaPss
+!		   tafaPss 
+!		   PassiveRoot
+!	  aPss
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Primary
+! Set ACTIVE to ON for all active prefixes (which are compatible with
+! PASSIVE2 suffixes.  Set VOICE to PASSIVE for passive prefixes. 
+@P.ACTIVE.ON@			Active ;
+				Passive ;
+				aPss ;
+
+LEXICON Active
+				ActiveI ;
+				ActiveAN ;
+				CausalANA ;
+				ActiveA2 ;
+
+! Roots disallowing ActiveAN or ActiveI are lexically marked.
+LEXICON ActiveI
+ActiveI+:i^ACTI^@U.ACT.I@		Vroot ;
+ActiveI+:i^ACTI^@U.ACT.I@		ActiveAN ;
+
+LEXICON ActiveAN
+ActiveAN+:an^ACT^@U.ACT.AN@		Vroot ;
+
+LEXICON CausalANA
+ANACaus+:ana^ANACaus^@U.ACT.ANA@	Vroot ;
+
+LEXICON ActiveA2
+0:a					VA2 ;
+
+! although a-, voa-, and tafa- are all passive prefixes, only a-
+! takes tense prefixation 
+LEXICON Passive
+@U.VOICE.PASSIVE@			voaPss ;
+@U.VOICE.PASSIVE@			tafaPss ;
+					PassiveRoot ;
+
+! voa and tafa do not mark present or past and do not form imperatives
+! voa prefixes a few passive roots ; others are marked to disallow voa
+LEXICON voaPss
+voaPss+:voa^VOA^@P.VOA.ON@		Vroot ;
+
+LEXICON tafaPss
+tafaPss+:tafa^Tafa@P.TAFA.ON@		Vroot ;	
+
+LEXICON aPss
+aPss+:a^APSS^@P.APSS.ON@@P.VOICE.PASSIVE@ Vroot ;  
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Verbal roots
+! Structure of lexical calls:
+! Vroot	    PassiveRoot
+!	    VNonPassRoot NonPassRoot
+!			 AdjectiveRoot
+!			 NounRoot
+!	   (Guessed forms)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Vroot
+! VA2 roots are irregular, and treated specially.  
+@P.POS.VERB@		PassiveRoot ;
+@P.POS.VERB@		VNonPassRoot ;
+			VGuess ;
+
+LEXICON VNonPassRoot
+			NonPassRoot ;
+			AdjectiveRoot ;
+			NounRoot ;
+
+LEXICON VGuess  !!! Guessed forms
+<Guess%+:0 StrongRoot>	StrongSuff ;	! guessed Strong root 
+<Guess%+:0 WeakKTRoot> 	KTWeak ;	! guessed Weak KT root 
+<Guess%+:0 WeakNRoot> 	NWeak ;		! guessed Weak N root 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Verbal suffixes: Strong/WeakEnding for pronominal genitive
+! suffixes, or no suffixation; Suffixes for passive1, passive2, and/or
+! imperative suffixes.  
+! Pattern for roots:
+! ROOT +Verb
+! ...   ROOTTYPE 
+! ROOTTYPE is ^StrongRoot or ^WeakKTRoot or ^WeakNRoot
+! The ROOTTYPE tag is currently used only for reduplication
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON StrongSuff
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ; 
++Verb:0@R.POS.VERB@	Suffixes ;
+
+LEXICON FI2ASStrong
++Noun:0@R.POS.NOUN@	StrongEnding;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Ffi2as@R.POS.VERB@	Suffixes ;
+
+LEXICON 02AVStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:av@R.POS.VERB@	Suffixes ;
+
+LEXICON 02AZStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:az@R.POS.VERB@	Suffixes ;
+
+LEXICON 02FStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:f@R.POS.VERB@	Suffixes ;
+
+LEXICON 02IZStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:iz@R.POS.VERB@	Suffixes ;
+
+LEXICON 02NStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:n@R.POS.VERB@	Suffixes ;
+
+
+LEXICON 02NESStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:nes@R.POS.VERB@ Suffixes ;
+
+LEXICON 02RStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:r@R.POS.VERB@	Suffixes ;
+
+LEXICON 02SStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:s@R.POS.VERB@	Suffixes ;
+
+LEXICON 02VStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:v@R.POS.VERB@	Suffixes ;
+
+LEXICON 02ZStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:z@R.POS.VERB@	Suffixes ;
+
+LEXICON A20Strong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Fa20@R.POS.VERB@	Suffixes ;
+
+LEXICON I2ASStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Fi2as@R.POS.VERB@	Suffixes ;
+
+LEXICON I2AZStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Fi2az@R.POS.VERB@	Suffixes ;
+
+LEXICON I2EStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Fi2e@R.POS.VERB@	Suffixes ;
+
+LEXICON I2ENStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Fi2en@R.POS.VERB@	Suffixes ;
+
+LEXICON I2ESStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Fi2es@R.POS.VERB@	Suffixes ;
+
+LEXICON I2EVStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Fi2ev@R.POS.VERB@	Suffixes ;
+
+LEXICON I2EZStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Fi2ez@R.POS.VERB@	Suffixes ;
+
+LEXICON E2IAZStrong
++Noun:0@R.POS.NOUN@	StrongEnding ;
++Adj:0@R.POS.ADJ@	StrongEnding ;
++Verb:0@R.POS.VERB@	StrongEnding ;
++Verb:^Fe2iaz@R.POS.VERB@	Suffixes ;
+
+LEXICON NWeak
++Noun:0@R.POS.NOUN@	WeakNEnding ;
++Adj:0@R.POS.ADJ@	WeakNEnding ;
++Verb:0@R.POS.VERB@	WeakNEnding ;
++Verb:^Fn2n@R.POS.VERB@	Suffixes ;
+
+LEXICON IN2EMWeak
++Noun:0@R.POS.NOUN@	WeakNEnding ;
++Adj:0@R.POS.ADJ@	WeakNEnding ;
++Verb:0@R.POS.VERB@	WeakNEnding ;
++Verb:^Fin2em@R.POS.VERB@	Suffixes ;
+
+LEXICON IN2ENWeak
++Noun:0@R.POS.NOUN@	WeakNEnding ;
++Adj:0@R.POS.ADJ@	WeakNEnding ;
++Verb:0@R.POS.VERB@	WeakNEnding ;
++Verb:^Fin2en@R.POS.VERB@	Suffixes ;
+
+LEXICON IN2ONWeak
++Noun:0@R.POS.NOUN@	WeakNEnding ;
++Adj:0@R.POS.ADJ@	WeakNEnding ;
++Verb:0@R.POS.VERB@	WeakNEnding ;
++Verb:^Fin2on@R.POS.VERB@	Suffixes ;
+
+LEXICON IN2ESWeak
++Noun:0@R.POS.NOUN@	WeakNEnding ;
++Adj:0@R.POS.ADJ@	WeakNEnding ;
++Verb:0@R.POS.VERB@	WeakNEnding ;
++Verb:^Fin2es@R.POS.VERB@	Suffixes ;
+
+!LEXICON IN2EZWeak
+!+Noun:0@R.POS.NOUN@	WeakNEnding ;
+!+Adj:0@R.POS.ADJ@	WeakNEnding ;
+!+Verb:0@R.POS.VERB@	WeakNEnding ;
+!+Verb:^Fi2ez@R.POS.VERB@	    Suffixes ;
+
+LEXICON N2MWeak
++Noun:0@R.POS.NOUN@	WeakNEnding ;
++Adj:0@R.POS.ADJ@	WeakNEnding ;
++Verb:0@R.POS.VERB@	WeakNEnding ;
++Verb:^Fn2m@R.POS.VERB@	Suffixes ;
+
+LEXICON KTWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding ;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Fk2k@R.POS.VERB@	Suffixes ;
+
+LEXICON AIK2EHWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Faik2eh@R.POS.VERB@	     Suffixes ;
+
+LEXICON IK2EHWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Fik2eh@R.POS.VERB@	Suffixes ;
+
+LEXICON K2EHWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Fk2eh@R.POS.VERB@	Suffixes ;
+
+LEXICON K2FWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Fk2f@R.POS.VERB@	Suffixes ;
+
+LEXICON K2HWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Fk2h@R.POS.VERB@	Suffixes ;
+
+LEXICON ITR2ETWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Fitr2et@R.POS.VERB@	Suffixes ;
+
+LEXICON ITR2ORWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Fitr2or@R.POS.VERB@	Suffixes ;
+
+LEXICON TR2ERWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Ftr2er@R.POS.VERB@	Suffixes ;
+
+LEXICON TR2FWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Ftr2f@R.POS.VERB@	Suffixes ;
+
+LEXICON TR2RWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Ftr2r@R.POS.VERB@	Suffixes ;
+
+LEXICON TR2TWeak
++Noun:0@R.POS.NOUN@	WeakKTEnding;
++Adj:0@R.POS.ADJ@	WeakKTEnding;
++Verb:0@R.POS.VERB@	WeakKTEnding ;
++Verb:^Ftr2t@R.POS.VERB@	Suffixes ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! Verbal suffixes: Passive suffixes, imperative endings
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! General suffix pattern:
+! ({Passive1|Passive2}) ({PRONGEN|IMP})
+!  ina/ana   ana          ...     ...
+! Passive1 is compatible with many roots, even passive roots.
+! Passive2 is compatible with active (prefixed) roots.
+! PRONGEN is pronominal genitive suffixation.
+! IMP is active or passive imperative.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Suffixes
+@R.POS.VERB@	ActImpSuff ;
+@R.POS.VERB@	PassSuff ;
+
+! Active imperative suffixes must attach to nonpassive verbs. 
+LEXICON ActImpSuff
++ActImp:a^ImpAct@D.VOICE.PASSIVE@@D.NOM@		# ;
+
+! Passive suffixation: Passive1, Passive2, and/or PassiveImperative.
+! Passive1 applies to roots, causativized roots, and a few active
+! (prefixed) forms (KP, p. 585) -- treat by disallowing passive voice
+! (D.VOICE.PASSIVE) .  Passive2 applies only to active
+! forms (R.ACTIVE.ON). The PassiveImperative suffix appears with Passive1, Passive2,
+! and the a- prefix passive (not voa- or tafa- passives).  If
+! PassiveImperative is directly suffixed to the root, the a- passive
+! prefix is required.
+LEXICON PassSuff
+@D.VOICE.PASSIVE@@D.NOM.F@@D.AHA.ON@	Pass1Suff ;
+@D.NOM.MP@				Pass2Suff ;
+					PassImpSuff ;
+
+! -ina unless lexically marked as taking -ana
+LEXICON Pass1Suff
++Passive1:^INA^ina@D.PASS1.A@		PassEnding ;
++Passive1:^ANA^ana@R.PASS1.A@		PassEnding ;
+
+! -ana Passive2 or Circumstantial
+LEXICON Pass2Suff
++Passive2:^ANA^ana			PassEnding ;
+
+!!! Endings for passive forms
+LEXICON PassEnding
+					# ;
+					PronominalGenitive1a ;
+					PassImpSuff ;
+
+! Requirement for null PresentTense+ with passive imperative imposed
+! by filtering out other options; see file malfilter.regex. 
+LEXICON PassImpSuff
++PassImp:o^ImpSuf@D.NOM@		# ;
+

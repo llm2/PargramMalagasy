@@ -1,0 +1,115 @@
+
+The Malagasy PARGRAM Project
+
+The Malagasy morphological analyzer is implemented using the Xerox finite-state tools LEXC and XFST (you will need these to compile and run these files). Our treatment of affixal verbal morphology and genitive compounding consists of a lexicon written in LEXC and more general orthographic rules written in XFST. 
+
+For more information on LEXC and XFST, see http://www.fsmbook.com
+
+
+			 *** TOKENIZATION ***
+
+The tokenization script is not called by any of the morphology scripts but is called by XLE.
+Script file for tokenizer: maltok.script
+Usage: xfst -f maltok.script
+Produces fst file: maltok.fst
+Testfiles: 
+   testtok.bat recompiles the tokenizer and submits a test string
+   testtok2.bat recompiles the tokenizer and prints sigma
+
+The tokenizer is not deterministic.  Functionality:
+  - Removes extra spaces or tabs.
+  - Optionally connects multiword expressions with underscores.  The
+  non-multiword option also remains.
+  - Optionally decapitalizes the first word.
+  - Optionally tokenizes abbreviations to include period.  Adds an optional
+  extra period if the abbreviation is at the end of the string.
+  - Takes care of exceptional "[k|tr]y ny" spelling rule
+
+
+			  *** MORPHOLOGY ***
+
+Script files for morphological analyzer: mallex.script, malredup.script
+Usage: xfst -f mallex.script; xfst -f malredup.script
+The malredup script compiles reduplicated forms separately but mallex.script must be run first. Both are called by compile-all.bat.
+
+Lexicons created by lexc using script malwords.script;
+  produces intermediate fst files malwords.fst and malmorph.compile-redup.fst.  Lexicon files are listed in malwords.script.
+Produces fst files: malmorph.fst, malmorph.guess.fst
+Testfiles: 
+   testlex.bat recompiles the transducer and prints random upper and lower strings.
+   testlex2.bat recompiles the transducer and applies it to an input word.
+   checkall.bat runs the script checkall.script in lexc.
+   checkall.script shows all surface/lexical analysis pairs. Sets single to ON to include words with just one analysis.
+   checksingle.bat runs the xfst script singleword.script and then the lexc script checksingle.script.
+   singleword.script extracts a transducer malmorphsingle.fst for the full paradigm for a single word.
+   checksingle.script shows all the surface/lexical analysis pairs for the transducer in malmorphsingle.fst.
+
+The script malredup.script takes malmorph.compile-redup.fst and produces fst file: malmorph.redup.fst.
+
+			*** ADDING NEW ROOTS ***
+
+There are two main files: malagasy-nouns.txt and malagasy-verbs.txt.
+
+The main classes of roots are Noun, Adjective, NonPassRoot, and Verb. All the categories point to the same set of continuation classes which specify spelling alternations. Nouns, Adjectives, and NonPassRoots may also form verbs and take verbal morphology. However, there are sets of nouns and adjectives which disallow verbal morphology and these are placed in separate lexicons.
+
+Verb roots are divided into PassiveRoot, VA2, PassIntranRoot. The largest category is PassiveRoot. 
+Example entry:
+
+<%@D%.VOA%.ON%@ {azo} %@P%.PASS1%.A%@>		StrongSuff ; ! be understood; be taken
+
+The root "azo" takes "ana" when forming passive1 and does not allow voa- passivization. However, if these flags are not included, correct forms will still be recognized but incorrect forms will also be generated.
+
+FLAG DIACRITICS
+
+@U.PASS1.A@	passive1 suffix ana
+
+@U.ACT.I@	activeI prefix
+@U.ACT.AN@	activeAN prefix
+@U.ACT.ANA@	causal ANA prefix (not actually an active prefix but occupies the same slot)
+
+@D.VOA.ON@	disallow voa- passive prefix
+@D.AVT.ON@	disallow a-, voa-, and tafa- passives prefixes 
+
+CONTINUATION CLASSES
+
+Strong Verbs:
+StrongSuff	for all strong verbs without epenthesis, etc.
+E2IAZStrong	e -> iaz
+I2EStrong	i -> e
+I2ESStrong	i -> es
+I2ASStrong	i -> as
+I2EZStrong	i -> ez
+IN2EWeak	in -> e
+02ZStrong	0 -> z
+02NStrong	0 -> n
+02NEStrong	0 -> ne
+02NESStrong	0 -> nes
+02FStrong	0 -> f
+02RStrong	0 -> r
+02SStrong	0 -> s
+02VStrong	0 -> v
+A20Strong	a -> 0
+S20Strong	s -> 0
+
+Weak tra/ka verbs:
+TR2FWeak	tra -> f
+TR2RWeak	tra -> r
+TR2ERWeak	tra -> er
+TR2TWeak	tra -> t
+AIK2EHWeak	aika -> eh
+K2HWeak		ka -> h
+K2FWeak		ka -> f
+K2EHWeak	ka -> eh
+KTWeak
+
+Weak na verbs:
+N2MWeak		na -> m
+IN2ENWeak	ina -> en
+IN2ONWeak	ina -> on
+NWeak		
+
+
+IRREGULAR FORMS
+Some irregular spelling changes are marked on roots such as:
+0:%^D{hadino}
+In this case, the initial "h" is dropped with ActiveAN prefixation. Otherwise, irregular forms are found in the file malirregular.regex.

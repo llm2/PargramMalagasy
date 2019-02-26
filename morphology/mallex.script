@@ -1,0 +1,65 @@
+# Script to create a lexicon for Malagasy, including guesser
+# Mary Dalrymple, Maria Liakata, Lisa Mackie 2004-2006
+# Based on example from Beesley and Karttunen book
+# Requires: malwords.script, malfilter.regex, malagasy-rul.script,
+# malirregular.regex, 
+# Produces: malmorph.fst, malmorph.guess.fst, malmorph.compile-redup.fst
+# Usage: xfst -f mallex.script
+
+clear stack
+
+### spelling rules ignore flag diacritics
+set flag-is-epsilon ON
+### retokenize is set to OFF for reduplication
+set retokenize OFF
+
+### system call to lexc invokes malwords.script to create 
+### lexical transducer malwords.fst;
+### we then read it in
+system lexc malwords.script
+load stack malwords.fst
+define Lexicon
+
+### create the lexical filter. 
+read regex < malfilter.regex
+define Filter
+
+### create override filter for irregular forms
+read regex < malirregular.regex
+define ORFilter
+
+read regex [ORFilter .P. Lexicon];
+define Lex 
+
+### spelling rules
+source malagasy-rul.script
+define Rules
+
+### combine to form full transducer
+read regex [Filter .o. Lex .o. Rules];
+### eliminate flags -- comment out for faster compilation
+eliminate flag POS
+eliminate flag PASS1
+eliminate flag VOICE
+eliminate flag AVT
+eliminate flag ACT
+eliminate flag NOM
+eliminate flag AHA
+eliminate flag ABL
+eliminate flag RECIP
+define Full
+
+### extract malmorph.fst
+clear stack 
+read regex ~$["Guess+"] .o. ~$["+Redup"] .o. Full;
+save stack malmorph.fst
+
+### extract guesser -- not currently used; comment out for faster compilation
+clear stack
+read regex $["Guess+"] .o. Full;
+save stack malmorph.guess.fst
+
+### extract reduplicated forms for further processing
+clear stack
+read regex $["+Redup"] .o. Full;
+save stack malmorph.compile-redup.fst;

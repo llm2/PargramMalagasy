@@ -1,0 +1,21 @@
+! lexicalization.script: 
+! transducer for morphologically regular but semantically lexicalized forms in Malagasy
+! Mary Dalrymple, 2006
+
+clear stack
+
+define LexicalizedForms [
+    "ComplexNounRoot+" {mpampianatra} "+Noun" ->
+       "NominalizationMP+" "AmpCaus+" "ActiveI+" "NounRoot+" {anatra} "+Verb"
+.o. "ComplexNounRoot+" {mpianatra} "+Noun" ->
+       "NominalizationMP+" "ActiveI+" "NounRoot+" {anatra} "+Verb"
+.o. "ComplexNounRoot+" {mpiasa} "+Noun" ->
+    "NominalizationMP+" "ActiveI+" "NounRoot+" {asa} "+Verb"
+];
+
+clear stack
+read regex [
+ LexicalizedForms
+];
+
+save stack malagasy_lexicalized_forms.fst 

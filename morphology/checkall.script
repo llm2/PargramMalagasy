@@ -1,0 +1,5 @@
+singles
+read-source malmorph.fst
+read-result malmorph.fst
+check-all -
+

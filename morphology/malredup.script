@@ -1,0 +1,75 @@
+# Script to create a transducer of reduplicated forms in Malagasy
+# Requires: pre-compiled transducer created by mallex.script
+# malmorph.compile-redup.fst
+# Produces: malmorph.redup.fst
+# Usage: xfst -f malredup.script
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Reduplication is dependent on word stress. Weak roots with predictable stress
+! copy the full word. Deletion and assimilation processes are handled in the separate
+! malreduprules.regex file. The character ^ indicates a weak root for processing.
+!
+! Strong roots of three or four syllables copy the last two syllables. Strong roots of only
+! one or two syllables copy the full word. Strong roots are marked with the character |.
+!
+! Examples: fantatra -> fantapantatra, alahelo -> alahelohelo, fotsy -> fotsifotsy
+! salama -> salamalama, lavitra -> lavidavitra, heloka -> helokeloka
+!
+! Data from Keenan and Polinsky pp. 570-573 and Lin "TWO PERSPECTIVES ON MALAGASY REDUPLICATION:
+! DERIVATIONAL AND OT ANALYSES" in UCLA Working Papers in Linguistics, no. 12, September 2005
+!
+! Roots without predictable stress must be marked
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+clear stack
+set retokenize OFF
+
+define Vowel [A|E|I|O|U|Y|a|e|i|o|u|y];
+define Conson  [B|C|D|F|G|H|J|K|L|M|N|P|Q|R|S|T|V|W|X|Z|
+                b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z];
+define Nasal [N|M|n|m];
+define Syllable [(Nasal) ([t|d]) (Conson) Vowel^{1,2}];
+define Weak	["^WeakKTRoot"|"^WeakNRoot"];
+
+read regex @"malmorph.compile-redup.fst";
+define LEX
+
+define MalRedup [
+Syllable^{1,4} @-> "{" ... "^" "}" "^2" || _ (?*) Weak ?* "^]"
+!!!stress falls on final syllable if the nucleus is a diphthong or [e]
+!!!mark syllable for final stress with ~
+.o. [Vowel^2|e] @-> ..."~" || _  "^StrongRoot" ?* "^]"
+!!!copy only final syllable
+.o. Syllable @-> "{" ... "|" "}" "^2"  || _ "~"
+.o. "^StrongRoot" -> 0 || "^2" _
+.o. "~" -> 0
+!!!otherwise, stress is on penultimate syllable
+.o. Syllable^2 @-> "{" ... "|" "}" "^2"  || Syllable _  "^StrongRoot" ?* "^]" !!matches alahelo
+.o. "^StrongRoot" -> 0 || "^2" _
+.o. Syllable^{1,2} @-> "{" ... "|" "}" "^2"  ||  _ ?* "^StrongRoot" ?* "^]"
+.o. ["^StrongRoot"|"^WeakKTRoot"|"^WeakNRoot"] -> 0
+];
+
+read regex [LEX .o. MalRedup];
+compile-replace lower
+define REDUP
+
+### redup spelling rules
+define RedupRules [
+" " -> 0
+.o. "^" -> 0 || "^" ?* _ 
+!.o. "|" -> 0 || "^STR" ?* _ 
+.o. f -> p, s -> ts, h -> k, r -> dr, v -> b, z -> j, l -> d ||  "^" _ 
+.o. [k| t r] a "^" -> 0
+.o. n a "^" b -> mb	!!prenasalized stop
+.o. n a "^" p -> mp	!!prenasalized stop
+.o. n a "^" m -> m
+.o. n a "^" -> n 
+!.o. [a | e | i | o | u ]  "|" -> 0 || _ [ a | e | i | o | u ] 
+.o.  "|" -> 0
+!!! i->y at end of word
+.o. i -> y, I -> Y || _ .#. 
+];
+
+read regex [REDUP .o. RedupRules];
+save stack malmorph.redup.fst;

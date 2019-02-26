@@ -1,0 +1,8 @@
+! small transducer for digits
+! Mary Dalrymple, 2007
+
+clear stack
+
+read regex [ 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | "0" ]+ "+Digit":0;
+
+save stack digits.fst 

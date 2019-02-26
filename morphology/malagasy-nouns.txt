@@ -1,0 +1,1901 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Noun lexicon
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NounRoot
+NounRoot+:0				ListedNounRoots;
+
+LEXICON ListedNounRoots
+!!! Strong noun roots
+
+Alahadi					StrongSuff ; ! Sunday
+Alakamisi				StrongSuff ; ! Thursday
+Alarobia				StrongSuff ; ! Wednesday
+Alatsinaini				StrongSuff ; ! Monday
+Andriamatoa				StrongSuff ; ! Mister
+Andriananahari				StrongSuff ; ! Creator_God
+Arabo					StrongSuff ; ! Arab
+Asabotsi				StrongSuff ; ! Saturday
+Filazantsara				StrongSuff ; ! Gospel
+Ikaki					StrongSuff ; ! father
+Ineni					StrongSuff ; ! mother
+Ingahi					StrongSuff ; ! Mister
+Karemi					StrongSuff ; ! Lent
+Krismasi				StrongSuff ; ! Christmas
+Mose					StrongSuff ; ! Mister
+Noeli					StrongSuff ; ! Christmas
+Paka					StrongSuff ; ! Easter
+Paska					StrongSuff ; ! Easter
+Talata					StrongSuff ; ! Tuesday
+Zoma					StrongSuff ; ! Friday
+aba					StrongSuff ; ! father
+abidi					StrongSuff ; ! alphabet
+adabo					StrongSuff ; ! large_tree_of_fig_family
+<"@U.ACT.I@" {adi}>			StrongSuff ; ! fight
+adidi					StrongSuff ; ! responsibility
+adisanina				StrongSuff ; ! addition
+afero					StrongSuff ; ! bile
+afo					StrongSuff ; ! fire
+afokasika				StrongSuff ; ! match
+ahi					StrongSuff ; ! worry
+ainga					StrongSuff ; ! departure	
+akanga					StrongSuff ; ! guinea_hen
+akani					StrongSuff ; ! nest
+<"@U.ACT.I@" {akanjo}>			StrongSuff ; ! clothes
+ako					StrongSuff ; ! echo
+akofa					StrongSuff ; ! chaff
+akoho					StrongSuff ; ! chicken
+akondro					StrongSuff ; ! banana
+akora					StrongSuff ; ! shouting
+akotri					StrongSuff ; ! paddy_or_unhulled_rice
+ala					StrongSuff ; ! taking_going_away_or_forest
+alahelo					StrongSuff ; ! sorrow_affliction
+alemana					StrongSuff ; ! German
+alika					StrongSuff ; ! dog
+alimanaka				StrongSuff ; ! almanac
+alitara					StrongSuff ; ! altar
+aloalo					StrongSuff ; ! grave_ornament_carved_from_wood
+aloi					StrongSuff ; ! gnat_small_fly
+alokola					StrongSuff ; ! alcohol
+amalona					StrongSuff ; ! eel
+amani					StrongSuff ; ! urine
+ambanivohitra				StrongSuff ; ! country
+ambanivolo				StrongSuff ; ! country
+ambaratonga				StrongSuff ; ! step_or_degree_in_progress
+ambasadaoro				StrongSuff ; ! ambassador
+ambilombazana				StrongSuff ; ! very_little_to_chew_not_enough
+amboa					StrongSuff ; ! dog
+amboadia				StrongSuff ; ! wild_dog
+amboara					StrongSuff ; ! sheaf_of_grain
+ambolo					StrongSuff ; ! sense of smell	
+amboradara				StrongSuff ; ! embroidery
+amontana				StrongSuff ; ! large_tree_of_fig_family
+ampali					I2ESStrong ; ! sandpaper
+ampanga					StrongSuff ; ! fern
+ampango					StrongSuff ; ! burnt_rice_sticking_to_pot
+ampangoro				StrongSuff ; ! rice_boiled_dry_and_fragrant
+ampela					StrongSuff ; ! spindle
+ampinga					StrongSuff ; ! shield
+ampombo					StrongSuff ; ! bran_or_inner_coating_of_rice
+ampondra				StrongSuff ; ! donkey
+amponga					StrongSuff ; ! drum
+ampongabendanitra			StrongSuff ; ! pomegranate
+anabavi					StrongSuff ; ! sister_of_man
+anadahi					StrongSuff ; ! brother_of_woman
+anarana					StrongSuff ; ! name
+andevo					02ZStrong ; ! slave
+andiani					StrongSuff ; ! flock_herd_crowd
+andilana				StrongSuff ; ! narrow_part_of_back_waist
+andinini				StrongSuff ; ! verse_or_stanza
+ando					StrongSuff ; ! dew
+andohalambo				StrongSuff ; ! arch_vault
+andrefana				StrongSuff ; ! west
+<"@D.AVT.ON@" {andri} "@P.PASS1.A@">	I2ASStrong ; ! pillar_or_post_or_waiting
+andriamanitra				StrongSuff ; ! god
+andro					StrongSuff ; ! day
+androatokoni				StrongSuff ; ! two_thirds
+androbe					StrongSuff ; ! epilepsy
+androngo				StrongSuff ; ! lizard
+angadi					StrongSuff ; ! spade
+angadrano				StrongSuff ; ! dandruff
+angamenavava				StrongSuff ; ! firefly
+angano					StrongSuff ; ! fable
+<"@U.ACT.I@" {angavi}  "@P.PASS1.A@">	StrongSuff ; ! request
+angeli					StrongSuff ; ! cricket
+angidina				StrongSuff ; ! dragonfly
+anglisi					StrongSuff ; ! English_man_or_woman
+angola					StrongSuff ; ! fancies_fanciful_desires
+angoli					I2EStrong ; ! deceit
+anjara					StrongSuff ; ! share
+anjavidi				StrongSuff ; ! heather_that_grows_on_worthless_land
+anjeli					StrongSuff ; ! angel
+anjomara				StrongSuff ; ! bugle_sometimes_made_of_bamboo_and_ox_horn
+anjombona				StrongSuff ; ! bugle_made_from_conch_shell
+ankabeazani				StrongSuff ; ! most_of_majority
+ankihibe				StrongSuff ; ! thumb
+ankihikeli				StrongSuff ; ! little_finger
+ankizi					StrongSuff ; ! child
+ankohonana				StrongSuff ; ! household
+ankolafini				StrongSuff ; ! section_group_caste
+ankosotra				StrongSuff ; ! plating_or_coating
+antambo					StrongSuff ; ! calamity
+antoandro				StrongSuff ; ! full_daylight_daytime
+antoandrobenanahari			StrongSuff ; ! daytime_middle_of_day
+antoko					StrongSuff ; ! group_political_party
+antra					StrongSuff ; ! compassion
+antsa					StrongSuff ; ! chanting_singing
+antsamotadi				StrongSuff ; ! sling_for_throwing_stones
+antsanga				StrongSuff ; ! trash_and_mud_deposited_by_flood_water
+antsantsa				StrongSuff ; ! shark
+antsasani				StrongSuff ; ! half
+antsavili				StrongSuff ; ! swing
+antsi					StrongSuff ; ! knife
+antsibe					StrongSuff ; ! cleaver_bush_knife
+antsiva					StrongSuff ; ! bugle_made_from_conch_shell
+antso					StrongSuff ; ! call_summons
+arabe					StrongSuff ; ! street_road
+arahaba					StrongSuff ; ! greeting_congratulations
+aretina					StrongSuff ; ! sickness_illness
+ari					StrongSuff ; ! throwing away		
+ariari					StrongSuff ; ! dollar_five_francs
+arira					StrongSuff ; ! legend_fable
+arivo					StrongSuff ; ! thousand
+<{aro} "@P.PASS1.A@">			02VStrong ; ! protection
+arofanina				StrongSuff ; ! railing
+arosi					StrongSuff ; ! hump_billed_duck
+asa					StrongSuff ; ! sharpening_or_work_or_invitation
+asidra					StrongSuff ; ! acid
+atidoha					StrongSuff ; ! brain
+atitrano				StrongSuff ; ! inside_of_house
+ato					StrongSuff ; ! stop	
+<{atodi} "@P.PASS1.A@">			02ZStrong ; ! egg
+atsimo					StrongSuff ; ! south
+atsinanana				StrongSuff ; ! east
+<{ava} "@P.PASS1.A@">			StrongSuff ; ! weeding
+avaratra				StrongSuff ; ! north
+avelo					StrongSuff ; ! soul
+aviavi					StrongSuff ; ! fig_tree
+avona					StrongSuff ; ! arrogance
+ba					StrongSuff ; ! knitting_or_measure_in_music
+babababa				StrongSuff ; ! outcry
+<"@D.VOA.ON@" {babi}>			I2EStrong ; ! carrying_on_back
+babo					StrongSuff ; ! booty_captives
+baibo					StrongSuff ; ! moist_fertile_land_in_river_bottoms
+baiko					StrongSuff ; ! foreign_word
+bainga					StrongSuff ; ! clod_of_earth_turned_over
+baka					StrongSuff ; ! ferry
+bakoli					StrongSuff ; ! crockery_china
+bala					StrongSuff ; ! bullet_cartridge
+banga					StrongSuff ; ! gap
+bao					StrongSuff ; ! pole_for_carrying_burdens_across_shoulder
+bararata				StrongSuff ; ! small_bambooo_that_grows_in_or_near_water
+barika					StrongSuff ; ! barrel
+basi					StrongSuff ; ! gun
+basketi					StrongSuff ; ! basketball
+bata					StrongSuff ; ! carrying in one's hands		
+batemi					StrongSuff ; ! baptism
+bateri					StrongSuff ; ! fortification
+batisa					StrongSuff ; ! baptism
+bedi					I2ESStrong ; ! scolding
+bemirai					StrongSuff ; ! patched_together_from_many_different_pieces
+beranjeli				StrongSuff ; ! eggplant
+beso					StrongSuff ; ! bass_voice
+bibasi					StrongSuff ; ! loquat_tree
+bibi					StrongSuff ; ! animal
+bika					StrongSuff ; ! shape_form_figure_appearance
+biriki					StrongSuff ; ! brick
+bisikileti				StrongSuff ; ! bicycle
+bisikileta				StrongSuff ; ! bicycle
+bisikitra				StrongSuff ; ! biscuit
+bitro					StrongSuff ; ! rabbit_hare
+boati					StrongSuff ; ! small_carton_tin
+bobongolo				StrongSuff ; ! mildew_mold
+bodofotsi				StrongSuff ; ! blanket
+boika					StrongSuff ; ! bubbling_up
+boka					StrongSuff ; ! leper
+boki					StrongSuff ; ! book
+bolaki					StrongSuff ; ! block_and_tackle_pulley
+bolasitra				StrongSuff ; ! slip_stumble
+boloa					StrongSuff ; ! bolt
+boloki					StrongSuff ; ! blue_grey_Malagasy_parrot
+bori					StrongSuff ; ! round???
+boto					StrongSuff ; ! small_boy
+daba					StrongSuff ; ! small_or_medium_sized_tin_for_water
+dabilio					StrongSuff ; ! workbench
+dada					StrongSuff ; ! father
+<"@U.ACT.AN@" "@D.VOA.ON@" {daka} "@P.PASS1.A@">	StrongSuff ; ! kick
+demoni					StrongSuff ; ! malicious_spirit
+dia					02VStrong ; ! trip_or_wild
+diari					StrongSuff ; ! agenda
+diavolana				StrongSuff ; ! moonlight
+<"@U.ACT.AN@" {didi} "@P.PASS1.A@">	StrongSuff ; ! cut
+difi					StrongSuff ; ! turning_aside
+dihi					02IZStrong ; ! dance
+dika					StrongSuff ; ! translation
+diki					StrongSuff ; ! filth
+<{dimbi} "@P.PASS1.A@">			I2ASStrong ; ! successor_replacement
+dina					StrongSuff ; ! charter_agreed_on_by_group
+dinta					StrongSuff ; ! leech
+dio					02VStrong ; ! cleanliness
+disadisa				StrongSuff ; ! that_which_fatigues_or_annoys
+dite					StrongSuff ; ! tea
+diti					StrongSuff ; ! anything_sticky_or_gummy
+<"@U.ACT.I@" {ditra}>			StrongSuff ; ! stubbornness_obstinacy
+divai					StrongSuff ; ! wine
+dobo					StrongSuff ; ! pool_reservoir
+<"@D.VOA.ON@" {doka} "@P.PASS1.A@">	02FStrong; ! praise_flattery_or_advertisement
+dokotera				StrongSuff ; ! doctor
+dona					StrongSuff ; ! shock_blow_knock
+<{doro} "@P.PASS1.A@">			StrongSuff ; ! burning_setting_on_fire
+dozenina				StrongSuff ; ! dozen
+dradradradra				StrongSuff ; ! loud_weeping
+dridralava				StrongSuff ; ! monotonous_repetition
+ebo					StrongSuff ; ! boasting_showing_off
+eglizi					StrongSuff ; ! Catholic_church_church_building
+ehoeho					StrongSuff ; ! squeaking_sound
+eky					StrongSuff ; ! obedience, submission, agreement	
+elektrisite				StrongSuff ; ! electricity
+eli					StrongSuff ; ! dispersion	
+<{elo} "@P.PASS1.A@">			StrongSuff ; ! parasol_or_umbrella
+endi					I2ASStrong ; ! fried
+era					StrongSuff ; ! consent_permission
+eso					StrongSuff ; ! scorn_mockery
+etri					I2EStrong ; ! dwindling
+fadi					StrongSuff ; ! something_forbidden
+<{fafa} "@P.PASS1.A@">			StrongSuff ; ! act_of_sweeping
+<{fafi} "@P.PASS1.A@">			I2AZStrong ; ! sowing
+<{faika} "@P.PASS1.A@">			StrongSuff ; ! dregs_sediment_residue
+faitra					StrongSuff ; ! bitterness
+faka					StrongSuff ; ! root_cause
+fako					StrongSuff ; ! trash_garbage
+faladia					StrongSuff ; ! sole_of_foot_or_of_shoe
+falafa					StrongSuff ; ! wall_panels_made_of_travelers_palm_stalks
+famaki					StrongSuff ; ! axe
+famantsilahi				StrongSuff ; ! clever_man_hard_to_fool
+fana					StrongSuff ; ! heat
+fanafodi				StrongSuff ; ! medicine
+fanala					StrongSuff ; ! cold_frost_or_lantern
+fanamiana				StrongSuff ; ! uniform
+fandai					StrongSuff ; ! caterpillar
+fandrotrarana				StrongSuff ; ! creeping_jointed_grass
+fanitso					StrongSuff ; ! zinc
+fanjakana				StrongSuff ; ! government
+fano					StrongSuff ; ! sea_turtle
+fanorona				StrongSuff ; ! Malagasy_chess
+fantara					StrongSuff ; ! falling_star
+farafaikani				StrongSuff ; ! very_worst_in_character
+farafara				StrongSuff ; ! bedstead
+faraingo				StrongSuff ; ! hook
+faralahi				StrongSuff ; ! youngest_son
+farantsa				StrongSuff ; ! five_francs
+fararano				StrongSuff ; ! harvest_harvest_season
+farasisa				StrongSuff ; ! syphilis
+faravavi				StrongSuff ; ! youngest_daughter
+faravodilanitra				StrongSuff ; ! horizon
+fari					StrongSuff ; ! sugar_cane
+farimbona				StrongSuff ; ! acting_together
+<"@D.AVT.ON@" {fati} "@P.PASS1.A@">	I2ESStrong ; ! cut_or_corpse
+fatoriana				StrongSuff ; ! bedroom
+fatorina				StrongSuff ; ! manner_of_sleeping
+fatibolo				StrongSuff ; ! hair_that_comes_out_in_brushing_or_combing
+fatra					StrongSuff ; ! any_measure_of_capacity
+fe					StrongSuff ; ! thigh
+fefi					I2EStrong ; ! fence_enclosure
+fefiloha				StrongSuff ; ! dike
+fehi					I2EZStrong ; ! girdle_or_act_of_tying
+fehikibo				StrongSuff ; ! belt
+fehizoro				StrongSuff ; ! cornerstone
+felatanana				StrongSuff ; ! palm_of_hand
+fendrofendro				StrongSuff ; ! desire_to_weep
+fenomanana				StrongSuff ; ! full_moon
+feo					StrongSuff ; ! voice
+feri					I2EStrong ; ! wound_sore
+feta					StrongSuff ; ! mud_for_plastering
+feti					StrongSuff ; ! festival_holiday
+fi					02ZStrong ; ! enjoyment
+fia					StrongSuff ; ! hard squeeze	
+fiara					StrongSuff ; ! vehicle
+fiarakaretsaka				StrongSuff ; ! taxicab
+fiarakodia				StrongSuff ; ! automobile
+fiaramanidina				StrongSuff ; ! airplane
+fidi					StrongSuff ; ! selection	
+fihinanana				StrongSuff ; ! dining_room
+filamatra				StrongSuff ; ! long_ruler_used_in_construction_work
+filanelina				StrongSuff ; ! flannel
+findra					StrongSuff ; ! moving		
+fintsa					StrongSuff ; ! dried_bananas
+firinga					StrongSuff ; ! garbage
+fisakafoanana				StrongSuff ; ! dining_room
+fitizi					StrongSuff ; ! corset_girdle
+fo					02IZStrong ; ! heart
+fodi					StrongSuff ; ! return, exchange
+foha					StrongSuff ; ! awakening	
+foitra					StrongSuff ; ! navel
+foko					StrongSuff ; ! tribe_caste_group
+fokonolona				StrongSuff ; ! community_group
+foli					I2ESStrong ; ! thread
+fondro					StrongSuff ; ! blame_censure
+fonja					StrongSuff ; ! lump_of_metal
+<"@D.VOA.ON@" {fono}>			02SStrong ; ! cover_or_wrapping
+<{fora} "@P.PASS1.A@">			StrongSuff ; ! circumcision
+forohana				StrongSuff ; ! burning_brand
+foroseti				StrongSuff ; ! fork_for_eating
+fosa					StrongSuff ; ! Malagasy_carnivore_or_backbiting_slander
+foza					StrongSuff ; ! crab
+frantsai				StrongSuff ; ! Frenchman
+gadra					StrongSuff ; ! prisoner
+galera					StrongSuff ; ! jack_plane
+gamela					StrongSuff ; ! pail_bucket
+gana					StrongSuff ; ! duck
+garaba					StrongSuff ; ! large_open_weave_basket
+gazeti					StrongSuff ; ! newspaper_periodical
+geja					StrongSuff ; ! act_of_grasping_or_seizing
+gidro					StrongSuff ; ! monkey_like_creature
+gilio					StrongSuff ; ! glue
+<{gia} "@P.PASS1.A@">			02ZStrong ; ! hard_squeeze
+gina					StrongSuff ; ! silence
+girigirika				StrongSuff ; ! small_mark_or_point
+gisa					StrongSuff ; ! goose
+goaika					StrongSuff ; ! crow
+goavi					StrongSuff ; ! guava_treee
+gogogogo				StrongSuff ; ! lamentations
+goni					StrongSuff ; ! bag
+gora					StrongSuff ; ! bolt_of_cloth
+gorodana				StrongSuff ; ! sound_of_feet
+gororoana				StrongSuff ; ! noise_of_water_being_poured
+governemanta				StrongSuff ; ! government
+governora				StrongSuff ; ! governor
+grika					StrongSuff ; ! Greek
+haba					StrongSuff ; ! bracelet_or_tax_paid_at_marketplace
+hadi					StrongSuff ; ! pit_hole_ditch
+hadivori				StrongSuff ; ! dry_moat_around_fortified_villages
+hafi					StrongSuff ; ! hardship
+hahi					StrongSuff ; ! act_of_sunning_and_drying_things
+hai					02ZStrong ; ! heat_fire
+haika					StrongSuff ; ! call_challenge
+haingo					StrongSuff ; ! ornament
+<0:%^D{haja}>				StrongSuff ; ! respect_honor
+hakiho					StrongSuff ; ! cubit
+hambo					StrongSuff ; ! pretence_imposture
+hamori					StrongSuff ; ! rudder
+handro					StrongSuff ; ! cooking_of_food
+hanja					StrongSuff ; ! openness
+hanta					StrongSuff ; ! indulgence
+hantsi					StrongSuff ; ! challenge_defiance
+hao					StrongSuff ; ! louse
+harabi					StrongSuff ; ! ridicule_jeer
+harato					StrongSuff ; ! net		 
+harefo					StrongSuff ; ! reed_from_which_fine_mats_and_baskets_are_made
+hareza					StrongSuff ; ! razor
+hari					StrongSuff ; ! accumulated_possessions
+hariri					StrongSuff ; ! finely_woven_cloth
+hariva					StrongSuff ; ! afternoon_evening
+haro					StrongSuff ; ! mixture
+<"@U.ACT.AN@" {harona}>			A20Strong; ! basket_or_searching
+hatafa					StrongSuff ; ! broad_leafed_tree_that_grows_along_coast
+hatsiaka				StrongSuff ; ! cold
+hatsikana				StrongSuff ; ! joke_amusing_story
+havanana				StrongSuff ; ! right_hand_or_right_side
+havandra				StrongSuff ; ! hail
+havia					StrongSuff ; ! left_hand_or_left_side
+haza					StrongSuff ; ! something_gotten_by_hunting_or_fishing_game
+hazo					StrongSuff ; ! tree
+hehi					I2EZStrong ; ! scatter_by_scratching
+helo					StrongSuff ; ! hell
+helodrano				StrongSuff ; ! bay
+hena					StrongSuff ; ! meat
+heni					StrongSuff ; ! so_many_times
+heniheni				StrongSuff ; ! swamp
+hentohento				StrongSuff ; ! crying_sobbing
+heri					I2EZStrong ; ! force
+herinandro				StrongSuff ; ! week
+herintaona				StrongSuff ; ! year
+herona					StrongSuff ; ! threats
+herotreroni				StrongSuff ; ! still_young_and_tender
+hetaheta				StrongSuff ; ! thirst
+<{heti} "@P.PASS1.A@">			I2EZStrong; ! scissors
+hetra					StrongSuff ; ! taxes
+hevaheva				StrongSuff ; ! suspension
+hevingevina				StrongSuff ; ! suspension_hanging
+hiaka					StrongSuff ; ! cry_of_defiance_or_of_victory
+<"@U.ACT.AN@" "@D.AVT.ON@" {hidi} "@P.PASS1.A@">	StrongSuff; ! lock
+hidihidi				StrongSuff ; ! itch
+<{hihi} "@P.PASS1.A@">			02SStrong ; ! gums
+hindrahindra				StrongSuff ; ! playfulness_wantonness
+hira					StrongSuff ; ! song
+hitsikitsika				StrongSuff ; ! kestrel_hawk
+hobi					StrongSuff ; ! shout_of_rejoicing
+hodimaso				StrongSuff ; ! eyelids
+<0:%^D{hofa}  "@P.PASS1.A@">		StrongSuff;  ! rent
+hogo					StrongSuff ; ! combing one's hair		 
+hoho					StrongSuff ; ! claw
+<{hombo}  "@P.PASS1.A@">		StrongSuff ; ! iron_or_wooden_spike_or_peg
+hondri					StrongSuff ; ! fist
+hono					StrongSuff ; ! rumor
+hopitali				StrongSuff ; ! hospital
+horohoro				StrongSuff ; ! trembling_shudder
+horonana				StrongSuff ; ! roll_of_something
+hosi					I2EStrong ; ! act_of_trampling_mud_in_rice_fields
+hota					StrongSuff ; ! anything_chewed
+hovotra					StrongSuff ; ! shaking
+<"@U.ACT.I@" "@D.AVT.ON@" 0:%^G{hozohozo}>	02NStrong ; ! shake
+ikalakeli				StrongSuff ; ! familiar_name_for_young_ladies
+indra					StrongSuff ; ! pity_compassion
+indroa					StrongSuff ; ! twice
+<"@U.ACT.I@" "@D.AVT.ON@" {ino} "@P.PASS1.A@">  StrongSuff ; ! belief
+iraimbilanja				StrongSuff ; ! one_franc
+iri					StrongSuff ; ! ardent_desire
+isa					StrongSuff ; ! number
+ivi					StrongSuff ; ! saliva
+ivo					StrongSuff ; ! middle_center
+jaboadi					StrongSuff ; ! civet_cat
+jabora					StrongSuff ; ! beef_tallow
+jaki					StrongSuff ; ! bright_red
+jako					StrongSuff ; ! monkey
+jeji					StrongSuff ; ! guitar_made_with_stick_and_gourd
+jeometria				StrongSuff ; ! geometry
+jeri					I2EStrong ; ! look
+jeri					I2EVStrong ; ! look
+jiafotsi				StrongSuff ; ! cloth_woven_from_rafia
+jinja					StrongSuff ; ! reaping
+jiolahi					StrongSuff ; ! thief
+jiro					StrongSuff ; ! lamp
+joalajoala				StrongSuff ; ! height
+jono					StrongSuff ; ! fishbait
+joro					StrongSuff ; ! action_of_standing
+jorofo					StrongSuff ; ! cloves
+kabari					StrongSuff ; ! palaver_public_discourse
+kadoa					StrongSuff ; ! tip_for_services_rendered
+kafe					StrongSuff ; ! coffee
+kafitera				StrongSuff ; ! coffee_pot
+kahie					StrongSuff ; ! notebook_copy_book
+kakakaka				StrongSuff ; ! loud_laughter
+kalalao					StrongSuff ; ! cockroach
+kalazalahi				StrongSuff ; ! champion_very_clever_man
+kalesi					StrongSuff ; ! horse_drawn_carriage
+kali					StrongSuff ; ! careful_attention_to_task
+kalisaona				StrongSuff ; ! undershorts
+kalo					StrongSuff ; ! melancholy_song_or_chant
+kambo					StrongSuff ; ! mole_or_other_growth_on_skin
+kamboti					StrongSuff ; ! orphan
+kamori					StrongSuff ; ! pond_or_reservoir
+kanakana				StrongSuff ; ! tame_duck
+kaneti					StrongSuff ; ! marble
+kanonkanona				StrongSuff ; ! odds_and_ends
+kanonta					StrongSuff ; ! sledge_hammer
+kaonti					StrongSuff ; ! account
+kaopi					StrongSuff ; ! cup
+kapa					StrongSuff ; ! cutting_hewing_or_sandals
+kapila					StrongSuff ; ! roof_tile
+kapitalista				StrongSuff ; ! capitalist
+kapiteni				StrongSuff ; ! captain
+kaporali				StrongSuff ; ! corporal
+karakara				StrongSuff ; ! action_or_lattice_or_taking_care_of_things
+karama					StrongSuff ; ! pay_salary
+karandoha				StrongSuff ; ! skull
+karato					StrongSuff ; ! cracklings_left_after_rendering_lard
+karavasi				StrongSuff ; ! whip
+karazana				StrongSuff ; ! kind_sort_species
+karenji					StrongSuff ; ! grazing_at_liberty
+karetsaka				StrongSuff ; ! bolt_for_door
+kari					StrongSuff ; ! wild_cat
+karibonetra				StrongSuff ; ! bicarbonate_of_soda
+karipetra				StrongSuff ; ! carpet
+karoti					StrongSuff ; ! carrot
+kasa					StrongSuff ; ! resolution
+kase					StrongSuff ; ! stamp_seal
+kasiketa				StrongSuff ; ! cloth_cap
+kasiraoli				StrongSuff ; ! casserole
+katekista				StrongSuff ; ! catechist
+katesizi				StrongSuff ; ! catechism
+katiriji				StrongSuff ; ! cartridge
+katra					StrongSuff ; ! Malagasy_game
+<"@D.AVT.ON@" "@U.ACT.AN@" {ketsa} "@P.PASS1.A@">	StrongSuff ; ! rice_plants
+kiadi					StrongSuff ; ! pole_used_to_mark_property_rights
+kadi					StrongSuff ; ! pole_used_to_mark_property_rights
+kiani					StrongSuff ; ! blemish		
+kianja					StrongSuff ; ! public_square
+kibai					StrongSuff ; ! cudgel_club_stick
+kibo					StrongSuff ; ! belly_or_quail
+kibokibo				StrongSuff ; ! tickling
+kidoro					StrongSuff ; ! mattress
+kiho					StrongSuff ; ! elbow
+kijeja					StrongSuff ; ! young_locusts_still_in_hopping_stage
+<{kiki} "@P.PASS1.A@">			02SStrong ; ! scraping		 
+kilasi					StrongSuff ; ! class_in_school
+kile					StrongSuff ; ! key_in_music
+kilema					StrongSuff ; ! deformity_blemish_scar
+kili					StrongSuff ; ! tamarind_tree
+kilonji					StrongSuff ; ! small_round_pebble
+kinaoli					StrongSuff ; ! elf_of_folklore
+kininina				StrongSuff ; ! quinine
+kira					StrongSuff ; ! vegetable_fibers
+<{kiraro} "@P.PASS1.A@">		StrongSuff ; ! shoes
+kiri					02ZStrong ; ! obstinacy
+kisoa					StrongSuff ; ! pig
+kitai					StrongSuff ; ! firewood
+kitambi					StrongSuff ; ! piece_of_cloth_worn_wrapped_around_by_women
+kitapo					StrongSuff ; ! bag_small_sack
+kitoatoa				StrongSuff ; ! random_guess_random_act
+kitoza					StrongSuff ; ! salted_and_dried_meat
+kitro					StrongSuff ; ! hoof
+kitrokeli				StrongSuff ; ! ankle
+kivilivili				StrongSuff ; ! zigzag
+koba					StrongSuff ; ! flour_or_bread
+kofehi					StrongSuff ; ! string_thread
+kojakoja				StrongSuff ; ! details_requiring_close_attention
+kolokolo				StrongSuff ; ! good care
+koleji					StrongSuff ; ! college
+koli					I2EStrong ; ! corruption
+komandi					StrongSuff ; ! governor_of_town_or_district_in_former_times
+kombarika				StrongSuff ; ! scaffold
+kominio					StrongSuff ; ! Communion
+kodiadia				StrongSuff ; ! rolling_over
+kominisma				StrongSuff ; ! communism
+komiti					StrongSuff ; ! committee
+konfesi					StrongSuff ; ! confession_to_priest
+konseritra				StrongSuff ; ! concert
+kopi					StrongSuff ; ! cup
+kopia					02ZStrong ; ! copy
+korisa					StrongSuff ; ! sliding_rolling
+kororosi				StrongSuff ; ! sliding_falling_down
+kotaba					StrongSuff ; ! disorder_noise
+koveta					StrongSuff ; ! bowl_or_basin_for_washing
+ladi					StrongSuff ; ! creeping_prowling
+ladiresi				StrongSuff ; ! address_for_post_borrowing
+ladoani					StrongSuff ; ! customs
+ladobo					StrongSuff ; ! meat_or_poultry_cooked_in_one_piece
+lafaoro					StrongSuff ; ! oven
+lafarina				StrongSuff ; ! flour
+lafi					I2ASStrong ; ! side_face
+lahasa					StrongSuff ; ! work_occupation
+lahateni				StrongSuff ; ! speech
+lahatsoratra				StrongSuff ; ! article
+lahiaivo				StrongSuff ; ! second_son_in_family
+lahimatoa				StrongSuff ; ! eldest_son_in_family
+lai					StrongSuff ; ! insect_found_in_sugar_cane_or_tent_cloth
+laika					StrongSuff ; ! layman_as_compared_to_clergyman
+laina					StrongSuff ; ! laziness_idleness
+lainga					StrongSuff ; ! lie
+laingo					StrongSuff ; ! tip_of_plant
+laka					StrongSuff ; ! position_in_Malagasy_chess_or_fanorona
+lakilasi				StrongSuff ; ! classroom
+lakile					StrongSuff ; ! key
+lakoli					StrongSuff ; ! glue
+lakolosi				StrongSuff ; ! bell
+lakozi					StrongSuff ; ! kitchen
+lalambe					StrongSuff ; ! main_road
+lalambi					StrongSuff ; ! railroad
+lalana					StrongSuff ; ! law
+lalandra				StrongSuff ; ! blood_vessel
+lalantsara				StrongSuff ; ! corridor
+lalao					02VStrong ; ! play_recreation_amusement
+lalikera				StrongSuff ; ! distilled_liquor
+lalimoara				StrongSuff ; ! wardrobe
+lalo					StrongSuff ; ! going through	
+lalomena				StrongSuff ; ! extinct_pygmy_hippopotamus
+lama					StrongSuff ; ! slipperiness
+lamako					StrongSuff ; ! applause
+lamaodi					StrongSuff ; ! fashion
+lamba					StrongSuff ; ! linen
+lambamena				StrongSuff ; ! deep_red_shroud_for_dead
+lambo					StrongSuff ; ! wild_boar_wild_pig
+lamboridi				StrongSuff ; ! bridle
+lamesa					StrongSuff ; ! mass_chanted_liturgical_service
+lamokani				StrongSuff ; ! unhatched_rotten_egg
+lamosina				StrongSuff ; ! back
+lamoti					StrongSuff ; ! small_fruit_found_in_south_and_west
+lampihazo				StrongSuff ; ! wooden_stage_platform
+lampivato				StrongSuff ; ! stone_pavement
+landi					StrongSuff ; ! silk
+landihazo				StrongSuff ; ! cotton
+langilangi				StrongSuff ; ! staff_cudgel
+lanilani				StrongSuff ; ! palate_of_mouth
+lanivoa					StrongSuff ; ! side_below_ribs
+lanja					StrongSuff ; ! weight
+lanonana				StrongSuff ; ! feast_with_music_and_dancing
+lanto					StrongSuff ; ! order_arrangement
+laodivi					StrongSuff ; ! distilled_liquor_spirits
+laoka					StrongSuff ; ! meat_fish_vegetables_etc_eaten_with_rice
+laona					StrongSuff ; ! mortar_for_pounding_rice
+laonini					StrongSuff ; ! measure_of_length
+laoranji				StrongSuff ; ! orange
+lapa					StrongSuff ; ! palace
+lapoali					StrongSuff ; ! frying_pan
+lasantsi				StrongSuff ; ! gasoline_petrol
+lasari					StrongSuff ; ! appetizer_made_of_onions_and_tomatoes
+laseli					StrongSuff ; ! saddle
+lasi					StrongSuff ; ! camp
+lasitika				StrongSuff ; ! elastic_esp_in_shoes
+lasoa					StrongSuff ; ! silk
+lasopi					StrongSuff ; ! soup
+lasosi					StrongSuff ; ! sauce_gravy
+latabatra				StrongSuff ; ! table
+latonoara				StrongSuff ; ! funnel
+latsa					StrongSuff ; ! reproach
+latsabato				StrongSuff ; ! election_voting
+lavabari				StrongSuff ; ! pit_for_storing_rice
+lavabato				StrongSuff ; ! cave_in_rock
+lavabokotra				StrongSuff ; ! buttonhole
+lavakombarika				StrongSuff ; ! hole_for_fastening_scaffolding
+lavanila				StrongSuff ; ! vanilla
+lavanti					StrongSuff ; ! auction_sale
+lavenona				StrongSuff ; ! ashes
+<"@U.ACT.I@" {laza}>			StrongSuff ; ! saying_or_reputation
+lazo					StrongSuff ; !wilting
+lehilahi				StrongSuff ; ! man
+lela					02FStrong ; ! tongue
+lelafo					StrongSuff ; ! flames_tongues_of_fire (see pass root lelaka)
+lelantsi				StrongSuff ; ! knife_blade
+lelo					StrongSuff ; ! mucus_of_nose
+lelosi					StrongSuff ; ! snail
+lemi					I2EStrong ; ! softness
+lemini					StrongSuff ; ! side_and_belly_meat_of_pork
+levenana				StrongSuff ; ! funeral_ceremonies
+levi					I2EStrong ; ! anger
+lezo					StrongSuff ; ! flimsiness
+lezolezo				StrongSuff ; ! flimsiness
+lietna					StrongSuff ; ! lieutenant
+litera					StrongSuff ; ! letter_of_alphabet
+loa					StrongSuff ; ! vomit
+lobolobo				StrongSuff ; ! denseness_closeness
+<{lofo} "@P.PASS1.A@">			02SStrong ; ! persistence
+loha					StrongSuff ; ! head
+lohahevitra				StrongSuff ; ! point_in_discussion
+lohalika				StrongSuff ; ! knee
+loharano				StrongSuff ; ! spring_of_water
+lohasaha				StrongSuff ; ! valley
+lohataona				StrongSuff ; ! springtime
+lohateni				StrongSuff ; ! title_heading
+lohatrano				StrongSuff ; ! roof_structure
+lohavolana				StrongSuff ; ! first_Sunday_of_month
+loka					StrongSuff ; ! bet_or_trophy
+lokanga					StrongSuff ; ! violin
+loko					StrongSuff ; ! paint_colour
+lolo					StrongSuff ; ! butterfly
+loloha					02VStrong ; ! act_of_carrying_on_head
+lomano					02SStrong ; ! swimming
+lombiro					StrongSuff ; ! poisonous_vine
+londo					StrongSuff ; ! sleepiness
+longo					StrongSuff ; ! friend
+loto					StrongSuff ; ! dirt_filthiness
+<{lova} "@P.PASS1.A@">			StrongSuff ; ! inheritance
+lovia					StrongSuff ; ! dish
+loza					StrongSuff ; ! calamity_danger
+madiro					StrongSuff ; ! tamarind_tree
+magahazo				StrongSuff ; ! manioc_cassava
+mahabibo				StrongSuff ; ! cashew_tree
+mahazaka				StrongSuff ; ! stout_rope_or_cable
+maki					StrongSuff ; ! ring_tailed_grey_lemur
+malagasi				StrongSuff ; ! Malagasy_people
+mama					StrongSuff ; ! mother
+mamakitratra				StrongSuff ; ! measure_from_middle_of_chest_to_fingertips
+mamatonalina				StrongSuff ; ! midnight_nighttime
+mamba					StrongSuff ; ! crocodile
+mana					StrongSuff ; ! manna
+manamboninahitra			StrongSuff ; ! officer_of_palace_or_of_armed_forces
+manampahefana				StrongSuff ; ! authorities
+mananasi				StrongSuff ; ! pineapple
+manavi					StrongSuff ; ! small_bat
+manda					StrongSuff ; ! rampart_fortifcation
+manga					StrongSuff ; ! mango_tree_or_blue
+mangahazo				StrongSuff ; ! manioc_or_cassava
+manjarano				StrongSuff ; ! graphite
+marakeli				StrongSuff ; ! small_fish
+mariazi					StrongSuff ; ! wedding
+maritiora				StrongSuff ; ! martyr
+marito					StrongSuff ; ! hammer
+maromita				StrongSuff ; ! laborer_servant
+masera					StrongSuff ; ! nun
+masirasira				StrongSuff ; ! yeast
+maso					StrongSuff ; ! eye
+masoandro				StrongSuff ; ! sun
+masoivoho				StrongSuff ; ! representative
+masolavitra				StrongSuff ; ! telescope
+masonkarena				StrongSuff ; ! cost_price
+mati					StrongSuff ; ! corpse
+matilo					StrongSuff ; ! sailor
+matoatoa				StrongSuff ; ! ghost
+matso					StrongSuff ; ! military_revue
+mavo					StrongSuff ; ! any_dull_light_color_such_as_grey_or_tan
+medai					StrongSuff ; ! medal
+memi					StrongSuff ; ! crucible_furnace_for_smelting_metal
+menarana				StrongSuff ; ! snake_reputed_to_be_poisonous
+menavazana				StrongSuff ; ! old_soldiers
+meo					StrongSuff ; ! cats_meow
+metali					StrongSuff ; ! metal
+miaramila				StrongSuff ; ! soldier
+militera				StrongSuff ; ! military
+ministera				StrongSuff ; ! government_department_or_ministry
+ministra				StrongSuff ; ! minister_of_cabinet
+modeli					StrongSuff ; ! model
+mofo					StrongSuff ; ! bread
+mohara					StrongSuff ; ! fetish_made_from_cows_horn
+moka					StrongSuff ; ! mosquito
+molali					StrongSuff ; ! soot
+mole					StrongSuff ; ! mule
+mololo					StrongSuff ; ! rice_straw
+mompera					StrongSuff ; ! priest
+moni					StrongSuff ; ! pimples
+monomonona				StrongSuff ; ! muttering_grumbling
+mosara					StrongSuff ; ! handkerchief
+mosari					StrongSuff ; ! famine
+mosavi					StrongSuff ; !sorcery
+motera					StrongSuff ; ! motor
+nahandro				StrongSuff ; ! cooked_food
+nana					StrongSuff ; ! pus
+nato					StrongSuff ; ! tree_whose_bark_yields_red_dye
+nendra					StrongSuff ; ! smallpox
+neni					StrongSuff ; ! mother_mama
+ngidi					StrongSuff ; ! bitterness
+ngorongosi				StrongSuff ; ! jaundice
+nifi					StrongSuff ; ! tooth_or_thinness
+nofi					StrongSuff ; ! dream
+nofo					02SStrong ; ! flesh
+nono					StrongSuff ; ! breasts
+nosi					StrongSuff ; ! island
+ntaolo					StrongSuff ; ! men_of_old_ancestors
+odi					StrongSuff ; ! charm_fetish
+ohabolana				StrongSuff ; ! proverb
+olombelona				StrongSuff ; ! mortal_man
+omali					StrongSuff ; ! yesterday
+ombalahi				StrongSuff ; ! bull
+ombi					StrongSuff ; ! cow_ox_or_enough
+ombiasa					StrongSuff ; ! shaman_medicine_man_diviner
+ompa					StrongSuff ; ! abusive_or_foul_language
+ondri					StrongSuff ; ! sheep
+oni					StrongSuff ; ! river
+onja					StrongSuff ; ! wave
+ora					StrongSuff ; ! hour
+osi					StrongSuff ; ! goat
+ota					StrongSuff ; ! sin
+oti					I2AZStrong ; ! picking_of_fruit_or_flowers
+ova					StrongSuff ; !change
+ovi					StrongSuff ; ! sweet_potatoes
+paiso					StrongSuff ; ! peach
+palitao					StrongSuff ; ! jacket_suit_coat
+panda					StrongSuff ; ! freckle_blemish_of_skin
+paosi					StrongSuff ; ! pocket
+papai					StrongSuff ; ! papaya_tree
+papango					StrongSuff ; ! hawk_Arabian_kite
+paradisa				StrongSuff ; ! paradise
+paraki					StrongSuff ; ! tobacco
+parapaingo				StrongSuff ; ! ties_on_chickens_feet_or_wings
+pararetra				StrongSuff ; ! vibration
+parasi					StrongSuff ; ! flea
+parasili				StrongSuff ; ! imported_silk
+pasipaoro				StrongSuff ; ! passport_pass
+pataloa					StrongSuff ; ! trousers
+peji					StrongSuff ; ! page_in_book
+pensili					StrongSuff ; ! pencil
+pi					02ZStrong ; ! winking_of_eyes
+piesi					StrongSuff ; ! stage_play
+piliavava				StrongSuff ; ! thing_recited_by_heart_without_understanding_meaning
+pipa					StrongSuff ; ! tobacco_pipe
+piso					StrongSuff ; ! cat
+poaka					StrongSuff ; ! explosion
+poleta					StrongSuff ; ! pistol
+polipitra				StrongSuff ; ! pulpit_speakers_stand
+polisi					StrongSuff ; ! police_police_constable
+politika				StrongSuff ; ! politics
+poma					StrongSuff ; ! apple
+pompa					StrongSuff ; ! pump
+porofo					StrongSuff ; ! proof
+ra					StrongSuff ; ! blood
+rabao					02ZStrong ; ! plane
+radara					StrongSuff ; ! radar
+rafi					StrongSuff ; ! adversary_rival
+rafozana				StrongSuff ; ! parent_or_parents_in_law
+rahalahi				StrongSuff ; ! brother_of_man
+raharaha				StrongSuff ; ! affairs_business_work
+rahavavi				StrongSuff ; ! sister_of_woman
+<"@U.ACT.AN@" {rai}>			02SStrong ; ! father_or_grab_or_reception
+railovi					StrongSuff ; ! black_songbird
+rairaindrihana				StrongSuff ; ! joists_that_support_floor
+raketa					StrongSuff ; ! cactus
+ramatoa					StrongSuff ; ! lady
+rambo					StrongSuff ; ! tail
+rameva					StrongSuff ; ! camel
+ranabavi				StrongSuff ; ! term_of_endearment_used_by_male_towards_female
+ranjo					StrongSuff ; ! leg_from_knee_to_ankle
+rano					StrongSuff ; ! water
+ranomainti				StrongSuff ; ! ink
+ranomandri				StrongSuff ; ! ice
+ranomanitra				StrongSuff ; ! perfume_toilet_water
+ranomasina				StrongSuff ; ! sea
+ranomaso				StrongSuff ; ! tears
+ranonorana				StrongSuff ; ! rain
+ranotrambo				StrongSuff ; ! floodwater
+ranto					StrongSuff ; ! trade_done_in_travellng
+raorao					StrongSuff ; ! roughness
+raozi					StrongSuff ; ! rose
+rara					StrongSuff ; ! prohibition
+rari					StrongSuff ; ! pain
+rasa					StrongSuff ; ! cutting_up_of_beef_and_other_carcasses
+ratra					StrongSuff ; ! injury
+ravimboafotsi				StrongSuff ; ! plant_used_to_make_kind_of_tea
+ravimbodi				StrongSuff ; ! buttocks
+ravinala				StrongSuff ; ! travelers_palm
+ravintoto				StrongSuff ; ! pounded_manioc_leaves_cooked_with_pork
+ravintsara				StrongSuff ; ! camphor_tree
+ravintsofina				StrongSuff ; ! external_ear
+raviravi				StrongSuff ; ! suspension
+razandri				StrongSuff ; ! younger_brother_or_sister
+razoki					StrongSuff ; ! elder_brother_or_sister
+redareda				StrongSuff ; ! flaming_of_fire
+refi					I2ESStrong ; ! measure
+rehareha				StrongSuff ; ! pride_boasting
+rembi					StrongSuff ; ! food_gathered_in_wilds
+reni					StrongSuff ; ! mother
+reniala					StrongSuff ; ! largest_baobob_tree
+renireni				StrongSuff ; ! roving_wandering
+renivitsika				StrongSuff ; ! snake_sometimes_found_in_anthills
+renivohitra				StrongSuff ; ! capital_or_central_city
+renivola				StrongSuff ; ! capital_set_out_at_interest
+repoblika				StrongSuff ; ! republic
+rere					StrongSuff ; ! fresh_water_turtle
+riaka					StrongSuff ; ! small_streams_of_water_after_rain
+riana					StrongSuff ; ! rapids_waterfall
+riba					StrongSuff ; ! ribbon
+rimo					StrongSuff ; ! buzzing_as_of_bees
+rindra					StrongSuff ; ! arrangement
+riorio					StrongSuff ; ! wandering
+rirani					StrongSuff ; ! edge
+ririnina				StrongSuff ; ! winter_cold_and_dry_season
+ro					StrongSuff ; ! bouillon_meat_juice_broth
+roatra					StrongSuff ; ! foam_froth
+roba					StrongSuff ; ! booty
+rodobe					StrongSuff ; ! act_of_speaking_or_doing_something_all_together
+rofi					StrongSuff ; ! illness_ill_health
+rofia					StrongSuff ; ! rafia_palm
+rohi					02ZStrong ; ! cord_used_for_binding
+roi					StrongSuff ; ! thorny_bush
+rojo					StrongSuff ; ! chain
+rongoni					StrongSuff ; ! hemp_plant
+ronono					StrongSuff ; ! milk
+rora					StrongSuff ; ! spittle
+roso					StrongSuff ; ! putting_forward
+rotsi					StrongSuff ; ! lullaby
+rova					StrongSuff ; ! palissade
+rovindamba				StrongSuff ; ! pieces_of_cloth
+sabotsi					StrongSuff ; ! saturday
+sadakeli				StrongSuff ; ! small_wild_duck
+safai					StrongSuff ; ! trifling_about_ones_work
+<{safidi} "@P.PASS1.A@">		StrongSuff ; ! freedom_of_choice
+safoaka					StrongSuff ; ! angry_speech
+safosafo				StrongSuff ; ! caress
+saha					StrongSuff ; ! valley
+sahafa					StrongSuff ; ! tray_for_winnowing_rice
+saina					StrongSuff ; ! ensign_flag_banner_or_mind_intellect
+saka					StrongSuff ; ! cat
+<"@U.ACT.I@" {sakafo}>			StrongSuff ; ! meal
+sakai					StrongSuff ; ! red_pepper
+sakaiza					StrongSuff ; ! intimate_friend
+sakamalao				StrongSuff ; ! ginger
+sakani					StrongSuff ; ! width
+sakaviro				StrongSuff ; ! ginger
+sakoitra				StrongSuff ; ! tenia_worm
+saladi					StrongSuff ; ! salad_greens_lettuce
+salaka					StrongSuff ; ! loincloth
+salaza					StrongSuff ; ! mast
+salohi					StrongSuff ; ! head_of_rice
+<{salovana} 0:%^Fa20>			StrongSuff ; ! front
+sama					StrongSuff ; ! flamingo
+sambo					StrongSuff ; ! ship_large_boat
+samboadi				StrongSuff ; ! sash
+samonta					StrongSuff ; ! tide_high_tide
+sampaho					StrongSuff ; ! cluster_esp_of_fruit_like_grapes
+sampi					StrongSuff ; ! charm_or_idol_or_straddle
+sanda					StrongSuff ; ! rate_of_exchange
+sandri					StrongSuff ; ! arm
+sanga					StrongSuff ; ! lock_of_hair_on_forehead
+<{sangi} "@P.PASS1.A@">			StrongSuff ; ! play_sport
+saobakaka				StrongSuff ; ! large_frog
+saoka					StrongSuff ; ! chin
+saona					StrongSuff ; ! mourning_for_dead
+saonjo					StrongSuff ; ! edible_arum_root
+saosisi					StrongSuff ; ! sausage
+sara					StrongSuff ; ! fare_paid_for_voyage
+sarambabe				StrongSuff ; ! multitude_mass_of_people
+saranga					StrongSuff ; ! rank
+sareti					StrongSuff ; ! bullock_cart
+sari					StrongSuff ; ! picture
+saribakoli				StrongSuff ; ! doll
+sarotro					StrongSuff ; ! cape_made_of_mat
+<{sasa} "@P.PASS1.A@">			StrongSuff ; ! wash
+sasi					StrongSuff ; ! introduction_preliminaries
+sata					StrongSuff ; ! custom_habit
+sava					StrongSuff ; ! search
+savili					StrongSuff ; ! hinge
+savoni					StrongSuff ; ! soap
+savorovoro				StrongSuff ; ! entanglementconfusion
+sazi					StrongSuff ; ! punishment
+sedra					StrongSuff ; ! trial
+sefosefo				StrongSuff ; ! difficulty_in_breathing
+seho					StrongSuff ; ! apparition		
+sekoli					StrongSuff ; ! school
+sento					StrongSuff ; ! sign_sob
+seranana				StrongSuff ; ! port_of_entry
+seri					StrongSuff ; ! cold_in_head
+servieta				StrongSuff ; ! napkin_towel
+setri					StrongSuff ; ! response_reply
+seza					StrongSuff ; ! chair
+sia					StrongSuff ; ! turning_aside_wandering_about
+siaka					StrongSuff ; ! fierceness_violence
+siansa					StrongSuff ; ! science
+sidintsidina				StrongSuff ; ! swallow_bird
+sigara					StrongSuff ; ! cigar_cigarette
+sikidi					StrongSuff ; ! rite_of_divination
+sikimbalobe				StrongSuff ; ! plaid_fabric
+sima					StrongSuff ; ! Portland_cement_or_harelipped
+simenitra				StrongSuff ; ! Portland_cement
+sina					StrongSuff ; ! speechless
+singori					StrongSuff ; ! slipknot_snare
+sini					StrongSuff ; ! clay_water_pot
+sinibe					StrongSuff ; ! pitcher
+siosio					StrongSuff ; ! rumor
+sira					StrongSuff ; ! salt
+siramami				StrongSuff ; ! sugar
+sisa					StrongSuff ; ! remnant_residue
+sitrapo					StrongSuff ; ! will
+soa					02VStrong ; ! blessing
+soavali					StrongSuff ; ! horse
+sobiki					StrongSuff ; ! basket
+soga					StrongSuff ; ! unbleached_muslin_fabric
+sokai					StrongSuff ; ! lime
+sokaji					StrongSuff ; ! squad
+sokera					StrongSuff ; ! carpenters_square
+soketa					StrongSuff ; ! censure
+sokola					StrongSuff ; ! chocolate
+solaitra				StrongSuff ; ! slate_for_writing
+solfa					StrongSuff ; ! solfa_musical_notation
+solila					StrongSuff ; ! mint_or_on_bias
+solitani				StrongSuff ; ! kerosene_paraffin_oil
+solo					StrongSuff ; ! substitute
+solofo					StrongSuff ; ! sprout_from_stump_or_tree
+soloki					StrongSuff ; ! extortion_fraud
+solomaso				StrongSuff ; ! spectacles
+solontena				StrongSuff ; ! delegate_representative
+somambisambi				StrongSuff ; ! twilight
+sominda					StrongSuff ; ! throat-cutting		
+somizi					StrongSuff ; ! bleached_cotton_fabric
+songosongo				StrongSuff ; ! thorny_ornamental_plant
+sonia					StrongSuff ; ! signature
+sora					StrongSuff ; ! small_tenrec
+sorohitra				StrongSuff ; ! lark
+sosialisma				StrongSuff ; ! socialism
+sosoa					StrongSuff ; ! rice_cooked_soft
+sotasota				StrongSuff ; ! quarrel
+sotro					StrongSuff ; ! spoon
+tabataba				StrongSuff ; ! noise_racket
+tabiha					StrongSuff ; ! glory_honor
+tabilao					StrongSuff ; ! table_as_multiplication_table
+<"@U.ACT.I@" {tadi}>			02AVStrong ; ! rope_or_search
+tadio					StrongSuff ; ! whirlwind
+tafa					StrongSuff ; ! conversation_chatting
+<{tafi} "@P.PASS1.A@">			StrongSuff ; ! clothing
+<{tafo} "@P.PASS1.A@">			StrongSuff ; ! roof
+tafoforana				StrongSuff ; ! bellows
+tafondro				StrongSuff ; ! cannon
+<{taha} "@P.PASS1.A@">			StrongSuff ; ! payment_of_compensation
+tahiri					02ZStrong ; ! saving
+taho					StrongSuff ; ! stem_of_plant
+tai					StrongSuff ; ! dung_excrement
+taila					StrongSuff ; ! floor_tiles
+<{taiza} "@P.PASS1.A@">			StrongSuff ; ! care
+takaitra				StrongSuff ; ! defect_physical_handicap
+<{takalo} "@P.PASS1.A@">		02ZStrong ; ! barter_exchange
+takariva				StrongSuff ; ! twilight_late_afternoon
+takelaka				StrongSuff ; ! sheet_of_anything
+takila					StrongSuff ; ! with_one_good_side
+takolaka				StrongSuff ; ! cheek
+talaho					StrongSuff ; ! supplication
+<{talantalana} "@P.PASS1.A@">		StrongSuff ; ! platform_or_shelf_of_sticks_board_or_stone
+tale					StrongSuff ; ! head_man_chief
+tambato					StrongSuff ; ! stonemason
+<{tambi} "@P.PASS1.A@">			I2AZStrong ; ! hire_wages_recompense
+tambitambi				I2AZStrong ; ! wheedling_coaxing
+tamboho					StrongSuff ; ! earthen_wall_breastwork
+tamenaka				StrongSuff ; ! yolk_of_eggs
+tamingana				StrongSuff ; ! family_relatives
+tamotamo				StrongSuff ; ! tumeric_or_saffron_plant
+tamponi					StrongSuff ; ! top
+<{tana} "@P.PASS1.A@">			StrongSuff ; ! chameleon
+tanamasoandro				StrongSuff ; ! rays_of_sun
+tanana					StrongSuff ; ! hand_or_village
+tandra					StrongSuff ; ! mole_or_mark_on_skin_or_pliers_tongs_nippers
+tandrefana				StrongSuff ; ! west_people
+tandrifi				StrongSuff ; ! opposite
+tandrimo				StrongSuff ; ! top
+tandroho				StrongSuff ; ! open_weave_basket_used_for_fishing
+taneti					StrongSuff ; ! high_and_fairly_level_ground
+tangi					StrongSuff ; ! wages_paid_for_evil_doing
+<{tani} "@P.PASS1.A@">			StrongSuff ; ! earth
+tanila					StrongSuff ; ! to one side, leaning	
+tanimanga				StrongSuff ; ! clay
+tanimbari				StrongSuff ; ! ricefield
+tanimboli				StrongSuff ; ! cultivated_field
+tanindrana				StrongSuff ; ! dweller_in_coastal_regions_of_Madagascar
+tanindrazana				StrongSuff ; ! familys_ancestral_land
+taninketsa				StrongSuff ; ! seedbed_where_young_rice_plants_are_grown
+tanisa					StrongSuff ; ! game
+tantanana				StrongSuff ; ! hammer
+tantara					StrongSuff ; ! story_tale
+tanteli					StrongSuff ; ! honey
+<{tanti} "@P.PASS1.A@">			I2AZStrong ; ! small_basket
+<"@U.ACT.AN@" {tao}>			02VStrong ; ! preparations
+taoka					StrongSuff ; ! alcohol
+taozavatra				StrongSuff ; ! handicrafts_manufacture
+tapenaka				StrongSuff ; ! gable_of_house
+tapoaka					StrongSuff ; ! soap_bubble
+tapotsini				StrongSuff ; ! white_of_egg
+taratasi				StrongSuff ; ! letter_or_paper
+tarehi					StrongSuff ; ! face
+tatamo					StrongSuff ; ! waterlily
+tatao					02VStrong ; ! something_carried_on_head
+tatavia					StrongSuff ; ! bladder
+tatsimo					StrongSuff ; ! south_people
+tatsinanana				StrongSuff ; ! Easterner
+tava					StrongSuff ; ! face
+tavaratra				StrongSuff ; ! North_African
+tavela					StrongSuff ; ! something_left_over
+tavi					02ZStrong ; ! basin_for_washing_or_slash_and_burn_agriculture
+tavoahangi				StrongSuff ; ! bottle
+tavolo					StrongSuff ; ! arrowroot_plant
+tazo					StrongSuff ; ! malaria
+tebitebi				StrongSuff ; ! apprehension
+tefi					I2EStrong ; ! artefact
+tefoedra				StrongSuff ; ! typhoid_fever
+tehamaina				StrongSuff ; ! slap_in_face
+tehenana				StrongSuff ; ! support_something_to_lean_on
+tehezana				StrongSuff ; ! side_by_ribs
+telefaona				StrongSuff ; ! telephone
+telegrafi				StrongSuff ; ! telegraph
+telegrama				StrongSuff ; ! telegram
+tena					StrongSuff ; ! body
+tenatenani				StrongSuff ; ! middle_of_length
+tenda					StrongSuff ; ! throat
+tendri					I2EStrong ; ! act_of_playing_musical_instrument
+tendro					StrongSuff ; ! tip_top
+tendrombohitra				StrongSuff ; ! mountain
+<"@D.VOA.ON@" "@U.ACT.I@" {teni}>	I2ENStrong ; ! tongue_or_language
+tete					StrongSuff ; ! leaking drop by drop	
+tetezana				StrongSuff ; ! bridge
+teti					I2EZStrong ; ! passing_through_or_over
+tevateva				StrongSuff ; ! abuse_reproach_disdain
+teza					StrongSuff ; ! firmness_and_durability
+tili					StrongSuff ; ! watchman
+tilikambo				StrongSuff ; ! tower
+tiona					StrongSuff ; ! melody_of_song
+tobi					StrongSuff ; ! camp
+todi					StrongSuff ; ! retaliation_wages_of_evil
+toha					StrongSuff ; ! resistance
+<"@D.VOA.ON@" {tohi}>			02ZStrong ; ! continuation
+toho					StrongSuff ; ! smallish_fish_with_flattened_head
+<{toki} "@P.PASS1.A@">			02SStrong ; ! confidence_trust
+<{toko} "@P.PASS1.A@">			StrongSuff ; ! trivet_for_supporting_kettle
+tokotani				StrongSuff ; ! yard_around_house
+toloho					StrongSuff ; ! kind_of_cuckoo
+toloko					StrongSuff ; ! groan_complaint
+tomani					StrongSuff ; ! cry
+tombo					StrongSuff ; ! increase_profit
+tompo					StrongSuff ; ! master_owner
+tondro					StrongSuff ; ! pointer_finger
+tongolo					StrongSuff ; ! onion
+tonia					StrongSuff ; ! executive_just_under_filoha_or_head
+tonta					StrongSuff ; ! trap
+tontakeli				StrongSuff ; ! gang_of_thieves
+topa					StrongSuff ; ! wave
+<{topi} "@P.PASS1.A@">			I2AZStrong ; ! glance_of_eyes
+toreo					StrongSuff ; ! importunate_requests
+tori					StrongSuff ; ! line_or_sleep
+<{toro} "@P.PASS1.A@">			StrongSuff ; ! indication
+totali					StrongSuff ; !total
+toto					StrongSuff ; ! pounding
+totohondri				StrongSuff ; ! blow_of_fist
+totorebika				StrongSuff ; ! dance_of_joy
+totozi					StrongSuff ; ! mouse
+tovo					02ZStrong ; ! drawing_water_or_unmarried
+trafo					StrongSuff ; ! hump_of_cattle
+trakta					StrongSuff ; ! booklet_tract
+tranga					StrongSuff ; ! happening, show		 
+trano					StrongSuff ; ! house
+tranomaizina				StrongSuff ; ! prison
+tranompokonolona			StrongSuff ; ! town_hall
+tranovorona				StrongSuff ; ! bier
+tratreva				StrongSuff ; ! walking_or_running_over_whatever_is_in_way
+tromba					StrongSuff ; ! evil_spirit_possessing_someone
+trondro					StrongSuff ; ! goldfish_acclimated_in_Madagascar
+trongi					02SStrong ; ! uprooting_with_snout
+trosa					StrongSuff ; ! debt
+trotro					StrongSuff ; ! carrying_on_bosom
+tsabo					StrongSuff ; ! medical_care
+tsaho					StrongSuff ; ! rumor
+tsaka					StrongSuff ; ! fetching_water
+tsako					StrongSuff ; ! chewing
+tsaika					StrongSuff ; ! act_of_approaching_quietly_or_sifting
+tsangambato				StrongSuff ; ! monument
+tsanganana				StrongSuff ; ! tallness
+tsaramaso				StrongSuff ; ! beans
+tsatso					StrongSuff ; ! insipidity
+tsena					StrongSuff ; ! meeting
+tsetra					StrongSuff ; ! clucking_sound_of_approval_or_sympathy
+tsi					StrongSuff ; ! steel
+tsiambaratelo				StrongSuff ; ! secret
+tsihi					StrongSuff ; ! mat_made_of_rushes_or_palm_fronds
+tsiahi					02VStrong ; ! remembrance
+tsiaro					StrongSuff ; ! memory	
+tsiki					StrongSuff ; ! smile
+tsikilo					StrongSuff ; ! spying
+tsikiriti				StrongSuff ; ! weaver_finch
+tsikoko					StrongSuff ; ! grime_on_body_on_garments_etc
+tsikorovana				StrongSuff ; ! sort_of_blackbird
+tsilailai				StrongSuff ; ! act_of_rolling_in_dust
+tsilo					StrongSuff ; ! thorn
+tsimparifari				StrongSuff ; ! weed_that_grows_in_ricefields
+tsinai					StrongSuff ; ! intestines_entrails
+<{tsindri} "@P.PASS1.A@">		StrongSuff ; ! act_of_pressing_down
+tsingala				StrongSuff ; ! water_bug
+tsingerina				StrongSuff ; ! return_to_point_of_departure
+tsingoloka				StrongSuff ; ! somersault
+tsini					StrongSuff ; ! blame_fault_reproach
+tsinkafonkafona				StrongSuff ; ! water_hyacinth
+tsipelina				StrongSuff ; ! spelling
+<"@U.ACT.AN@" {tsipi} "@P.PASS1.A@">	I2AZStrong ; ! throw
+tsipoi					StrongSuff ; ! kind_of_partridge
+tsiravina				StrongSuff ; ! shocked_appalled
+tsiri					StrongSuff ; ! sprout
+tsiriri					StrongSuff ; ! duck
+tsiririka				StrongSuff ; ! jet_of_liquid
+tsiro					StrongSuff ; ! taste
+tsitokotoko				StrongSuff ; ! heap	
+tsitsi					StrongSuff ; ! parsimony	
+tsodrano				StrongSuff ; ! blessing
+<{tsofa} "@P.PASS1.A@">			StrongSuff ; ! saw
+<{tsolo} "@P.PASS1.A@">			StrongSuff ; ! setting_fire
+tsongo					StrongSuff ; ! pinch_nip
+tsora					StrongSuff ; ! ore_being_melted
+<"@U.ACT.I@" {vadi}>			StrongSuff ; ! spouse
+<{vaha} "@P.PASS1.A@">			StrongSuff ; ! untying
+vahi					StrongSuff ; ! vine_creeping_plant
+vahini					StrongSuff ; ! guest
+vahoaka					StrongSuff ; ! people
+<{vai} "@P.PASS1.A@">			02NStrong ; ! boil
+vakodrazana				StrongSuff ; ! traditional_music
+<{vala} "@P.PASS1.A@">			StrongSuff ; ! enclosure_pen
+valahana				StrongSuff ; ! loins
+valala					StrongSuff ; ! grasshopper_locust
+<{vali} "@P.PASS1.A@">			StrongSuff ; ! answer
+valiha					StrongSuff ; ! Malagasy_lute_made_of_bamboo
+valindrihana				StrongSuff ; ! ceiling
+valopi					StrongSuff ; ! envelope
+vandravandra				StrongSuff ; ! stare
+<{vangi} "@P.PASS1.A@">			StrongSuff ; ! canine_teeth_or_visit
+vanini					StrongSuff ; ! part_between_knuckles_or_joints
+vanja					StrongSuff ; ! gunpowder
+vano					StrongSuff ; ! heron
+vao					StrongSuff ; ! news
+varahina				StrongSuff ; ! copper_brass
+varavarambe				StrongSuff ; ! window
+varavarana				StrongSuff ; ! door_or_window_opening
+varavarankeli				StrongSuff ; ! window
+vari					StrongSuff ; ! rice
+varombo					StrongSuff ; ! socket
+varongi					StrongSuff ; ! common_hardwood_tree
+vata					StrongSuff ; ! box
+vato					StrongSuff ; ! stone_rock
+vatofantsika				StrongSuff ; ! anchor
+vatokilonji				StrongSuff ; ! pebbles
+vatolampi				StrongSuff ; ! smooth_rock_bedrock
+vatomami				StrongSuff ; ! candy_sweets
+vatosoa					StrongSuff ; ! precious_stones
+vatravatra				StrongSuff ; ! downpour_of_rain
+vatsavatsa				StrongSuff ; ! racket_brawl
+vatsi					StrongSuff ; ! provisions_for_journey
+<{vava} "@P.PASS1.A@">			StrongSuff ; ! mouth
+vavafo					StrongSuff ; ! solar_plexus
+vavahadi				StrongSuff ; ! gateway
+vaventi					StrongSuff ; ! great_large
+vavorona				StrongSuff ; ! nostrils
+vazaha					StrongSuff ; ! foreigner_esp_European
+vazivazi				StrongSuff ; ! joke
+vehivavi				StrongSuff ; ! woman
+<"@U.ACT.AN@" {vela}>			StrongSuff ; ! leaving_aside
+velarana				StrongSuff ; ! width
+<"@D.AVT.ON@" {veli}>			I2ESStrong ; ! beat_strike
+vera					StrongSuff ; ! drinking_glass
+vero					StrongSuff ; ! kind_of_tall_grass
+veromanitra				StrongSuff ; ! lemongrass
+vezivezi				StrongSuff ; ! wandering_rambling
+vi					StrongSuff ; ! iron
+<"@U.ACT.I@" {vidi}>			StrongSuff ; ! purchase
+viha					StrongSuff ; ! large_arum_that_grows_in_swamps_or_shallow_water
+vikavika				StrongSuff ; ! large_stitches_tacking_or_basting_stitches
+vilani					StrongSuff ; ! cooking_pot_kettle_or_casserole
+vilia					StrongSuff ; ! plate_dish
+vinaigitra				StrongSuff ; ! vinegar
+vinani					StrongSuff ; ! confluence_of_two_rivers_or_guess_conjecture
+vinanto					StrongSuff ; ! son_or_daughter_in_law
+vinavina				StrongSuff ; ! conjecture
+vingavinga				StrongSuff ; ! disdain
+vintsi					StrongSuff ; ! small_kingfisher
+viravira				StrongSuff ; ! tearing_rending
+virijini				StrongSuff ; ! virgin
+visavisa				StrongSuff ; ! detailed_description_or_enumeration
+voadi					StrongSuff ; ! vow
+voahirana				StrongSuff ; ! kind_of_waterlily
+voai					StrongSuff ; ! crocodile
+voakazo					StrongSuff ; ! fruit
+voalavo					StrongSuff ; ! rat
+voaloboka				StrongSuff ; ! grapes
+voamaso					StrongSuff ; ! eyeball
+voangori				StrongSuff ; ! kind_of_beetle
+voanjo					StrongSuff ; ! colonist_or_peanuts
+voantai					StrongSuff ; ! dung_beetle
+voaroi					StrongSuff ; ! mulberry_and_similar_fruits
+voasari					StrongSuff ; ! lemon
+voatango				StrongSuff ; ! kind_of_muskmelon
+voavari					StrongSuff ; ! tapeworm_cyst
+vodiahitrarivo				StrongSuff ; ! common_people_lower_classes
+vodivona				StrongSuff ; ! shoulders_of_mountain
+vofi					FI2ASStrong ; ! peeling_off
+voha					StrongSuff ; ! open
+vohavoha				StrongSuff ; ! fluffed_out_cotton_or_other_fiber
+<0:%^ANV{voho}>				StrongSuff ; ! back_side
+voi					02ZStrong ; ! act_of_paddling_canoe
+voina					StrongSuff ; ! calamity_affliction
+voivoi					StrongSuff ; ! rambling_going_to_and_fro
+vokovoko				StrongSuff ; ! figure_X
+vola					StrongSuff ; ! money_or_silver
+volafotsi				StrongSuff ; ! silver
+volamena				StrongSuff ; ! gold
+volavelona				StrongSuff ; ! quicksilver_mercury
+volavola				StrongSuff ; ! cooked_rice_made_into_ball_for_journey
+<0:%^ANV{voli}>				I2EStrong; ! plant
+volo					02SStrong ; ! bamboo_or_hair
+volomaso				StrongSuff ; ! eyebrows
+volombato				StrongSuff ; ! moss_on_rocks
+volombatolalaka				StrongSuff ; ! greyish_color
+volombava				StrongSuff ; ! beard_moustache
+volomparasi				StrongSuff ; ! purple_color
+volonkazo				StrongSuff ; ! Spanish_moss_moss_on_trees
+volontani				StrongSuff ; ! earth_color_brown_khaki
+volotsangana				StrongSuff ; ! medium_sized_bamboo_used_for_lath_before_plastering
+vomanga					StrongSuff ; ! sweet_potatoes
+vona					StrongSuff ; ! knot_bow
+vongadi					StrongSuff ; ! wholesale_buying_and_selling
+voni					StrongSuff ; ! flower_or_yellow
+voninahitra				StrongSuff ; ! glory_honor
+voninkazo				StrongSuff ; ! flower
+vonji					I2EStrong ; ! help_rescue_salvation
+<"@U.ACT.AN@" {vono}>			StrongSuff ; ! killing
+<{vonto} "@P.PASS1.A@">			02SStrong ; ! swelling
+vori					StrongSuff ; ! froth_foam
+voromaheri				StrongSuff ; ! eagle
+vorombe					StrongSuff ; ! goose
+vorontsiloza				StrongSuff ; ! turkey
+vorovoro				StrongSuff ; ! confusion_disorder_entanglement
+votoatini				StrongSuff ; ! pith_of_plant
+votri					StrongSuff ; ! termites
+vovo					02ZStrong ; ! barking_of_dog_or_fishtrap_with_open_basket_weave
+vovonana				StrongSuff ; ! ridgepole_ridge_covering
+vozavoza				StrongSuff ; ! clumsiness_ineptitude
+za					StrongSuff ; ! baobab_tree
+zafi					StrongSuff ; ! grandchild
+zafiafi					StrongSuff ; ! great_grandchild
+<{zaha} "@P.PASS1.A@">			StrongSuff ; ! search
+zaika					StrongSuff ; ! meeting
+zaikabe					StrongSuff ; ! meeting_for_discussion
+zakifeli				StrongSuff ; ! grandchild
+zanabohitra				StrongSuff ; ! suburb
+zanabola				StrongSuff ; ! interest_on_money_lent_out
+zanabolana				StrongSuff ; ! man_made_satellite
+zanahari				StrongSuff ; ! god_superior_being
+zanatani				StrongSuff ; ! colony
+zanatsipikina				StrongSuff ; ! arrow
+zanatsoratra				StrongSuff ; ! vowel
+zandari					StrongSuff ; ! gendarme
+zandri					StrongSuff ; ! younger_brother_or_sister
+zaobavi					StrongSuff ; ! sister_in_law
+zaodahi					StrongSuff ; ! brother_in_law
+zara					StrongSuff ; ! lot_share
+zaridaina				StrongSuff ; ! garden
+zatovo					StrongSuff ; ! youth
+zava					StrongSuff ; ! ??????????????? light
+zavozavo				StrongSuff ; ! mist
+zaza					StrongSuff ; ! child
+zazakeli				StrongSuff ; ! small_child_or_compound
+zazalahi				StrongSuff ; ! boy
+zazavavi				StrongSuff ; ! girl
+zehi					I2EStrong ; ! span
+<{zera} "@P.PASS1.A@">			StrongSuff ; ! pulling_down_or_fall
+zinga					StrongSuff ; ! pitcher_ladle
+zioga					StrongSuff ; ! ox_yoke
+zipo					StrongSuff ; ! skirt
+zo					StrongSuff ; ! fame_or_bad_luck
+zohi					StrongSuff ; ! cave_or_march_forward
+zoki					StrongSuff ; ! elder_brother_or_sister
+zoro					StrongSuff ; ! corner
+zoto					StrongSuff ; ! zeal_diligence
+zozoro					StrongSuff ; ! tall_sedge_with_three_cornered_stalk
+
+!!! Weak noun roots ending in -ka/-tra
+ahitra					KTWeak ; ! short_grass
+aika					K2HWeak ; ! indigo
+aingitraingitra				TR2RWeak ; ! capricious_desires
+<{aloka} "@P.PASS1.A@">			K2FWeak ; ! shelter
+ampingaharatra				TR2TWeak ; ! flintlock_gun
+<"@U.ACT.I@" {anaka} "@P.PASS1.A@">	K2HWeak ; ! progeny
+anatra					TR2RWeak ; ! advice
+<{andraikitra} "@P.PASS1.A@">		ITR2ETWeak ; ! responsibility_charge
+angatra					KTWeak ; ! ghost_or_partiality_unfairness
+<{anika} "@P.PASS1.A@">			K2HWeak ; ! climb	
+antoka					K2HWeak ; ! pledge_guarantee
+atitra					TR2ERWeak ; ! offering
+atoka					KTWeak ; ! nod_of_head_in_agreement
+atrika					K2EHWeak ; ! front
+<{avaka} "@P.PASS1.A@">			K2HWeak ; ! separation, sorting out
+<"@D.VOA.ON@" {avotra} "@P.PASS1.A@">	TR2TWeak ; ! ransom_redemption
+baoritra				KTWeak ; ! cardboard
+barareoka				K2HWeak ; ! bleating_of_sheep_or_goats
+benitra					KTWeak ; ! bayonet
+beroberoka				K2HWeak ; ! thistle
+beroka					K2HWeak ; ! dialect
+<{bitaka} "@P.PASS1.A@">		K2HWeak ; ! leap_jump
+bokotra					KTWeak ; ! button
+boritra					KTWeak ; ! box
+<{bosesika} "@P.PASS1.A@">		K2EHWeak ; ! pushing_in_by_force
+bozaka					KTWeak ; ! grass
+braketra				KTWeak ; ! parentheses_brackets
+dinika					K2HWeak ; ! consultation
+dinitra					TR2RWeak ; ! perspiration
+<{doboka} "@P.PASS1.A@">		K2HWeak ; ! loud_noise
+dokotra					KTWeak ; ! Muscovy_duck
+<{donaka} "@P.PASS1.A@">		K2HWeak ; ! smoke_from_fire
+efitra					TR2RWeak ; ! room
+elatra					KTWeak ; ! wing
+<{emboka} "@P.PASS1.A@">		K2HWeak ; ! incense
+<{endaka} "@P.PASS1.A@">		K2HWeak ; ! peeling off	
+endrika					K2EHWeak ; ! image_form_visage_face
+endrikendrika				K2EHWeak ; ! slander_insinuation
+<"@U.ACT.AN@" {enjika}>			K2EHWeak ; ! chase
+erika					KTWeak ; ! drizzling_rain
+eritreritra				ITR2ETWeak ; ! thought_meditation
+<{erotra} "@P.PASS1.A@">		TR2TWeak ; ! snore
+esotra					TR2RWeak ; ! removal
+eveka					KTWeak ; ! bishop
+<{evoka} "@P.PASS1.A@">			K2HWeak ; ! steam_bath_or_inhalation
+ezaka					K2HWeak ; ! serious_effort
+fanaka					KTWeak ; ! furniture_and_household_furnishings
+<{fandraka} "@P.PASS1.A@">		K2HWeak ; ! chisel
+<"@U.ACT.AN@" {fandrika} "@P.PASS1.A@">	K2HWeak; ! trap
+<{fantaka} "@P.PASS1.A@">		K2HWeak ; ! small_bamboo_used_for_hedges
+<{fantoka} "@P.PASS1.A@">		K2HWeak ; ! nail_spike
+<{fantsika} "@P.PASS1.A@">		K2HWeak; ! nail
+<{fantsitsitra} "@P.PASS1.A@">		TR2RWeak ; ! jet_of_water
+<{faoka} "@P.PASS1.A@">			K2HWeak ; ! wiping
+<{faritra} "@P.PASS1.A@">		TR2TWeak; ! limit
+fasika					IK2EHWeak ; ! sand
+<{fatratra} "@P.PASS1.A@">		TR2RWeak ; ! stuffing
+fatsaka					KTWeak ; ! birdshot
+fenitra					KTWeak ; ! custom_usage
+<{fepetra} "@P.PASS1.A@">		TR2RWeak ; ! regulations
+<{fetra} "@P.PASS1.A@">			TR2RWeak ; ! limit
+fingotra				TR2RWeak ; ! rubber
+fisoka					KTWeak ; ! corner_where_chickens_are_kept
+fitaka					K2HWeak ; ! fraud_deceit
+fitaratra				KTWeak ; ! glasses
+<{fofoka} "@P.PASS1.A@">		K2HWeak ; ! grippe_Asian_flu
+fofotra					TR2RWeak ; ! blowing_of_bellows
+<{foka} "@P.PASS1.A@">			K2HWeak ; ! inhalation_or_idiot
+folaka					K2HWeak ; ! broken_but_still_holding_together
+foritra					KTWeak ; ! fold
+fositra					KTWeak ; ! boring_insect
+fotaka					KTWeak ; ! lightning_or_mud
+fotitra					KTWeak ; ! turning_end_for_end
+<{fototra} "@P.PASS1.A@">		TR2RWeak ; ! root
+<{goka} "@P.PASS1.A@">			K2HWeak ; ! drinking eagerly		
+<<0:%^D{hafatra} "@P.PASS1.A@">		TR2RWeak ; ! message
+hahaka					K2FWeak ; ! scattering
+haitraitra				TR2RWeak ; ! whim_fancy
+<"@U.ACT.AN@" {halatra}>		TR2RWeak ; ! theft
+hanitra					TR2RWeak ; ! fragrance
+haotra					TR2RWeak ; ! scratching
+<{haraka} "@P.PASS1.A@">		K2HWeak ; ! heddles_of_loom
+<0:%^D{hararaotra}>			TR2RWeak ; ! ever-widening wound, opportunity
+<{haratra} "@P.PASS1.A@">		TR2TWeak ; ! shaving_or_electrical_energy
+harika					K2HWeak ; ! scowl
+<"@U.ACT.AN@" "@D.AVT.ON@" {hataka}>	K2HWeak ; ! request
+hatoka					KTWeak ; ! nape_of_neck
+hatsika					K2HWeak ; ! beckoning_with_hand
+<"@U.ACT.I@" {hazakazaka}>		K2HWeak ; ! act_of_running_or_of_walking_fast
+helatra					KTWeak ; ! lightning_flash_of_light
+helika					KTWeak ; ! armpit
+heloka					K2HWeak ; ! crookedness
+hemotra					TR2RWeak; ! retreat
+henatra					TR2RWeak ; ! shame
+herika					K2HWeak ; ! turning one's head around	
+herotra					KTWeak ; ! rubbery_skin_or_layer
+hetraketraka				K2HWeak ; ! violence_aggression
+hetsika					K2EHWeak ; ! action
+<"@U.ACT.I@" {hevitra}>			TR2ERWeak ; ! idea	
+hifika					KTWeak ; ! shaking_pushing_away
+hihitra					TR2RWeak ; ! avarice_stinginess
+hiratra					KTWeak ; ! sight
+hirika					K2HWeak ; ! small_hole_or_opening
+<"@U.ACT.AN@" 0:%^D2{hitsaka}>		K2HWeak ; ! footprint
+hoditra					TR2RWeak ; ! skin_hide_bark
+hodivitra				TR2RWeak ; ! slight inclination	
+hofoka					K2HWeak ; ! motion
+hohoka					KTWeak ; ! prostration
+holatra					TR2RWeak ; ! mushrooms_or_scar
+horaka					TR2RWeak ; ! shouting
+hosoka					K2HWeak ; ! fraud_falsification
+<{hosotra} "@P.PASS1.A@">	  	TR2RWeak; ! anointment
+hotakotaka				K2HWeak ; ! tumult_disturbance
+<"@U.ACT.AN@" "@D.AVT.ON@" 0:%^G{hovitra}>	KTWeak ; ! shake
+iditra					TR2RWeak ; ! enter
+ilika					KTWeak ; ! side
+<"@U.ACT.AN@" {iraka}>			K2HWeak ; ! envoy
+iraka					K2HWeak ; ! messenger
+itatra					TR2RWeak ; ! enlargement, extension
+jirika					K2HWeak ; ! band_of_robbers
+<"@U.ACT.AN@" {kaikitra}>		TR2ERWeak ; ! bite
+<{kaka} "@P.PASS1.A@">			KTWeak ; ! wedge	
+kapoaka					K2HWeak ; ! cup
+kapoka					K2HWeak ; ! blow
+karatra					KTWeak ; ! card_ticket
+karoka					K2HWeak ; ! close_investigation_seeking_for_something
+kasika					K2HWeak ; ! touching, handling		
+kasoka					K2HWeak ; ! rubbing
+<{katroka} "@P.PASS1.A@">		K2HWeak ; ! same_exactly
+<{katsaka} "@P.PASS1.A@">		K2HWeak ; ! maize
+kepoka					K2HWeak ; ! crunching_sound
+kesika					KTWeak ; ! wooden_box
+kiaka					K2HWeak ; ! scratch_or_piercing_cries
+kifakifaka				K2HWeak ; ! wagging_shaking_off
+kisoka					K2HWeak ; ! powdered_tobacco_or_snuff
+kitika					K2HWeak ; ! thin
+kitika					K2HWeak ; ! tickling
+kitroka					KTWeak ; ! gnashing_of_teeth
+kizaka					K2HWeak ; ! reproach_mockery
+kobaka					K2HWeak ; ! act_of_agitating_water
+kofoka					K2HWeak ; ! agitation
+kohaka					K2FWeak ; ! cough
+kopaka					K2HWeak ; ! flapping
+koraka					KTWeak ; ! cry_of_chicken_when_caught
+korapaka				K2HWeak ; ! sudden_movement_struggle_for_release
+<{kotrika} "@P.PASS1.A@">		KTWeak ; ! hatching, incubation		
+kotroka					K2HWeak ; ! thunder
+lafatra					TR2RWeak ; ! rank
+lafika					K2HWeak ; ! bedding_or_litter
+lahatra					TR2RWeak ; ! order_arrangement
+lalitra					KTWeak ; ! housefly
+lalotra					TR2RWeak ; ! plaster_coating
+lamaka					KTWeak ; ! state.of.being.flat
+lanitra					KTWeak ; ! sky
+lasaka					KTWeak ; ! bag_sack
+lasitra					TR2RWeak ; ! mold_last_form_for_fashioning_something
+<{lavaka} "@P.PASS1.A@">		K2HWeak ; ! hole
+lemaka					K2HWeak ; ! flat_land
+<{loaka} "@P.PASS1.A@">			K2HWeak ; ! hole_through_something
+<{loatra} "@P.PASS1.A@">		TR2RWeak ; ! extraction
+lobaka					KTWeak ; ! shirt
+lomotra					TR2RWeak ; ! algae_green_water_scum
+lozoka					K2HWeak ; ! tunnel_like_place_of_concealment
+maingoka				KTWeak ; ! scorpion
+majika					KTWeak ; ! magic
+marika					K2HWeak ; ! sign_or_mark
+menaka					KTWeak ; ! oil
+metatra					TR2RWeak ; ! meter
+mianaka					KTWeak ; ! parents_and_children
+minitra					KTWeak ; ! minute
+molotra					KTWeak ; ! lips
+mozika					KTWeak ; ! brass_hand
+<"@D.VOA.ON@" "@U.ACT.AN@" {nenina} "@P.PASS1.A@">	IN2ENWeak ; ! regrets
+ohatra					TR2RWeak ; ! example
+olitra					KTWeak ; ! worm
+<{ongotra} "@P.PASS1.A@">		TR2TWeak ; ! uprooting
+<{onitra} "@P.PASS1.A@">		TR2ERWeak ; ! compensation_restitution
+<{oroka} "@P.PASS1.A@">			K2HWeak ; ! kiss
+<{otrika} "@P.PASS1.A@">		K2EHWeak ; ! ripening
+ozatra					KTWeak ; ! muscle_sinew
+paingotra				TR2RWeak ; ! pin
+paoka					K2HWeak ; ! forceful_removal
+paositra				KTWeak ; ! post_office
+pasoka					K2HWeak ; ! ironing
+pelika					K2HWeak ; ! showoff
+pepetra					TR2RWeak ; ! express_order_definite_instructions
+peratra					KTWeak ; ! ring_worn_on_finger
+petraka					K2HWeak ; ! deposit
+pika					K2HWeak ; ! click_of_knife_or_lock
+posaka					K2HWeak ; ! revelation
+rafitra					ITR2ETWeak ; ! construction_work_construction
+<{rakitra} "@P.PASS1.A@">		ITR2ETWeak ; ! hoard_treasure
+<{rakotra} "@P.PASS1.A@">		TR2FWeak ; ! cover
+rangotra				TR2TWeak ; ! scratch
+<{ranitra} "@P.PASS1.A@">		TR2TWeak ; ! sharpness
+raoka					K2FWeak ; ! grab
+raotra					TR2TWeak ; ! talking.to
+<{ravaka} "@P.PASS1.A@">		K2HWeak ; ! ornament_jewelry
+rehitra					KTWeak ; ! fire
+<"@U.ACT.I@" "@D.AVT.ON@" {resaka}>	K2HWeak ; ! conversation
+<"@U.ACT.I@" "@D.AVT.ON@" {resabe}>	K2HWeak ; ! idle_chat
+risika					K2HWeak ; ! excitement_zeal_encouragement
+rivotra					KTWeak ; ! wind
+roaka					K2HWeak ; ! driving_away
+roboka					KTWeak ; ! plungeon
+rofotra					KTWeak ; ! explosion
+rombaka					K2HWeak ; ! snatching
+roritra					TR2TWeak ; ! pulling_on'
+<{rotsaka} "@P.PASS1.A@">		K2HWeak ; ! act_of_pouring_or_falling_from_above
+sabaka					KTWeak ; ! straddling
+sabatra					KTWeak ; ! sword
+sakelika				K2EHWeak ; ! carrying_under_arm
+<{salotra} "@P.PASS1.A@">		TR2RWeak ; ! vest
+sambotra				TR2RWeak ; ! captive
+<{sandoka} "@P.PASS1.A@">		K2HWeak ; ! fraud
+sandratra				KTWeak ; ! elevation		
+<{santatra} "@P.PASS1.A@">		TR2RWeak ; ! firstfruits
+<{saotra} "@P.PASS1.A@">		TR2RWeak ; ! thanks
+<{sarika} "@P.PASS1.A@">		K2HWeak ; ! pull
+saritaka				K2HWeak ; ! disorder_confusion
+sasaka					K2HWeak ; ! half_one_half
+<"@U.ACT.I@" {satroka} "@P.PASS1.A@">	K2HWeak ; ! hat
+<{savoka} "@P.PASS1.A@">		K2HWeak ; ! beeswax
+sehatra					KTWeak ; ! stage
+<{sesika} "@P.PASS1.A@">		K2EHWeak ; ! stuffing
+setra					KTWeak ; ! aggressive_behaviour'
+setroka					K2HWeak ; ! smoke
+sifaka					KTWeak ; ! large_lemur_indris
+sifotra					TR2RWeak ; ! snail
+silaka					K2HWeak ; ! splinter_small_piece_split_off
+sioka					K2HWeak ; ! whistling
+sisika					KTWeak ; ! cram		 
+sitrika					KTWeak ; ! dip
+sobaka					KTWeak ; ! state of legs kept apart	
+soka					KTWeak ; ! plunge
+<{sokatra} "@P.PASS1.A@">		TR2FWeak ; ! turtle_or_tortoise or open(state)
+sokitra					TR2RWeak ; ! engraving_carving
+solika					K2EHWeak ; ! oil
+somotra					TR2RWeak ; ! chin_beard
+sompitra				KTWeak ; ! large_bag_made_from_mats_and_used_for_storing_rice
+sondrotra				KTWeak ; ! elevation, increase
+<{soratra} "@P.PASS1.A@">		TR2TWeak ; ! writing
+<{soritra} "@P.PASS1.A@">		TR2TWeak ; ! mark_trace
+<{soroka} "@P.PASS1.A@">		K2EHWeak ; ! weeding
+sosoka					KTWeak ; ! duplication, reinforcement		 
+tafika					K2HWeak ; ! army
+tahotra					TR2RWeak ; ! fear_terror
+takatra					TR2RWeak ; ! tuffed_umber
+takotra					TR2FWeak ; ! lid_of_cooking_pot
+tambatra				KTWeak ; ! adjunction, assembling
+tambotsotra				KTWeak ; ! sinking, lowering
+tampoka					K2HWeak ; ! cold_water_admixture
+tandindona				N2MWeak ; ! shadow
+tandomitra				TR2ERWeak ; ! hives
+<{tandroka} "@P.PASS1.A@">		K2HWeak ; ! horn
+tangolika				K2EHWeak ; ! something_that_twines_spiral
+<{tanika} "@P.PASS1.A@">		K2EHWeak ; ! boiling
+tanjaka					K2HWeak ; ! strength_vigor
+taona					N2MWeak ; ! year
+taranaka				K2HWeak ; ! descendants
+taratra					TR2FWeak ; ! beam_of_light
+taretra					KTWeak ; ! sisal_sisal_fiber
+tarika					K2HWeak ; ! pulling_or_leading_along
+<{tatatra} "@P.PASS1.A@">		TR2RWeak ; ! furrow
+tatitra					TR2ERWeak ; ! carrying
+tefoka					K2HWeak ; ! cracking_or_popping_sound
+tehaka					K2FWeak ; ! clapping_of_hands_in_applause
+temitra					TR2ERWeak ; ! mats_or_paper_on_walls
+tetika					K2EHWeak ; ! incision
+tevika					K2EHWeak ; ! piercing
+tifitra					TR2RWeak ; ! shooting
+toaka					KTWeak ; ! alcoholic_beverage
+todika					K2HWeak ; ! looking back
+<"@U.ACT.I@" {toetra}>			TR2RWeak ; ! state_quality_nature_condition
+<{tohatra} "@P.PASS1.A@">		TR2RWeak ; ! ladder_staircase
+tohitra					TR2ERWeak ; ! opposition
+<{tohoka} "@P.PASS1.A@">		K2FWeak ; ! barrier
+tolana					NWeak ; ! doorpost
+<{tolotra} "@P.PASS1.A@">		TR2RWeak ; ! gift_something_handed_over
+<"@U.ACT.AN@" {tomboka}>		K2HWeak ; ! beginning
+tongotra				KTWeak ; ! foot
+<{toraka} "@P.PASS1.A@">		K2HWeak ; ! act_of_throwing
+tosika					K2EHWeak ; ! push
+traka					KTWeak ; ! lift	
+<{trandraka} "@P.PASS1.A@">		K2HWeak ; ! larger_species_of_tenrec_or_quill_pig
+traoka					K2HWeak ; ! airway
+tsahatra				KTWeak ; ! stop
+<"@U.ACT.I@" {tsaingoka}>		K2HWeak ; ! the_one_who_has_long_fingers
+tsambikina		  		NWeak;	  ! jump
+tsaoka					K2HWeak ; ! chalk_for_writing
+<{tsatoka} "@P.PASS1.A@">		K2HWeak ; ! stake_or_other_object_stuck_into_something
+tsatsika				KTWeak ; ! roasting
+<{tselatra} "@P.PASS1.A@">		TR2RWeak ; ! flash_of_lightning_flash
+!!!tsentitra			KTWeak ; ! sucking -> tsentsefina 
+<"@U.ACT.AN@" {tsentsina} "@P.PASS1.A@">       IN2ENWeak ; ! clogged_up
+tseroka					K2HWeak ; ! castor_oil
+tsidika					K2HWeak ; ! short visit
+tsihika					K2FWeak ; ! fish_or_shrimps_caught_by_dredging
+tsimoka					KTWeak ; ! sprout_growth
+tsindroka				K2HWeak ; ! little_things_picked_up_with_beak
+tsinjaka				K2HWeak ; ! dancing_esp_by_jumping_about
+tsinjara				KTWeak ; ! portion
+tsipaka					K2HWeak ; ! kick
+tsipika					K2HWeak ; ! arrow_or_bow_or_straight_line
+tsiraka					KTWeak ; ! cape_or_fiber
+tsiratsira				KTWeak ; ! disdain
+tsiriritra				TR2TWeak ; ! coveting
+tsitsitra				TR2RWeak ; ! squirt
+tsoboka					KTWeak ; ! dip
+tsoaka					K2HWeak ; ! flight
+tsoka					K2FWeak ; ! act_of_blowing_or_marrow
+<{tsofoka} "@P.PASS1.A@">		K2HWeak ; ! insert
+<{tsolotra} "@P.PASS1.A@">		TR2RWeak ; ! bribe
+tsoriaka				K2HWeak ; ! flight_rapid_passage
+vadika					K2HWeak ; ! other_side
+vakoka					KTWeak ; ! silver_chain
+varatra					KTWeak ; ! thunder
+varika					KTWeak ; ! smallish_brown_lemur
+<{varotra} "@P.PASS1.A@">		TR2TWeak ; ! selling_trade_commerce
+<{vavaka} "@P.PASS1.A@">		K2HWeak ; ! prayer
+velatra					TR2RWeak ; ! width
+vesatra					TR2RWeak ; ! weight_heaviness
+vitrika					KTWeak ; ! nimbleness_vigor
+vitsika					KTWeak ; ! ants
+voaka					KTWeak ; ! exit	
+<0:%^ANAV{voatra}>			TR2RWeak ; ! arrangement !!Each entry produces part
+<0:%^ANV{voatra}>			TR2RWeak ; ! arrangement !!of the forms
+vohitra					KTWeak ; ! hill
+vohoka					KTWeak ; ! womb
+vokatra					TR2RWeak ; ! fruit_produce
+voroka					KTWeak ; ! rags_tatters
+vositra					TR2RWeak ; ! castrated
+vovoka					K2HWeak ; ! dust
+zahatra					KTWeak ; ! raft
+zaitra					TR2RWeak ; ! sewing
+<"@U.ACT.AN@" "@D.AVT.ON@" {zanaka}>	K2HWeak ; ! offspring_progeny
+zavatra					TR2RWeak ; ! thing
+zezika					K2EHWeak ; ! manure_fertilizer
+
+!!! Weak noun roots ending in -na
+
+adana					NWeak ; ! slowness
+adina					NWeak ; ! question_examination
+afina					IN2ENWeak ; ! hiding
+aizina					NWeak ; ! darkness
+alalana					NWeak ; ! permission
+alina					NWeak ; ! night_or_ten_thousand
+alona					NWeak ; ! wave_billow
+ambina					IN2ENWeak ; ! watch_guard
+anana					NWeak ; ! vegetables_especially_leafy_vegetables
+<"@U.ACT.AN@" {andrana} "@P.PASS1.A@">	N2MWeak ; ! trial_run
+andriana				NWeak ; ! king_queen_royalty
+ankina					NWeak ; ! leaning on
+anona					NWeak ; ! what_do_you_call_it
+antsona					NWeak ; ! grounded_come_to_stop
+arina					IN2ENWeak ; ! charcoal_soot_or_uprightness_levelness
+avana					NWeak ; ! rainbow
+bahana					NWeak ; ! straddling
+baibona					NWeak ; ! end_of_rivet
+banjina					NWeak ; ! careful attention		 
+baolina					NWeak ; ! ball
+bingona					NWeak ; ! bugle
+diakona					NWeak ; ! deacon
+dingana					NWeak ; ! step_leap
+elanelana				NWeak ; ! space
+entana					NWeak ; ! luggage
+erana					NWeak ; ! full_measure
+erona					NWeak ; ! growl_roar
+<{etona} "@P.PASS1.A@">			NWeak ; ! vapor_smoke_steam
+<{evina} "@P.PASS1.A@">			IN2ENWeak ; ! sneeze
+<{fahana} "@P.PASS1.A@">		NWeak ; ! gift_of_food
+faisana					NWeak ; ! scar_wound
+fandriana				NWeak ; ! bed
+fandroana				NWeak ; ! bathing
+<{fantina} "@P.PASS1.A@">		IN2ENWeak ; ! sorting out		 
+<{fantsona} "@P.PASS1.A@">		NWeak ; ! tube_drainpipe
+farana					NWeak ; ! end, conclusion		 
+fasana					NWeak ; ! grave_comb
+fatana					NWeak ; ! fireplace
+fihina					NWeak ; ! grasp_grab_clutching
+fintana					NWeak ; ! fishhook
+firenena				NWeak ; ! nation
+fitaovana				NWeak ; ! tool_equipment
+fofoana					NWeak ; ! bosom
+fofona					NWeak ; ! odor
+forona					NWeak ; ! creation, invention
+fotoana					NWeak ; ! free_time_or_moment
+galona					NWeak ; ! gold_braid_or_marks_of_rank_on_uniforms
+gilasi					NWeak ; ! ice_cream
+handrina				NWeak ; ! forehead
+handrona				NWeak ; ! stagnation
+hanina					NWeak ; ! food_nourishment_or_longing_regret
+hantona					NWeak ; ! suspension
+hantsana				NWeak ; ! precipice
+harana					NWeak ; ! sea_shells
+harena					NWeak ; ! riches_property
+hasina					NWeak ; ! ceremonial_gift
+hatina					IN2ENWeak ; ! afflicted_with_scabies??
+havana					NWeak ; ! relative
+herina					NWeak ; ! turn_return
+hilana					NWeak ; ! slant
+hilangilana				NWeak ; ! rocking
+hirana					NWeak ; ! glimmer_of_light
+hodidina				NWeak ; ! circumference
+hodina					NWeak ; ! turning_around
+hontsana				NWeak ; ! shaking, shake-up
+horirana				NWeak ; ! position_on_edge
+horona					NWeak ; ! roll
+hosina					NWeak ; ! besmearing		 
+hozongozona				NWeak ; ! shaking off		 
+idina					NWeak ; ! pouring_out
+indrana					N2MWeak ; ! outer_edges_or_borrowed
+jadona					NWeak ; ! despotic_authority
+janona					NWeak ; ! stop
+kambana					NWeak ; ! twins
+kankana					NWeak ; ! worm
+kaonkaona				NWeak ; ! cry_of_complaint
+ketrona					NWeak ; ! fold_or_wrinkle
+kintana					NWeak ; ! star
+kofona					NWeak ; ! act_of_choking_on_food
+kongona					NWeak ; ! bedbug
+kononkonona				NWeak ; ! sly
+korana					NWeak ; ! pleasant_conversation
+<"@D.VOA.ON@" {korontana}>		NWeak ; ! disorder
+koriana					NWeak ; ! peaceful_flowing
+korintsana				NWeak ; ! childs_rattle
+kristiana				NWeak ; ! Christian
+ladina					NWeak ; ! shoots_of_creeping_plants
+lakana					NWeak ; ! dugout_canoe
+lalona					NWeak ; ! tree_with_hard_reddish_wood
+<{lambanana} "@P.PASS1.A@">		NWeak ; ! width_of_cloth
+lamina					NWeak ; ! arrangement
+lavarangana				NWeak ; ! balcony
+lefona					NWeak ; ! spear
+lesona					NWeak ; ! lesson
+maraina					NWeak ; ! morning
+milina					NWeak ; ! machine_engine
+mizana					NWeak ; ! scale_for_weighing
+morona					NWeak ; ! border_brink_edge
+namana					NWeak ; ! companion_neighbor
+ngadona					NWeak ; ! dull_thumping_sound
+ngodona					NWeak ; ! thudding_sound_of_steps_or_of_pounding_rice
+ofana					NWeak ; ! tempering_of_steel
+olana					NWeak ; ! twisting
+olona					NWeak ; ! person
+omana					NWeak ; ! preparation
+<{ondana} "@P.PASS1.A@">		NWeak ; ! pillow
+ongana					NWeak ; ! overthrow
+<"@U.ACT.AN@" {orana}>			NWeak ; ! rain_or_shrimp
+orina					IN2ENWeak ; ! foundation
+orona					NWeak ; ! nose
+otrona					NWeak ; ! escort
+ozona					NWeak ; ! curse
+penina					NWeak ; ! pen
+pentina					NWeak ; ! spotted_soiled
+pilina					NWeak ; ! pill
+pirina					NWeak ; ! arrangement		 
+poizina					NWeak ; ! poison
+<{rahona} "@P.PASS1.A@">		NWeak ; ! cloud
+randrana				NWeak ; ! braid
+<{rantsana} "@P.PASS1.A@">		NWeak ; ! branch
+ravina					NWeak ; ! leaf
+ravona					NWeak ; ! levelling
+razana					NWeak ; ! ancestor
+renina					IN2ESWeak ; ! deafness
+reondreona				NWeak ; ! hum_of_large_number_of_people
+riandriana				NWeak ; ! anvil
+rihana					NWeak ; ! upper_floor
+rindrina				NWeak ; ! wall_of_house
+rodana					NWeak ; ! pull-down
+rohona					NWeak ; ! sound_like_thunder
+rona					NWeak ; ! slant
+ronjina					NWeak ; ! jostle
+sahana					NWeak ; ! barrier
+sahona					NWeak ; ! frog
+<{sakana} "@P.PASS1.A@">		NWeak ; ! something_placed_crosswise_barrier
+samoina					NWeak ; ! moth_of_silkworm
+<{sampana} "@P.PASS1.A@">		NWeak ; ! branch_branching_off
+<{sampona} "@P.PASS1.A@">		NWeak ; ! hindrance
+<{sarona} "@P.PASS1.A@">		NWeak ; ! cover_lid
+satrana					NWeak ; ! dwarf_fan_palm
+savoana					NWeak ; ! high_flying
+sembana					NWeak ; ! obstacle
+serana					NWeak ; ! quick tour
+<{sikina} "@P.PASS1.A@">		NWeak ; ! cloth_worn_around_waist
+singana					NWeak ; ! one_single_object
+sintona					NWeak ; ! pulling
+<{sisina} "@P.PASS1.A@">		NWeak ; ! edge_border
+sivana					NWeak ; ! sieve
+sodina					NWeak ; ! flute
+<{sofina} "@P.PASS1.A@">		NWeak ; ! ear
+sokina					NWeak ; ! small_tenrec_or_quill_pig
+<{sombina} "@P.PASS1.A@">		NWeak ; ! fragment_chip_crumb
+sorona					NWeak ; ! blood_sacrifice_or_discretion
+<{sosona} "@P.PASS1.A@">		NWeak ; ! layer
+taina					NWeak ; ! use as fire
+<{taingina} "@P.PASS1.A@">		IN2ENWeak ; ! mounting
+<"@D.VOA.ON@" {tandrina} "@P.PASS1.A@">	IN2EMWeak ; ! attention
+tangena					NWeak ; ! fruit_formerly_used_for_ordeal_by_poison
+tanina					NWeak ; ! warming up	
+<{tangorona} "@P.PASS1.A@">		NWeak ; ! gathering
+tanjona					NWeak ; ! protruding_shoulder_of_mountain
+tantana					NWeak ; ! hand holding	
+tantavana				NWeak ; ! sieve
+taolana					NWeak ; ! bone
+<"@U.ACT.I@" "@D.AVT.ON@" {taraina}>	NWeak ; ! complaint
+<{tehina} "@P.PASS1.A@">		IN2ENWeak ; ! staff_cane
+tenona					N2MWeak ; ! weaving
+<{tentina} "@P.PASS1.A@">		IN2ENWeak ; ! staining_besmearing
+telina					NWeak ; ! swallowing		 
+tevana					NWeak ; ! precipice_abyss
+<"@U.ACT.ANA@" {tevina}>		IN2ENWeak ; ! thickness
+<{tohana} "@P.PASS1.A@">		NWeak ; ! support_prop
+tolona					N2MWeak ; ! wrestling
+<{tombana} "@P.PASS1.A@">		NWeak ; ! evaluation_appraisal
+tongilana				NWeak ; ! slant	
+tonona					NWeak ; ! pronunciation
+<{tovana} "@P.PASS1.A@">		NWeak ; ! addition_at_end
+<{tovona} "@P.PASS1.A@">		NWeak ; ! prefix
+trozona					NWeak ; ! whale
+tsaikona				NWeak ; ! trot
+<"@U.ACT.I@" {tsangana} "@P.PASS1.A@">  NWeak ; ! height_or_standing
+tsimbina				NWeak ; ! regard_consideration_care
+tsindrona				NWeak ; ! act_of_pricking
+<{tsingina} "@P.PASS1.A@">		NWeak ; ! solder
+tsinkafona				NWeak ; ! float		 
+tsirambina				NWeak ; ! careless_with_ones_work
+<{tsivalana} "@P.PASS1.A@">		NWeak ; ! crosswise
+vahona					NWeak ; ! aloes
+vaingana				NWeak ; ! lump
+<{vakana} "@P.PASS1.A@">		NWeak ; ! bead
+valana					NWeak ; ! course_of_water_going_down
+<{valona} "@P.PASS1.A@">		NWeak ; ! fold
+vankona					NWeak ; ! carpenters_plane
+vanona					NWeak ; ! ground_floor_or_successful
+varina					NWeak ; ! rapid_descent
+vatana					NWeak ; ! trunk_body
+<{vazana} "@P.PASS1.A@">		NWeak ; ! back_teeth
+verina					NWeak ; ! return	
+vikina					NWeak ; ! jump_leap
+vilona					NWeak ; ! grass_cut_for_forage_hay
+vimbina					NWeak ; ! carrying_in_hands
+vintana					NWeak ; ! fate_luck_destiny
+vitrana					NWeak ; ! seam_lengthwise_joint
+voankena				NWeak ; ! beef_kidneys
+volana					NWeak ; ! month_or_moon_or_speech_speaking
+vombona					NWeak ; ! fins_of_fish
+vongana					NWeak ; ! lump
+vonkina					NWeak ; ! contraction		 
+vorona					NWeak ; ! bird
+<{vozona} "@P.PASS1.A@">		NWeak ; ! neck
+zandiana				NWeak ; ! printed_cotton_fabric
+zarana					NWeak ; ! handle_haft_as_for_hammer_or_spade
+<"@U.ACT.AN@" "@D.VOA.ON@" {zavona} "@P.PASS1.A@"> NWeak ; ! fog
+
+!!!! These roots do not take any verbal morphology
+LEXICON NounRootNV
+NounRoot+:0	ListedNounRootNV ;
+
+LEXICON ListedNounRootNV
+ambi					StrongSuff ; ! excess_surplus
+ampitso					StrongSuff ; ! tomorrow
+ankaso					StrongSuff ; ! taking_by_force
+antoni					StrongSuff ; ! cause
+ati					StrongSuff ; ! liver
+domi					StrongSuff ; ! dominoes
+hia					StrongSuff ; ! leanness
+ila					StrongSuff ; ! side_half
+kibori					StrongSuff ; ! any_spherical_object
+kifafa					StrongSuff ; ! broom
+kilalao					StrongSuff ; ! toy_plaything
+kirihitra				StrongSuff ; ! shrubs_brush_bushes
+kisolosolo				StrongSuff ; ! sloping_ground
+kivazivazi				StrongSuff ; ! joking_horseplay
+laharana				StrongSuff ; ! row_alignment
+tanavo					StrongSuff ; ! provincial
+tsimilanjavatsi				StrongSuff ; ! plaid
+rohana					NWeak ; ! rheumatism
+toerana					NWeak ; ! place_locality
